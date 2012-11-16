@@ -1,0 +1,102 @@
+#header {
+	top: 0px;
+	position: absolute;
+	z-index: 2;
+}
+html>body #header {
+	position: fixed;
+}
+
+#header a {
+	color: #a0dfff;
+	border: 0px;
+}
+	#header a:hover {
+		color: #6CFFFF;
+	}
+
+#ress {
+	text-align: left;
+}
+
+#ress span {
+	font-weight: bold;
+}
+
+#ress ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.green {
+	font-weight: bold;
+	color: #15c955;
+}
+
+/* Header
+------------------ */
+#header {
+	margin: 0 0 0 230px;
+	width: 600px;
+	height: 90px;
+	padding: 1em;
+	text-align: center;
+	background: url(../imgs/header2.png) center  no-repeat;
+	line-height: 2em;
+}
+
+#header-menu {
+	width: 300px;
+	position: absolute; top: 10%; right: 5%;
+	text-align:right;
+}
+#header-menu div {
+	text-align:right;
+}
+#header-menu span span {
+	position:absolute;
+	margin-top:10px;
+	padding-top:5px;
+
+	visibility: hidden;
+}
+	#header-menu span:hover span {
+		visibility: visible;
+	}
+#header-menu span span.mright {
+	right:5px;
+}
+#header-menu span.mleft {
+	position:relative;
+	display:inline-block;
+}
+#header-menu span.mleft span {
+	left:0px;
+	top: 0px;
+}
+#header-menu span ul {
+	background:#2a3847;
+	margin:5px 0 0 0;
+	padding:0 20px;
+	list-style-type: none;
+	border:1px solid #9dd9ff;
+	text-align:left;
+}
+
+#ress {
+	top: 0;
+	margin: 0 0 0 610px;
+	width: 99px;
+	height: 90px;
+	padding: 12px 14px;
+	position: absolute;
+	z-index: 2;
+	background: url(../ress.png);
+	line-height: 2em;
+}
+
+#top {
+	height: 100px;
+	position: fixed;
+}
