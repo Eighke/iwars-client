@@ -36,7 +36,6 @@ if (!session_id()) exit();
 						<?php if($wrks = $this->getData('works')) : ?>
 						<div class="wrk">
 							<div>
-								<span class="bld_nb">#</span>
 								<span class="bld_name"><?php echo ILang::_('Research'); ?></span>
 								<span class="bld_time"><?php echo ILang::_('Time'); ?></span>
 								<span class="bld_end"><?php echo ILang::_('End'); ?></span>
@@ -46,15 +45,14 @@ if (!session_id()) exit();
 							<?php foreach($wrks as $key => $wrk) : ?>
 							<div>
 							<?php if ($wrk->new) : ?>
-								<span class="bld_nb"><?php echo $key+1; ?></span>
-								<span class="bld_name"><?php echo qftext($wrk->techName); ?> (<?php echo $this->user->getTech($wrk->techId); ?>)</span>
+								<span class="bld_name"><?php echo ILang::research($wrk->techId, 'name'); ?> (<?php echo $this->user->getTech($wrk->techId); ?>)</span>
 								<span class="bld_time">00:00:00</span>
 								<span class="bld_end"> - </span>
 								<span class="bld_cent">(0%)</span>
 								<span class="spacer">&nbsp;</span>
 							<?php else : ?>
 								<span class="bld_nb"><?php echo $key+1; ?></span>
-								<span class="bld_name"><?php echo qftext(IWTech::getName($wrk->typeId)); ?> (<?php echo $wrk->nber; ?>)</span>
+								<span class="bld_name"><?php echo ILang::research($wrk->typeId, 'name')); ?> (<?php echo $wrk->nber; ?>)</span>
 								<span class="bld_time countdown" id="bx[<?php echo $key; ?>]" title="<?php echo $wrk->uTime; ?>"><?php echo $wrk->time; ?></span>
 								<span class="bld_end"><?php echo $wrk->end; ?></span>
 								<span class="bld_cent">(<?php echo $key == 0 ? ($wrk->percent) : 0; ?>%)</span>
@@ -78,9 +76,10 @@ if (!session_id()) exit();
 								<div class="elem-ress">
 									<span class="line"><?php echo $tech->ress[1] ? ILang::_('T').': '.ILang::number($tech->ress[1]).' &nbsp;' : FALSE; ?>
 										<?php echo $tech->ress[2] ? ILang::_('S').': '.ILang::number($tech->ress[2]).' &nbsp;' : FALSE ?>
-										<?php echo $tech->ress[3] ? ILang::_('H').': '.ILang::number($tech->ress[3]) : FALSE; ?></span>
+										<?php echo $tech->ress[3] ? ILang::_('H').': '.ILang::number($tech->ress[3]) : FALSE; ?></span><br />
+									<span class="end"><?php echo ILang::_('Time'); ?>: <?php echo IWTech::getFormatTime($tech->buildTime); ?></span>
 								</div>
-								<span class="end"><?php echo ILang::_('Time'); ?>: <?php echo IWTech::getFormatTime($tech->buildTime); ?></span>
+								
 							</div>
 							<?php endforeach; ?>
 						</div>

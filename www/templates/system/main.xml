@@ -1,0 +1,13 @@
+<page>
+	<head>
+		<media type="js">
+			<name>mootools</name>
+		</media>
+		<media type="js">
+			<name>count</name>
+		</media>
+		<media type="js">
+			<name>tooltip</name>
+		</media>
+	</head>
+</page>
