@@ -1,0 +1,13 @@
+<page>
+	<head>
+		<media type="js">
+			<name>mootools</name>
+		</media>
+		<media type="js">
+			<name>moocheck</name>
+		</media>
+		<media type="js">
+			<name>msg</name>
+		</media>
+	</head>
+</page>

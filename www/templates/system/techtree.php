@@ -49,7 +49,7 @@ if (!session_id()) exit();
 								<?php if ($item['cnd']['T']) : ?>
 								<div><strong><?php echo ILang::_('Researchs'); ?></strong>
 									<?php foreach ($item->cnd['T'] as $id => $level) : ?>
-									<div class="<?php echo $this->user->getTech($id) < $level ? 'cwrn' : 'cvld'; ?>"><?php echo ILang::tech($id, 'name'); ?> (<?php echo $level; ?>)</div>
+									<div class="<?php echo $this->user->getTech($id) < $level ? 'cwrn' : 'cvld'; ?>"><?php echo ILang::research($id, 'name'); ?> (<?php echo $level; ?>)</div>
 									<?php endforeach; ?>
 								</div>
 								<?php endif; ?>
