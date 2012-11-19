@@ -37,9 +37,9 @@ if (!session_id()) exit();
 						<form action="units.php" method="post">
 							<?php foreach($this->getData('troop') as $item) : ?>
 							<div class="one_two div_content">
-								<div style="margin-<?php echo ++$j%2 == 0 ? 'right' : 'left' ; ?>:5px;">
+								<div style="margin-<?php echo ++$j%2 == 1 ? 'right' : 'left' ; ?>:5px;">
 									<span class="item">
-										<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total')?>: <?php echo ILang::number($this->town->getUnit($item->id)); ?>)<br />
+										<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total'); ?>: <?php echo ILang::number($this->town->getUnit($item->id)); ?>)<br />
 										<i><?php echo ILang::unit($item->id, 'desc'); ?></i> <br />
 										<span class="line"><?php echo $item->ress[1] ? ILang::_('T').': '.ILang::number($item->ress[1]).' &nbsp;' : FALSE; ?> <?php echo $item->ress[2] ? ILang::_('S').': '. ILang::number($item->ress[2]) .' &nbsp;' : FALSE; ?> <?php echo $item->ress[3] ? ILang::_('H').': '. ILang::number($item->ress[3]) : FALSE; ?></span><br />
 										<span class="end"><?php echo ILang::_('Time'); ?>: <?php echo IWUnit::getFormatTime($item->buildTime); ?></span>
@@ -70,7 +70,7 @@ if (!session_id()) exit();
 						<form action="units.php" method="post">
 							<?php foreach($this->getData('workshop') as $item) : ?>
 							<div class="one_two div_content">
-								<div style="margin-<?php echo ++$k%2 == 0 ? 'right' : 'left' ; ?>:5px;">
+								<div style="margin-<?php echo ++$k%2 == 1 ? 'right' : 'left' ; ?>:5px;">
 									<span class="item">
 										<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total')?>: <?php echo $this->town->getUnit($item->id); ?>)<br />
 										<i><?php echo ILang::unit($item->id, 'desc'); ?></i> <br />

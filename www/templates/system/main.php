@@ -9,7 +9,7 @@
  * Contrib		Frédéric Vandebeuque (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2012-11-18 - Eighke
+ * Version		2012-11-19 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -33,23 +33,23 @@ if (!session_id()) exit();
 					<div class="main">
 						<h1><?php echo ILang::_('General'); ?></h1>
 						<?php $this->renderMsgs(); ?>
-						<?php if (!empty(ILang::_('AdminMSG'))) : ?>
+						<?php if (ILang::_('AdminMSG')) : ?>
 						<div class="block light">
 							<?php echo ILang::_('AdminMSG'); ?>
 						</div>
 						<?php endif; ?>
 						<h2><?php echo ILang::_('UnitsMove'); ?></h2>
-						<?php if($troops = $this->getData('troops')) : ?>
+						<?php if($actions = $this->getData('actions')) : ?>
 						<div class="moves">
-							<?php foreach($troops as $troop) : ?>
-							<div class="<?php echo $troop->class; ?> hasTip" title="<?php echo ILang::_($troop->type); ?>::Units: <?php echo $troop->unit; ?>&lt;br /&gt; <?php if ($troop->ress[0] != '') : ?>&lt;b&gt;T:&lt;/b&gt; <?php echo $troop->ress[0]; ?>&lt;br /&gt; &lt;b&gt;S:&lt;/b&gt; <?php echo $troop->ress[1]; ?>&lt;br /&gt; &lt;b&gt;E:&lt;/b&gt; <?php echo $troop->ress[3]; ?>&lt;br /&gt; &lt;b&gt;H:&lt;/b&gt; <?php echo $troop->ress[2]; ?><?php endif; ?>">
+							<?php foreach($actions as $action) : ?>
+							<div class="<?php echo $action->class; ?> hasTip" title="<?php echo ILang::_($action->type); ?>::Units: <?php echo $action->unit; ?>&lt;br /&gt; <?php if ($action->ress[0] != '') : ?>&lt;b&gt;T:&lt;/b&gt; <?php echo $action->ress[0]; ?>&lt;br /&gt; &lt;b&gt;S:&lt;/b&gt; <?php echo $action->ress[1]; ?>&lt;br /&gt; &lt;b&gt;E:&lt;/b&gt; <?php echo $action->ress[3]; ?>&lt;br /&gt; &lt;b&gt;H:&lt;/b&gt; <?php echo $action->ress[2]; ?><?php endif; ?>">
 								<span class="left">
-									<span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $troop->uTime; ?>"><?php echo $troop->wait; ?></span>
-									| <?php echo $troop->msg[0]; ?> <?php echo $troop->X1; ?>:<?php echo $troop->Y1; ?>:<?php echo $troop->Z1; ?>
-									<?php echo $troop->msg[1]; ?> <?php echo $troop->X2; ?>:<?php echo $troop->Y2; ?>:<?php echo $troop->Z2; ?>
-									<?php echo ILang::_('WithOrder'); ?> <?php echo ILang::_($troop->type); ?></span>
-									<?php if ($troop->cancel) : ?>
-									<span class="right">[ <a href="?cancel=<?php echo $troop->id; ?>"><?php echo ILang::_('Cancel'); ?></a> ]</span>
+									<span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $action->uTime; ?>"><?php echo $action->wait; ?></span>
+									| <?php echo $action->msg[0]; ?> <?php echo $action->X1; ?>:<?php echo $action->Y1; ?>:<?php echo $action->Z1; ?>
+									<?php echo $action->msg[1]; ?> <?php echo $action->X2; ?>:<?php echo $action->Y2; ?>:<?php echo $action->Z2; ?>
+									<?php echo ILang::_('WithOrder'); ?> <?php echo ILang::_($action->type); ?></span>
+									<?php if ($action->cancel) : ?>
+									<span class="right">[ <a href="?cancel=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a> ]</span>
 									<?php endif; ?>
 								<span class="clr">&nbsp;</span>
 							</div>
@@ -60,7 +60,7 @@ if (!session_id()) exit();
 						<div class="center bold"><?php echo ILang::_('NoMove'); ?></div><br />
 						<?php endif; ?>
 						<h2><?php echo ILang::_('Buildings'); ?></h2>
-						<?php if($builds = $this->getData('builds') : ?>
+						<?php if($builds = $this->getData('builds')) : ?>
 						<div class="wrk">
 							<div>
 								<span class="bld_nb">#</span>
@@ -113,7 +113,7 @@ if (!session_id()) exit();
 							<div class="left lcol">
 								<h2><?php echo ILang::_('Planet'); ?></h2>
 								<div>
-									<div><span style="font-weight:bold;"><?php echo ILang::_('BuildPoints'); ?></span> <span class="right"><?php echo ILang::number($this->getData('points')); ?></span></div>
+									<div><span style="font-weight:bold;"><?php echo ILang::_('BuildPoints'); ?></span> <span class="right"><?php echo ILang::number($this->town->points); ?></span></div>
 								</div><br />
 								<div class="bnorm">
 									<div class="bg3">
@@ -123,7 +123,7 @@ if (!session_id()) exit();
 									</div>
 									<div class="bg2">
 										<span class="left" style="width:87px"><?php echo ILang::_('Titanium'); ?></span>
-										<span class="left center<?php echo $this->getData('prod')->R1->stock <= 10 ? ' cvld' : ($this->getData('prod')->R1->stock == 100 ? ' cerr' : ($this->getData('prod')->R1->stock >= 80 ? ' cwrn' : NULL)); ?>" style="width:40px;"><?php $this->getData('prod')->R1->stock; ?>%</span>
+										<span class="left center<?php echo $this->getData('prod')->R1->stock <= 10 ? ' cvld' : ($this->getData('prod')->R1->stock == 100 ? ' cerr' : ($this->getData('prod')->R1->stock >= 80 ? ' cwrn' : NULL)); ?>" style="width:40px;"><?php echo $this->getData('prod')->R1->stock; ?>%</span>
 										<span class="aright" style="display:inline-block;width:75px"><?php echo ILang::number($this->getData('prod')->R1->factCoef); ?></span>
 									</div>
 									<div class="bg1">
@@ -138,7 +138,7 @@ if (!session_id()) exit();
 									</div>
 									<div class="bg1">
 										<span class="left" style="width:87px"><?php echo ILang::_('Hydrogen'); ?></span>
-										<span class="left center<?php echo $this->getData('prod')->R3->stock; <= 10 ? ' cvld' : ($this->getData('prod')->R3->stock; == 100 ? ' cerr' : ($this->getData('prod')->R3->stock; >= 80 ? ' cwrn' : NULL)); ?>" style="width:40px;"><?php echo $this->getData('prod')->R3->stock; ?>%</span>
+										<span class="left center<?php echo $this->getData('prod')->R3->stock <= 10 ? ' cvld' : ($this->getData('prod')->R3->stock == 100 ? ' cerr' : ($this->getData('prod')->R3->stock >= 80 ? ' cwrn' : NULL)); ?>" style="width:40px;"><?php echo $this->getData('prod')->R3->stock; ?>%</span>
 										<span class="aright" style="display:inline-block;width:75px"><?php echo ILang::number($this->getData('prod')->R3->factCoef); ?></span>
 									</div>
 									<div class="bg3"><a href="./ress.php"><?php echo ILang::_('MoreInfos'); ?></a></div>
@@ -148,7 +148,7 @@ if (!session_id()) exit();
 								<h2><?php echo ILang::_('Empire'); ?></h2>
 								<div>
 									<div><span style="font-weight:bold;"><?php echo ILang::_('Power'); ?></span> <span class="right"><?php echo $this->getData('empire')->power; ?>%</span></div>
-									<div><span style="font-weight:bold;"><?php echo ILang::_('Planets'); ?></span> <span class="right"><?php echo count($this->user->towns); ?> / <?php echo $this->getData('empire')->maxcolo; ?></span></div>
+									<div><span style="font-weight:bold;"><?php echo ILang::_('Planets'); ?></span> <span class="right"><?php echo $this->getData('empire')->planets; ?> / <?php echo $this->getData('empire')->maxcolo; ?></span></div>
 								</div><br />
 								<div>
 									<div><span style="font-weight:bold;"><?php echo ILang::_('BuildPoints'); ?></span> <span class="right"><?php echo ILang::number($this->getData('empire')->points[0]); ?></span></div>
@@ -168,22 +168,22 @@ if (!session_id()) exit();
 							<div class="dark">
 								<div class="bg1">
 									<span class="left" style="width:90px;"><?php echo ILang::_('Building'); ?></span>
-									<span class="left"> <?php if($build = $this->getData('build')) : ?> <?php echo qftext($build->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $build->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $build->uTime; ?>"><?php echo $build->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+									<span class="left"> <?php if($build = $this->getData('cWorks')->build) : ?> <?php echo qftext($build->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $build->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $build->uTime; ?>"><?php echo $build->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
 									<span class="clr">&nbsp;</span>
 								</div>
 								<div class="bg2">
 									<span class="left" style="width:90px;"><?php echo ILang::_('Research'); ?></span>
-									<span class="left"> <?php if($tech = $this->getData('tech')) : ?> <?php echo qftext($tech->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $tech->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $tech->uTime; ?>"><?php echo $tech->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+									<span class="left"> <?php if($tech = $this->getData('tech')->tech) : ?> <?php echo qftext($tech->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $tech->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $tech->uTime; ?>"><?php echo $tech->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
 									<span class="clr">&nbsp;</span>
 								</div>
 								<div class="bg1">
 									<span class="left" style="width:90px;"><?php echo ILang::_('Factory'); ?></span>
-									<span class="left"> <?php if($unit = $this->getData('factory')) : ?> <?php echo qftext($unit->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+									<span class="left"> <?php if($unit = $this->getData('factory')->factory) : ?> <?php echo qftext($unit->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
 									<span class="clr">&nbsp;</span>
 								</div>
 								<div class="bg2">
 									<span class="left" style="width:90px;"><?php echo ILang::_('Workshop'); ?></span>
-									<span class="left"> <?php if($unit = $this->getData('workshop')) : ?> <?php echo qftext($unit->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+									<span class="left"> <?php if($unit = $this->getData('workshop')->workshop) : ?> <?php echo qftext($unit->name); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" id="bx[<?php echo $js++; ?>]" title="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
 									<span class="clr">&nbsp;</span>
 								</div>
 							</div>
