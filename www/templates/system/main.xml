@@ -1,10 +1,10 @@
 <page>
 	<head>
 		<media type="js">
-			<name>mootools</name>
+			<name>jquery.ui-custom</name>
 		</media>
 		<media type="js">
-			<name>count</name>
+			<name>countdown</name>
 		</media>
 		<media type="js">
 			<name>tooltip</name>
