@@ -1,2 +1,2 @@
-iwars-client
+IWars Client
 ============

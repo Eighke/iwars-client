@@ -4,12 +4,12 @@
  * Subpackage	~
  * File			p_town.php
  *
- * Licence		GNU General Public License version 3; see http://www.gnu.org/licenses/lgpl-3.0.en.html
- * Copyright	Copyright (C) 2005 - 2012 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric Vandebeuque (fred.vdb@newebtime.com)
+ * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
+ * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2012-11-19 - Eighke
+ * Version		2013-02-14 - Eighke
  */
 session_start();
 
