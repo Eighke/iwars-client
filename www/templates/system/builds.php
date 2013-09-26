@@ -9,7 +9,7 @@
  * Contrib		Frédéric Vandebeuque (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2012-11-18 - Eighke
+ * Version		2012-11-19 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -50,7 +50,7 @@ if (!session_id()) exit();
 								<span class="bld_cent">(0%)</span>
 								<div class="clr"></div>
 							<?php else : ?>
-								<span class="bld_name"><?php echo ILang::build($work->typeId), 'name'); ?> (<?php echo $work->nber; ?>)</span>
+								<span class="bld_name"><?php echo ILang::build($work->typeId, 'name'); ?> (<?php echo $work->nber; ?>)</span>
 								<span class="bld_time countdown" id="bx[<?php echo $key; ?>]" title="<?php echo $work->uTime; ?>"><?php echo $work->time; ?></span>
 								<span class="bld_end"><?php echo MySQLtoFormat($work->end); ?></span>
 								<span class="bld_cent">(<?php echo $key == 0 ? ($work->percent) : 0; ?>%)</span>
@@ -65,7 +65,7 @@ if (!session_id()) exit();
 							<?php if ($builds = $this->getData('builds')) : ?>
 							<?php foreach($builds as $build) : ?>
 							<div>
-								<span class="elem-name"><b><a class="nolink" href="?bid=<?php echo $build->id; ?>"><?php echo ILang::research($build->id, 'name'); ?></a></b> (<?php echo $this->town->getBuild($build->id); ?>)</span>
+								<span class="elem-name"><b><a class="nolink" href="?bid=<?php echo $build->id; ?>"><?php echo ILang::build($build->id, 'name'); ?></a></b> (<?php echo $this->town->getBuild($build->id); ?>)</span>
 								<?php if(!$inwork
 										& $this->resources[1] >= $build->ress[1]
 										& $this->resources[2] >= $build->ress[2]
@@ -118,7 +118,7 @@ if (!session_id()) exit();
 									<?php endforeach; ?>
 								</div><br />
 								<?php endif; ?>
-								<?php if ($advanced = ILang::research($this->getData('info')->id, 'advanced')) : ?>
+								<?php if ($advanced = ILang::build($this->getData('info')->id, 'advanced')) : ?>
 								<h2><?php echo ILang::_('Advanced'); ?></h2>
 								<div>
 									<?php
