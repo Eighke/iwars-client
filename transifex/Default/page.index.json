@@ -1,0 +1,20 @@
+{
+	"CommandCenter": "Command center",
+	"YourFleets": "Your fleets",
+	"OtherFleets": "Other fleets",
+	"Time": "Time",
+	"End": "End",
+	"Cancel": "Cancel",
+	"Attack": "Attack",
+	"Port": "Port",
+	"Base": "Base",
+	"Colon": "Colonize",
+	"Spy": "Spy",
+	"Back": "Back",
+	"UnitsMove": "Fleets movement",
+	"NoMove": "No fleets movement detected",
+	"MoveNumber:": "Number of movement:",
+	"YourFleet": "Your fleet from %1$s going to %2$s with orders: %3$s",
+	"OtherFleet": "A fleet from %1$s going to %2$s with orders: %3$s",
+	"BackFleet": "Your fleet back from %1$s going to %2$s"
+}

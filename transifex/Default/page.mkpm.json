@@ -1,0 +1,18 @@
+{
+	"Random": "Random",
+	"Partial": "Partial",
+	"Manual": "Manual",
+	"Continue": "Continue",
+	"Retry": "Retry",
+	"Language": "Language",
+	"Template": "Template",
+	"Skin": "Skin",
+	"Email": "E-mail",
+	"Next": "Next",
+	"Optional": "Optional",
+	"MakePM": "Main planet creation",
+	"InsertCoords": "Choose the coordinates of your main planet",
+	"ErrCoords": "G and S aren't between 1 and 50, or P between 1 and 255",
+	"ErrNotFree": "It have already a planet in this emplacement or in its environs",
+	"PMCreated": "Creation complete"
+}

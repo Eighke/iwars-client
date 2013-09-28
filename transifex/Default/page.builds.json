@@ -1,0 +1,17 @@
+{
+	"Information": "Information",
+	"Queue": "Queue",
+	"BuildNow": "Build",
+	"Advanced": "Advanced",
+	"Time": "Time",
+	"End": "End",
+	"Cancel": "Cancel",
+	"CancelAll": "Cancel all",
+	"Level": "Level",
+	"Waiting": "Waiting",
+	"None": "None",
+	"Detail": "Detail",
+	"NoResources": "You don't have necessary resources!",
+	"DelPrevious": "You have to delete the previous levels first.",
+	"NotBuildable": "This building isn't buildable."
+}

@@ -1,0 +1,19 @@
+{
+	"Player": "Player",
+	"Contact": "Contact",
+	"Alliance:": "Alliance:",
+	"Country:": "Country :",
+	"BuildPoints": "Buildings",
+	"TechPoints": "Researches",
+	"DevPoints": "Generals",
+	"UnitPoints": "Units",
+	"FightPoints": "Fights",
+	"TotalPoints": "Totals",
+	"Blacklist": "Blacklist",
+	"Points": "Points",
+	"Rank": "Rank",
+	"End": "End",
+	"Enabled": "Enabled",
+	"Disabled": "Disabled",
+	"Profil of": "Profil of"
+}

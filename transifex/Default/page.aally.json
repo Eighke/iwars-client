@@ -1,0 +1,18 @@
+{
+	"Save": "Save",
+	"Password": "Password",
+	"Character": "Character",
+	"AllyDesc": "Alliance description",
+	"ChangeLeader": "Change leader",
+	"NewLeader": "New leader :",
+	"DeleteAlly": "Delete alliance",
+	"DelAlly": "Delete alliance:",
+	"ActionWarn": "Attention, this action is definitive.",
+	"WeNeedPassword": "All modification in this section require your password.",
+	"DelDone": "Delete done.",
+	"NoDelDone": "No Delete done...",
+	"NoAllyUser": "This user isn't in your alliance.",
+	"UpdateDone": "Update done.",
+	"InvalidPwd": "This password isn't valide.",
+	"NotLeader": "You aren't the alliance leader."
+}

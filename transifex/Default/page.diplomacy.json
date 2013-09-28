@@ -1,0 +1,21 @@
+{
+	"Diplomacy": "Diplomacy",
+	"NA": "Non-aggression",
+	"DEF": "Defence",
+	"FULL": "Total",
+	"COM": "Commercial",
+	"WAR": "War",
+	"Type": "Type",
+	"End": "End",
+	"Pacts": "Pacts",
+	"Pact": "Pact",
+	"Duration": "Duration",
+	"Save": "Save",
+	"Alliance": "Alliance",
+	"Requests": "Requests",
+	"Reject": "Reject",
+	"Accept": "Accept",
+	"Cancel": "Cancel",
+	"Unlimited": "Unlimited",
+	"DurationInformation": "Duration in day, 0 for none"
+}

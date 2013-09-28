@@ -1,0 +1,9 @@
+{
+	"BuildNow": "Build",
+	"Time": "Time",
+	"End": "End",
+	"NoResources": "You don't have necessary resources!",
+	"Usine3Empty": "No build in work",
+	"NoPlatform": "You need platform of defense",
+	"PlatformLimit": "Your platform need to be evolve to start new units."
+}

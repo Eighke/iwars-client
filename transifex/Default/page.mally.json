@@ -1,0 +1,12 @@
+{
+	"AllianceCreation": "Alliance creation",
+	"Name:": "Name:",
+	"Tag:": "Tag:",
+	"WarnLeaveAlly": "Attention, you'll leave automatically your current alliance by making a new one.",
+	"CreationDone": "Creation done.",
+	"AreLeader": "You are the alliance leader, you can't changing alliance.",
+	"NowLeader": "You are now the leader of",
+	"AllyExist": "This alliance or tag already exist.",
+	"BadName": "Bad alliance name or tag.",
+	"FormError": "You haven't filled the form correctly."
+}

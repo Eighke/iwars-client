@@ -1,0 +1,15 @@
+{
+	"Information": "Information",
+	"Queue": "Queue",
+	"ResearchNow": "Research",
+	"Advanced": "Advanced",
+	"Time": "Time",
+	"End": "End",
+	"Cancel": "Cancel",
+	"CancelAll": "Cancel all",
+	"Level": "Level",
+	"Detail": "Detail",
+	"NoResearchCenter": "You need research center.",
+	"NoResources": "You don't have necessary resources!",
+	"InProgress": "You have already a research in progress."
+}
