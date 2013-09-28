@@ -4,12 +4,12 @@
  * Subpackage	System
  * File			_menu.php
  *
- * Licence		GNU General Public License version 3; see http://www.gnu.org/licenses/lgpl-3.0.en.html
- * Copyright	Copyright (C) 2005 - 2012 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric Vandebeuque (fred.vdb@newebtime.com)
+ * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
+ * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-01-13 - Eighke
+ * Version		2013-09-29 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -21,7 +21,7 @@ if (!session_id()) exit();
 		<div class="m-coords"><form action="?" method="post">
 			 <select name="CCity" onChange="this.form.submit();">
 					 <?php foreach($this->user->towns as $row) : ?>
-					 <option value="<?php echo $row->id; ?>"<?php echo $row->id == $_SESSION[sess_key.'crt_town'] ? ' selected="selected"' : ''; ?>><?php echo $row->X; ?>:<?php echo $row->Y; ?>:<?php echo $row->Z; ?></option>
+					 <option value="<?php echo $row->id; ?>"<?php echo $row->id == $this->town->id ? ' selected="selected"' : ''; ?>><?php echo $row->X; ?>:<?php echo $row->Y; ?>:<?php echo $row->Z; ?></option>
 					 <?php endforeach; ?>
 			 </select>
 		</form></div>
