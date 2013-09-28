@@ -2,7 +2,7 @@
 /**
  * Package		Templates
  * Subpackage	System
- * File			_footer.php
+ * File			_render.ajax.php
  *
  * Licence		GNU Lesser General Public License version 3; see http://www.gnu.org/licenses/lgpl-3.0.en.html
  * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
@@ -11,16 +11,8 @@
  *
  * Version		2013-02-18 - Eighke
  */
+if (!session_id()) exit();
 ?>
-			<div class="clr"></div>
-			<!-- #Footer -->
-			<div id="footer">
-				&copy; 2005, 2013. All rights reserved.<br />
-				Optimised for FireFox &amp; Opera. Resolution 1024x768<br />
-			</div>
-			<!-- /#Footer -->
-			<div class="clr"></div>
-		</div>
-	<!-- /#Container -->
-	</div>
+<div>
+<?php $this->renderBody(); ?>
 </div>
