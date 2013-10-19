@@ -1,7 +1,8 @@
 {
-	"Next": "Next",
-	"Login": "Login",
-	"Password": "Password",
-	"Submit": "Submit",
-	"BadLogin": "Incorrect login or password"
+  "Connection": "Connection",
+  "Next": "Next",
+  "Login": "Login",
+  "Password": "Password",
+  "Submit": "Submit",
+  "BadLogin": "Incorrect login or password"
 }
