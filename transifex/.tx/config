@@ -1,0 +1,256 @@
+[main]
+host = https://www.transifex.com
+lang_map = en:Default, en_US:English, fr_FR:French, it_IT:Italian, pl_PL:Polish, th_TH:Thai
+
+[iwars-clients.builds-global]
+file_filter = <lang>/builds.global.json
+source_file = Default/builds.global.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.researchs-global]
+file_filter = <lang>/researchs.global.json
+source_file = Default/researchs.global.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.units-global]
+file_filter = <lang>/units.global.json
+source_file = Default/units.global.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-aally]
+file_filter = <lang>/page.aally.json
+source_file = Default/page.aally.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-ally]
+file_filter = <lang>/page.ally.json
+source_file = Default/page.ally.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-allym]
+file_filter = <lang>/page.allym.json
+source_file = Default/page.allym.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-build]
+file_filter = <lang>/page.build.json
+source_file = Default/page.build.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-builds]
+file_filter = <lang>/page.builds.json
+source_file = Default/page.builds.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-cally]
+file_filter = <lang>/page.cally.json
+source_file = Default/page.cally.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-def]
+file_filter = <lang>/page.def.json
+source_file = Default/page.def.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-defs]
+file_filter = <lang>/page.defs.json
+source_file = Default/page.defs.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-diplomacy]
+file_filter = <lang>/page.diplomacy.json
+source_file = Default/page.diplomacy.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-global]
+file_filter = <lang>/page.global.json
+source_file = Default/page.global.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-index]
+file_filter = <lang>/page.index.json
+source_file = Default/page.index.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-inscription]
+file_filter = <lang>/page.inscription.json
+source_file = Default/page.inscription.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-login]
+file_filter = <lang>/page.login.json
+source_file = Default/page.login.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-main]
+file_filter = <lang>/page.main.json
+source_file = Default/page.main.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-mally]
+file_filter = <lang>/page.mally.json
+source_file = Default/page.mally.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-map]
+file_filter = <lang>/page.map.json
+source_file = Default/page.map.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-m_folder]
+file_filter = <lang>/page.m_folder.json
+source_file = Default/page.m_folder.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-mkpm]
+file_filter = <lang>/page.mkpm.json
+source_file = Default/page.mkpm.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-m_msg]
+file_filter = <lang>/page.m_msg.json
+source_file = Default/page.m_msg.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-move]
+file_filter = <lang>/page.move.json
+source_file = Default/page.move.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-msg]
+file_filter = <lang>/page.msg.json
+source_file = Default/page.msg.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-msgs]
+file_filter = <lang>/page.msgs.json
+source_file = Default/page.msgs.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-notices]
+file_filter = <lang>/page.notices.json
+source_file = Default/page.notices.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-options]
+file_filter = <lang>/page.options.json
+source_file = Default/page.options.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-player]
+file_filter = <lang>/page.player.json
+source_file = Default/page.player.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-preinscription]
+file_filter = <lang>/page.preinscription.json
+source_file = Default/page.preinscription.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-p_town]
+file_filter = <lang>/page.p_town.json
+source_file = Default/page.p_town.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-rank]
+file_filter = <lang>/page.rank.json
+source_file = Default/page.rank.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-report]
+file_filter = <lang>/page.report.json
+source_file = Default/page.report.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-reports]
+file_filter = <lang>/page.reports.json
+source_file = Default/page.reports.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-ress]
+file_filter = <lang>/page.ress.json
+source_file = Default/page.ress.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-search]
+file_filter = <lang>/page.search.json
+source_file = Default/page.search.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-technos]
+file_filter = <lang>/page.technos.json
+source_file = Default/page.technos.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-techtree]
+file_filter = <lang>/page.techtree.json
+source_file = Default/page.techtree.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-townd]
+file_filter = <lang>/page.townd.json
+source_file = Default/page.townd.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-towns]
+file_filter = <lang>/page.towns.json
+source_file = Default/page.towns.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-unit]
+file_filter = <lang>/page.unit.json
+source_file = Default/page.unit.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.page-units]
+file_filter = <lang>/page.units.json
+source_file = Default/page.units.json
+source_lang = en
+type = KEYVALUEJSON
+
+[iwars-clients.messages-global]
+file_filter = <lang>/messages.global.json
+source_file = Default/messages.global.json
+source_lang = en
+type = KEYVALUEJSON
+
