@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Laboratorio di Ricerca',	'desc' => 'Studio e ricerca sono le chiavi per lo sviluppo e l\'avanzamento tecnologico; per questo se ne dovrebbe sempre avere uno. Un buon livello del centro di ricerca vi permette di diminuire il tempo di ogni ricerca.'];?>

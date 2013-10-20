@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Wzmocnienie Opancerzenia',	'desc' => 'Wzmocnienie Opancerzenia'];?>

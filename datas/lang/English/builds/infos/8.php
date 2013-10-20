@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Research Center',	'desc' => 'Research and concepts are the keys to development, and why you should research centers. A good level of research center will allow you, among other things, decrease the time of each search.'];?>

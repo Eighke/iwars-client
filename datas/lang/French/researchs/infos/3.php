@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Propulsion hyperespace',	'desc' => 'Propulsion hyperespace'];?>

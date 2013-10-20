@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'City Center',	'desc' => 'The city center is the base building of the city. It is quite important because it improves the speed of construction. It can also provide some useful energy when your city has been built.'];?>

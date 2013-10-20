@@ -1,0 +1,24 @@
+<?php$lang += array (
+  'MsgArch' => 'Message archivé.',
+  'WriteMsg' => 'Écrire un message',
+  'Send' => 'Envoyer',
+  'Archives' => 'Archives',
+  'Messaging' => 'Messagerie',
+  'Reply' => 'Répondre',
+  'FullArch' => 'Vous avez déjà plus de 30 messages archivés...',
+  'NoMsgSelect' => 'Aucun message selectionné.',
+  'CreateFolder' => 'Créer un nouveau dossier',
+  'Messages' => 'Messages',
+  'MoveTo:' => 'Déplacer vers :',
+  'Reception' => 'Réception',
+  'MsgsMove' => 'Messages déplacés.',
+  'Delete' => 'Supprimer',
+  'MsgsDel' => 'Messages supprimés.',
+  'MsgDel' => 'Message supprimé.',
+  'NoFolder' => 'Aucun dossier',
+  'New' => 'nouveau',
+  'Folder:' => 'Dossier :',
+  'Archive' => 'Archive',
+  'InvertSelect' => 'Inverser la sélection',
+  'NoMsg' => 'Aucun message',
+);?>

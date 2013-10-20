@@ -1,64 +1,1 @@
-<?php
-$lunits[1]->name = 'Light Fighter';
-$lunits[1]->desc = 'Light Fighter (Szakal)';
-
-$lunits[2]->name = 'Assault Fighter';
-$lunits[2]->desc = 'Assault Fighter (Renegat)';
-
-$lunits[3]->name = 'ExoFighter';
-$lunits[3]->desc = 'ExoFighter (Tjuger)';
-
-$lunits[4]->name = 'Serenity';
-$lunits[4]->desc = 'Serenity (Spit)';
-
-$lunits[5]->name = 'Spy Commnication Satellite';
-$lunits[5]->desc = 'Spy Commnication Satellite (Sonda)';
-
-$lunits[6]->name = 'Spacel Corvette';
-$lunits[6]->desc = 'Spacel Corvette (Darwin)';
-
-$lunits[7]->name = 'Space Cruser';
-$lunits[7]->desc = 'Space Cruser (Raider)';
-
-$lunits[8]->name = 'Esperanza';
-$lunits[8]->desc = 'Esperanza (Cougar)';
-
-$lunits[9]->name = 'Destroyer';
-$lunits[9]->desc = 'Destroyer (Bombowiec)';
-
-$lunits[10]->name = 'Leviathan';
-$lunits[10]->desc = 'Leviathan (Noah)';
-
-$lunits[11]->name = 'Commerce Spaceship';
-$lunits[11]->desc = 'Commerce Spaceship (Statek Handlowy)';
-
-$lunits[12]->name = 'Transport Spaceship';
-$lunits[12]->desc = 'Transport Spaceship (Transportowiec)';
-
-$lunits[14]->name = 'Behemot';
-$lunits[14]->desc = 'Behemot (Longeagle V)';
-
-$lunits[15]->name = 'Aurora';
-$lunits[15]->desc = 'Aurora (Longeagle X)';
-
-$lunits[16]->name = 'Serenity SR6';
-$lunits[16]->desc = 'Serenity SR6 (Sentih)';
-
-$lunits[19]->name = 'Colonizer Spaceship';
-$lunits[19]->desc = 'Colonizer Spaceship (Statek Kolonizacyjny)';
-
-$lunits[21]->name = 'Light Laser Tower';
-$lunits[21]->desc = 'Light Laser Tower (Lekkie Działo Laserowe)';
-
-$lunits[22]->name = 'Assault Laser Tower';
-$lunits[22]->desc = 'Assault Laser Tower (Działo Laserowe)';
-
-$lunits[23]->name = 'Ion Canon';
-$lunits[23]->desc = 'Ion Canon (Wyrzutnia EMP)';
-
-$lunits[24]->name = 'Antimatter Canon';
-$lunits[24]->desc = 'Antimatter Canon (Działo plazmowe)';
-
-$lunits[25]->name = 'NANML';
-$lunits[25]->desc = 'Nuclar Antimatter Nanobot Missile Launcher (Wyrzutnia rakiet)';
-?>
+<?php$lunits = [	1	=> (object) [		'name' => 'Name::Light Fighter',		'desc' => 'Description::Light Fighter'	],	2	=> (object) [		'name' => 'Name::Assault Fighter',		'desc' => 'Description::Assault Fighter'	],	3	=> (object) [		'name' => 'Name::ExoFighter',		'desc' => 'Description::ExoFighter'	],	4	=> (object) [		'name' => 'Name::Serenity',		'desc' => 'Serenity'	],	5	=> (object) [		'name' => 'Name::Spy Commnication Satellite',		'desc' => 'Description::Spy Commnication Satellite'	],	6	=> (object) [		'name' => 'Name::Spacel Corvette',		'desc' => 'SDescription::pacel Corvette'	],	7	=> (object) [		'name' => 'Name::Space Cruser',		'desc' => 'Description::Space Cruser'	],	8	=> (object) [		'name' => 'Name::Esperanza',		'desc' => 'Description::Esperanza'	],	9	=> (object) [		'name' => 'Name::Destroyer',		'desc' => 'Description::Destroyer'	],	10	=> (object) [		'name' => 'Name::Leviathan',		'desc' => 'Description::Leviathan'	],	11	=> (object) [		'name' => 'Name::Commerce Spaceship',		'desc' => 'Description::Commerce Spaceship'	],	12	=> (object) [		'name' => 'Name::Transport Spaceship',		'desc' => 'Description::Transport Spaceship'	],	14	=> (object) [		'name' => 'Name::Behemoth',		'desc' => 'Description::Behemoth'	],	15	=> (object) [		'name' => 'Name::Aurora',		'desc' => 'Description::Aurora'	],	16	=> (object) [		'name' => 'Name::Serenity SR6',		'desc' => 'Description::Serenity SR6'	],	19	=> (object) [		'name' => 'Name::Colonizer Spaceship',		'desc' => 'Description::Colonizer Spaceship'	],	21	=> (object) [		'name' => 'Name::Light Laser Tower',		'desc' => 'Description::Light Laser Tower'	],	22	=> (object) [		'name' => 'Name::Assault Laser Tower',		'desc' => 'Description::Assault Laser Tower'	],	23	=> (object) [		'name' => 'Name::Ion Canon',		'desc' => 'Description::Ion Canon'	],	24	=> (object) [		'name' => 'Name::Antimatter Canon',		'desc' => 'Description::Antimatter Canon'	],	25	=> (object) [		'name' => 'Name::NANML',		'desc' => 'Description::Nuclar Antimatter Nanobot Missile Launcher'	],];?>

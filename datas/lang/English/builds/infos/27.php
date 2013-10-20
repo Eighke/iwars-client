@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Energy Shield',	'desc' => 'Create an energy shield to prevent the land troops to enter the colony. Only spacial attacks or certain weapons can disable it.'];?>

@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Napęd podprzestrzenny',	'desc' => 'Napęd podprzestrzenny'];?>

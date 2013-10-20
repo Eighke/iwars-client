@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Propulsion spatio-temporelle',	'desc' => 'Propulsion spatio-temporelle'];?>

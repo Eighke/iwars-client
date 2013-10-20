@@ -1,49 +1,1 @@
-<?php
-$lresearchs[1]->name = 'Napęd Odrzutowy';
-$lresearchs[1]->desc = 'Napęd Odrzutowy';
-
-$lresearchs[2]->name = 'Napęd jonowy';
-$lresearchs[2]->desc = 'Napęd jonowy';
-
-$lresearchs[3]->name = 'Napęd podprzestrzenny';
-$lresearchs[3]->desc = 'Napęd podprzestrzenny';
-
-$lresearchs[4]->name = 'Technika Kolonizacyjna';
-$lresearchs[4]->desc = 'Technika Kolonizacyjna';
-
-$lresearchs[5]->name = 'Zwiększona Pojemność Ładowni';
-$lresearchs[5]->desc = 'Zwiększona Pojemność Ładowni';
-
-$lresearchs[6]->name = 'Technika Szpiegowska';
-$lresearchs[6]->desc = 'Technika Szpiegowska';
-
-$lresearchs[7]->name = 'Napęd Fałdowania Przestrzeni';
-$lresearchs[7]->desc = 'Napęd Fałdowania Przestrzeni';
-
-$lresearchs[8]->name = 'Technika Sensorowa';
-$lresearchs[8]->desc = 'Technika Sensorowa';
-
-$lresearchs[9]->name = 'Technika Kamuflażu';
-$lresearchs[9]->desc = 'Technika Kamuflażu';
-
-$lresearchs[10]->name = 'Wzmocnienie Opancerzenia';
-$lresearchs[10]->desc = 'Wzmocnienie Opancerzenia';
-
-$lresearchs[11]->name = 'Technika Ochronna';
-$lresearchs[11]->desc = 'Technika Ochronna';
-
-$lresearchs[12]->name = 'Wiązanie Energii';
-$lresearchs[12]->desc = 'Wiązanie Energii';
-
-$lresearchs[13]->name = 'Jonizacja';
-$lresearchs[13]->desc = 'Jonizacja';
-
-$lresearchs[14]->name = 'Strzał Eksplozywny';
-$lresearchs[14]->desc = 'Strzał Eksplozywny';
-
-$lresearchs[15]->name = 'Technika Plazmowa';
-$lresearchs[15]->desc = 'Technika Plazmowa';
-
-$lresearchs[16]->name = 'Dyplomacja';
-$lresearchs[16]->desc = 'Dyplomacja';
-?>
+<?php$lresearchs = [	1	=> (object) [		'name' => 'Napęd Odrzutowy',		'desc' => 'Napęd Odrzutowy'	],	2	=> (object) [		'name' => 'Napęd jonowy',		'desc' => 'Napęd jonowy'	],	3	=> (object) [		'name' => 'Napęd podprzestrzenny',		'desc' => 'Napęd podprzestrzenny'	],	4	=> (object) [		'name' => 'Technika Kolonizacyjna',		'desc' => 'Technika Kolonizacyjna'	],	5	=> (object) [		'name' => 'Zwiększona Pojemność Ładowni',		'desc' => 'Zwiększona Pojemność Ładowni'	],	6	=> (object) [		'name' => 'Technika Szpiegowska',		'desc' => 'Technika Szpiegowska'	],	7	=> (object) [		'name' => 'Napęd Fałdowania Przestrzeni',		'desc' => 'Napęd Fałdowania Przestrzeni'	],	8	=> (object) [		'name' => 'Technika Sensorowa',		'desc' => 'Technika Sensorowa'	],	9	=> (object) [		'name' => 'Technika Kamuflażu',		'desc' => 'Technika Kamuflażu'	],	10	=> (object) [		'name' => 'Wzmocnienie Opancerzenia',		'desc' => 'Wzmocnienie Opancerzenia'	],	11	=> (object) [		'name' => 'Technika Ochronna',		'desc' => 'Technika Ochronna'	],	12	=> (object) [		'name' => 'Wiązanie Energii',		'desc' => 'Wiązanie Energii'	],	13	=> (object) [		'name' => 'Jonizacja',		'desc' => 'Jonizacja'	],	14	=> (object) [		'name' => 'Strzał Eksplozywny',		'desc' => 'Strzał Eksplozywny'	],	15	=> (object) [		'name' => 'Technika Plazmowa',		'desc' => 'Technika Plazmowa'	],	16	=> (object) [		'name' => 'Dyplomacja',		'desc' => 'Dyplomacja'	],];?>

@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Name::Enhanced Cargo Capacity',	'desc' => 'Description::Enhanced Cargo Capacity'];?>

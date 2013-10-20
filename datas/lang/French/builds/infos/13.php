@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Hangar de titane',	'desc' => 'Ces hangars permettent de stocker le titane, sans quoi la production s\'arrêterait une fois les capacités de stockage dépassées. Dans une moindre mesure ils permettent de protéger quelques ressources du pillage des flottes ennemies.'];?>

@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Synthétiseur avancé d\'hydrogène',	'desc' => 'L\'hydrogène et principalement le deutérium et tritium sont des éléments importants dans le domaine de l\'énergie, permettant de faire marcher les moteurs a combustion ou encore utilise pour les réactions nucléaire. Les synthétiseur permettent de créer cet élément essentiel.'];?>

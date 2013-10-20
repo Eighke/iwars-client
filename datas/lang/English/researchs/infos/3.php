@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Space-Curvature Propulsion',	'desc' => 'Space-Curvature Propulsion'];?>

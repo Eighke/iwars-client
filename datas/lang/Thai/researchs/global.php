@@ -1,49 +1,1 @@
-<?php
-$lresearchs[1]->name = 'Combustion Engine';
-$lresearchs[1]->desc = 'Combustion Engine';
-
-$lresearchs[2]->name = 'Ion Engine';
-$lresearchs[2]->desc = 'Ion Engine';
-
-$lresearchs[3]->name = 'Space-Curvature Propulsion';
-$lresearchs[3]->desc = 'Space-Curvature Propulsion';
-
-$lresearchs[4]->name = 'Colonization Tech';
-$lresearchs[4]->desc = 'Colonization Tech';
-
-$lresearchs[5]->name = 'Enhanced Cargo Capacity';
-$lresearchs[5]->desc = 'Enhanced Cargo Capacity';
-
-$lresearchs[6]->name = 'Espionage Technology';
-$lresearchs[6]->desc = 'Espionage Technology';
-
-$lresearchs[7]->name = 'Space-Folding Propulsion';
-$lresearchs[7]->desc = 'Space-Folding Propulsion';
-
-$lresearchs[8]->name = 'Sensor Technology';
-$lresearchs[8]->desc = 'Sensor Technology';
-
-$lresearchs[9]->name = 'Camouflage Technology';
-$lresearchs[9]->desc = 'Camouflage Technology';
-
-$lresearchs[10]->name = 'Enhanced Plating';
-$lresearchs[10]->desc = 'Enhanced Plating';
-
-$lresearchs[11]->name = 'Shield Technology';
-$lresearchs[11]->desc = 'Shield Technology';
-
-$lresearchs[12]->name = 'Energy Focalization';
-$lresearchs[12]->desc = 'Energy Focalization';
-
-$lresearchs[13]->name = 'Ionization';
-$lresearchs[13]->desc = 'Ionization';
-
-$lresearchs[14]->name = 'Explosive Projectiles';
-$lresearchs[14]->desc = 'Explosive Projectiles';
-
-$lresearchs[15]->name = 'Plasma Projectiles';
-$lresearchs[15]->desc = 'Plasma Projectiles';
-
-$lresearchs[16]->name = 'Diplomacy';
-$lresearchs[16]->desc = 'Diplomacy';
-?>
+<?php$lresearchs = [	1	=> (object) [		'name' => 'Name::Combustion Engine',		'desc' => 'Description::Combustion Engine'	],	2	=> (object) [		'name' => 'Name::Ion Engine',		'desc' => 'Description::Ion Engine'	],	3	=> (object) [		'name' => 'Name::Space-Curvature Propulsion',		'desc' => 'Description::Space-Curvature Propulsion'	],	4	=> (object) [		'name' => 'Name::Colonization Tech',		'desc' => 'Description::Colonization Tech'	],	5	=> (object) [		'name' => 'Name::Enhanced Cargo Capacity',		'desc' => 'Description::Enhanced Cargo Capacity'	],	6	=> (object) [		'name' => 'Name::Espionage Technology',		'desc' => 'Description::Espionage Technology'	],	7	=> (object) [		'name' => 'Name::Space-Folding Propulsion',		'desc' => 'Description::Space-Folding Propulsion'	],	8	=> (object) [		'name' => 'Name::Sensor Technology',		'desc' => 'Description::Sensor Technology'	],	9	=> (object) [		'name' => 'Name::Camouflage Technology',		'desc' => 'Description::Camouflage Technology'	],	10	=> (object) [		'name' => 'Name::Enhanced Plating',		'desc' => 'Description::Enhanced Plating'	],	11	=> (object) [		'name' => 'Name::Shield Technology',		'desc' => 'Description::Shield Technology'	],	12	=> (object) [		'name' => 'Name::Energy Focalization',		'desc' => 'Description::Energy Focalization'	],	13	=> (object) [		'name' => 'Name::Ionization',		'desc' => 'Description::Ionization'	],	14	=> (object) [		'name' => 'Name::Explosive Projectiles',		'desc' => 'Description::Explosive Projectiles'	],	15	=> (object) [		'name' => 'Name::Plasma Projectiles',		'desc' => 'Description::Plasma Projectiles'	],	16	=> (object) [		'name' => 'Name::Diplomacy',		'desc' => 'Description::Diplomacy'	],];?>

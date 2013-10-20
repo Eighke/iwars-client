@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Tour de forage',	'desc' => 'Une tour qui permet d\'extraire l\'eau du sous-sol, élément essentiel pour en extraire l\'hydrogène qu\'elle contient. Le surplus d\'oxygène engendré par cette réaction permet aux colonies de disposer d\'installation viables pour les colons et scientifiques.'];?>

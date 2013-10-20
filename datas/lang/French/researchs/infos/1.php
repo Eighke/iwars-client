@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Propulsion à combustion interne',	'desc' => 'Propulsion à combustion interne'];?>

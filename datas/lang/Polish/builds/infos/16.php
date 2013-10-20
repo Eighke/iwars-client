@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Name::Water tank',	'desc' => 'Description::Water tank'];?>

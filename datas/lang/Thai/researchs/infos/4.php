@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Name::Colonization Tech',	'desc' => 'Description::Colonization Tech'];?>

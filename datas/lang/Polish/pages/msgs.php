@@ -1,0 +1,24 @@
+<?php$lang += array (
+  'MsgArch' => 'Wiadomość zarchiwizowana.',
+  'WriteMsg' => 'Napisz wiadomość',
+  'Send' => 'Wyślij',
+  'Archives' => 'Archiwa',
+  'Messaging' => 'Wiadomości',
+  'Reply' => 'Odpowiedz',
+  'FullArch' => 'Masz juz 30 wiadomości zarchiwizowanych.',
+  'NoMsgSelect' => 'Brak zaznaczonych wiadomości.',
+  'CreateFolder' => 'Stwórz nowy folder',
+  'Messages' => 'Wiadomości',
+  'MoveTo:' => 'Przenieś do:',
+  'Reception' => 'Odbiór',
+  'MsgsMove' => 'Wiadomość przeniesiona.',
+  'Delete' => 'Usuń',
+  'MsgsDel' => 'Wiadomość usunięta.',
+  'MsgDel' => 'Wiadomość usunięta.',
+  'NoFolder' => 'Brak folderów',
+  'New' => 'nowa',
+  'Folder:' => 'Folder:',
+  'Archive' => 'Archiwum',
+  'InvertSelect' => 'Odwróć zaznaczenie',
+  'NoMsg' => 'Brak wiadomości',
+);?>

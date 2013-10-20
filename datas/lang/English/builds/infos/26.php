@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Reactor Shield',	'desc' => 'These are reactors to supply the energy shield. Without them the shield could not be started.'];?>

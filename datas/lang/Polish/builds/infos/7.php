@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Name::Advanced Hydrogen Synthesizer',	'desc' => 'Description::Advanced Hydrogen Synthesizer'];?>

@@ -1,0 +1,1 @@
+<?php$unit	= (object) [	'name' => 'Antimatter Canon',	'desc' => 'Antimatter Canon'];?>

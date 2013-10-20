@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Name::Sensor Technology',	'desc' => 'Description::Sensor Technology'];?>

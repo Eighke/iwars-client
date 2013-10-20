@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Energy Focalization',	'desc' => 'Energy Focalization'];?>

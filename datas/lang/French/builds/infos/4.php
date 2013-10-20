@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Usine de Silicium',	'desc' => 'Les usine de Silicium permettent de récupérer et traiter différentes roches pour en récupérer le Silicium qui est utilisé en électronique par exemple.'];?>

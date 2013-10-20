@@ -1,0 +1,1 @@
+<?php$unit	= (object) [	'name' => 'BNLMNA',	'desc' => 'Batterie nucléaire de lance-missile nanobot antimatière'];?>

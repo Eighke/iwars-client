@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Usine de vaisseaux',	'desc' => 'L\'usine de vaisseaux permet la construction des vaisseaux légers, comme les chasseurs et vaisseaux de commerce.'];?>

@@ -1,64 +1,1 @@
-<?php
-$lunits[1]->name = 'Light Fighter (Sciacallo)';
-$lunits[1]->desc = 'Light Fighter (Sciacallo)';
-
-$lunits[2]->name = 'Assault Fighter (Renegade)';
-$lunits[2]->desc = 'Assault Fighter (Renegade)';
-
-$lunits[3]->name = 'ExoFighter (Tjuger)';
-$lunits[3]->desc = 'ExoFighter (Tjuger)';
-
-$lunits[4]->name = 'Serenity (Spit)';
-$lunits[4]->desc = 'Serenity (Spit)';
-
-$lunits[5]->name = 'Satellite spia';
-$lunits[5]->desc = 'Satellite spia';
-
-$lunits[6]->name = 'Spacel Corvette (Darwin)';
-$lunits[6]->desc = 'Spacel Corvette (Darwin)';
-
-$lunits[7]->name = 'Space Cruser (Raider)';
-$lunits[7]->desc = 'Space Cruser (Raider)';
-
-$lunits[8]->name = 'Esperanza (Cougar)';
-$lunits[8]->desc = 'Esperanza (Cougar)';
-
-$lunits[9]->name = 'Destroyer (Bombardiere camuffato)';
-$lunits[9]->desc = 'Destroyer (Bombardiere camuffato)';
-
-$lunits[10]->name = 'Leviathan (Noah)';
-$lunits[10]->desc = 'Leviathan (Noah)';
-
-$lunits[11]->name = 'Nave commerciale';
-$lunits[11]->desc = 'Nave commerciale';
-
-$lunits[12]->name = 'Cargo';
-$lunits[12]->desc = 'Cargo';
-
-$lunits[14]->name = 'Behemoth (Aquila V)';
-$lunits[14]->desc = 'Behemoth (Aquila V)';
-
-$lunits[15]->name = 'Aurora (Aquila X)';
-$lunits[15]->desc = 'Aurora (Aquila X)';
-
-$lunits[16]->name = 'Serenity SR6 (Sentih)';
-$lunits[16]->desc = 'Serenity SR6 (Sentih)';
-
-$lunits[19]->name = 'Colonizzatrice';
-$lunits[19]->desc = 'Colonizzatrice';
-
-$lunits[21]->name = 'Laser leggero';
-$lunits[21]->desc = 'Laser leggero';
-
-$lunits[22]->name = 'Torre EMP';
-$lunits[22]->desc = 'Torre EMP';
-
-$lunits[23]->name = 'Cannone al laser';
-$lunits[23]->desc = 'Cannone al laser';
-
-$lunits[24]->name = 'Torretta al plasma';
-$lunits[24]->desc = 'Torretta al plasma';
-
-$lunits[25]->name = 'NANML (Lancia missili)';
-$lunits[25]->desc = 'Nuclear Antimatter Nanobot Missile Launcher (Lancia missili)';
-?>
+<?php$lunits = [	1	=> (object) [		'name' => 'Sciacallo',		'desc' => 'Sciacallo'	],	2	=> (object) [		'name' => 'Renegade',		'desc' => 'Renegade'	],	3	=> (object) [		'name' => 'Tjuger',		'desc' => 'Tjuger'	],	4	=> (object) [		'name' => 'Spit',		'desc' => 'Spit'	],	5	=> (object) [		'name' => 'Satellite spia',		'desc' => 'Satellite spia'	],	6	=> (object) [		'name' => 'Darwin',		'desc' => 'Darwin'	],	7	=> (object) [		'name' => 'Raider',		'desc' => 'Description::Space Cruser'	],	8	=> (object) [		'name' => 'Cougar',		'desc' => 'Cougar'	],	9	=> (object) [		'name' => 'Bombardiere camuffato',		'desc' => 'Bombardiere camuffato'	],	10	=> (object) [		'name' => 'Noah',		'desc' => 'Description::Leviathan'	],	11	=> (object) [		'name' => 'Nave commerciale',		'desc' => 'Nave commerciale'	],	12	=> (object) [		'name' => 'Name::Transport Spaceship',		'desc' => 'Description::Transport Spaceship'	],	14	=> (object) [		'name' => 'Name::Behemoth',		'desc' => 'Description::Behemoth'	],	15	=> (object) [		'name' => 'Name::Aurora',		'desc' => 'Description::Aurora'	],	16	=> (object) [		'name' => 'Name::Serenity SR6',		'desc' => 'Description::Serenity SR6'	],	19	=> (object) [		'name' => 'Colonizzatrice',		'desc' => 'Colonizzatrice'	],	21	=> (object) [		'name' => 'Laser leggero',		'desc' => 'Laser leggero'	],	22	=> (object) [		'name' => 'Name::Assault Laser Tower',		'desc' => 'Description::Assault Laser Tower'	],	23	=> (object) [		'name' => 'Name::Ion Canon',		'desc' => 'Description::Ion Canon'	],	24	=> (object) [		'name' => 'Name::Antimatter Canon',		'desc' => 'Description::Antimatter Canon'	],	25	=> (object) [		'name' => 'Nuclear Antimatter Nanobot Missile Launcher',		'desc' => 'Nuclear Antimatter Nanobot Missile Launcher'	],];?>

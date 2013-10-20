@@ -1,49 +1,1 @@
-<?php
-$lresearchs[1]->name = 'Propulsion à combustion interne';
-$lresearchs[1]->desc = 'Propulsion à combustion interne';
-
-$lresearchs[2]->name = 'Propulsion à ions';
-$lresearchs[2]->desc = 'Propulsion à ions';
-
-$lresearchs[3]->name = 'Propulsion hyperespace';
-$lresearchs[3]->desc = 'Propulsion hyperespace';
-
-$lresearchs[4]->name = 'Technique de colonisation';
-$lresearchs[4]->desc = 'Technique de colonisation';
-
-$lresearchs[5]->name = 'Capacité de charge augmentée';
-$lresearchs[5]->desc = 'Capacité de charge augmentée';
-
-$lresearchs[6]->name = 'Technique d\'éspionnage';
-$lresearchs[6]->desc = 'Technique d\'éspionnage';
-
-$lresearchs[7]->name = 'Propulsion spatio-temporelle';
-$lresearchs[7]->desc = 'Propulsion spatio-temporelle';
-
-$lresearchs[8]->name = 'Technique de capteur';
-$lresearchs[8]->desc = 'Technique de capteur';
-
-$lresearchs[9]->name = 'Technique de camouflage';
-$lresearchs[9]->desc = 'Technique de camouflage';
-
-$lresearchs[10]->name = 'Blindage élargi du vaisseau';
-$lresearchs[10]->desc = 'Blindage élargi du vaisseau';
-
-$lresearchs[11]->name = 'Technique de bouclier';
-$lresearchs[11]->desc = 'Technique de bouclier';
-
-$lresearchs[12]->name = 'Alignement d\'énergie';
-$lresearchs[12]->desc = 'Alignement d\'énergie';
-
-$lresearchs[13]->name = 'Ionisation';
-$lresearchs[13]->desc = 'Ionisation';
-
-$lresearchs[14]->name = 'Projectiles explosifs';
-$lresearchs[14]->desc = 'Projectiles explosifs';
-
-$lresearchs[15]->name = 'Projectile de plasma';
-$lresearchs[15]->desc = 'Projectile de plasma';
-
-$lresearchs[16]->name = 'Diplomatie';
-$lresearchs[16]->desc = 'Diplomatie';
-?>
+<?php$lresearchs = [	1	=> (object) [		'name' => 'Propulsion à combustion interne',		'desc' => 'Propulsion à combustion interne'	],	2	=> (object) [		'name' => 'Propulsion à ions',		'desc' => 'Propulsion à ions'	],	3	=> (object) [		'name' => 'Propulsion hyperespace',		'desc' => 'Propulsion hyperespace'	],	4	=> (object) [		'name' => 'Technique de colonisation',		'desc' => 'Technique de colonisation'	],	5	=> (object) [		'name' => 'Capacité de charge augmentée',		'desc' => 'Capacité de charge augmentée'	],	6	=> (object) [		'name' => 'Technique d\'éspionnage',		'desc' => 'Technique d\'éspionnage'	],	7	=> (object) [		'name' => 'Propulsion spatio-temporelle',		'desc' => 'Propulsion spatio-temporelle'	],	8	=> (object) [		'name' => 'Technique de capteur',		'desc' => 'Technique de capteur'	],	9	=> (object) [		'name' => 'Technique de camouflage',		'desc' => 'Technique de camouflage'	],	10	=> (object) [		'name' => 'Blindage élargi du vaisseau',		'desc' => 'Blindage élargi du vaisseau'	],	11	=> (object) [		'name' => 'Technique de bouclier',		'desc' => 'Technique de bouclier'	],	12	=> (object) [		'name' => 'Alignement d\'énergie',		'desc' => 'Alignement d\'énergie'	],	13	=> (object) [		'name' => 'Ionisation',		'desc' => 'Ionisation'	],	14	=> (object) [		'name' => 'Projectiles explosifs',		'desc' => 'Projectiles explosifs'	],	15	=> (object) [		'name' => 'Projectile de plasma',		'desc' => 'Projectile de plasma'	],	16	=> (object) [		'name' => 'Diplomatie',		'desc' => 'Diplomatie'	],];?>

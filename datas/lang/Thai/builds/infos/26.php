@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Reactor Shield',	'desc' => 'Reactor Shield เป็นเตาปฏิกรณ์พลังงานให้กับ Energy Shield หรือโล่พลังงาน หากปราศจากเตาปฏิกรณ์นี้ โล่พลังงานก็มิอาจทำงานได้'];?>

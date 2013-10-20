@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Silicon Warehouses',	'desc' => 'The warehouses store the silicon, without which production would stop once the storage capacity exceeded. To a lesser extent they help to protect some resource plundering of enemy fleets.'];?>

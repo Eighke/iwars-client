@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Proiettili esplosivi',	'desc' => 'Proiettili esplosivi'];?>

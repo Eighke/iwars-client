@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Derrick',	'desc' => 'A tower that removes water from the basement, which is essential to extract the hydrogen it contains. The extra oxygen created by this reaction allows colonies to dispose of facility viable for the settlers and scientists.'];?>

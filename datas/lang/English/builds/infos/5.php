@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Hydrogen Synthesizer',	'desc' => 'The hydrogen, deuterium and tritium mainly are important elements in the field of energy needed to start combustion engines or used for nuclear reactions. The synthesizer can create this essential element.'];?>

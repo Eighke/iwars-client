@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Blindage élargi du vaisseau',	'desc' => 'Blindage élargi du vaisseau'];?>

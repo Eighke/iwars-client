@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Schermo planetario energetico',	'desc' => 'Lo schermo planetario copre l\'intero pianeta per proteggerne le persone dagli attacchi di navi nemiche, assorbendone l\'impatto dei proiettili. Ogni livello ne viene aumentata la forza.'];?>

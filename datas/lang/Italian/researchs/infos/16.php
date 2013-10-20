@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Diplomazia',	'desc' => 'Diplomazia'];?>

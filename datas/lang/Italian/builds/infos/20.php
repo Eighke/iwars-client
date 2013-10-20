@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Laboratorio orbitale',	'desc' => 'Il laboratorio orbitale permette la progettazione e la produzione di navi terribili e potenti che formeranno la tua flotta.'];?>

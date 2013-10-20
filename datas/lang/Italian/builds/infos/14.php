@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Deposito di silicio',	'desc' => 'Consente l\'immagazzinamento del silicio senza il quale la produzione si fermerebbe una volta superato il limite di stoccaggio. Inoltre aiuta a proteggere una parte delle tue risorse dal saccheggio delle flotte nemiche.'];?>

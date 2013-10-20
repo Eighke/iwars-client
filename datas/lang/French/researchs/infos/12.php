@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Alignement d\'énergie',	'desc' => 'Alignement d\'énergie'];?>

@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Technique de bouclier',	'desc' => 'Technique de bouclier'];?>

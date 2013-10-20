@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Name::Orbital Workshop',	'desc' => 'Description::Orbital Workshop'];?>

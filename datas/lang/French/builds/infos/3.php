@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Mine de Titane',	'desc' => 'Les métaux sont des éléments très importants dans la construction de flotte et de bâtiments. Les mines de titane permettent d\'extraire les métaux qui permettront de réaliser ces constructions.'];?>

@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Water tank',	'desc' => 'The Water tank can store water, without which production would stop once the storage capacity exceeded. To a lesser extent they help to protect some resource plundering of enemy fleets.'];?>

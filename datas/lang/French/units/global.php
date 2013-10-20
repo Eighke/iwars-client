@@ -1,64 +1,1 @@
-<?php
-$lunits[1]->name = 'Chasseur léger';
-$lunits[1]->desc = 'Chasseur léger';
-
-$lunits[2]->name = 'Chasseur lourd';
-$lunits[2]->desc = 'Chasseur lourd';
-
-$lunits[3]->name = 'Exo-chasseur';
-$lunits[3]->desc = 'Exo-chasseur';
-
-$lunits[4]->name = 'Serenity';
-$lunits[4]->desc = 'Serenity';
-
-$lunits[5]->name = 'Satellite espion';
-$lunits[5]->desc = 'Satellite espion';
-
-$lunits[6]->name = 'Corvette';
-$lunits[6]->desc = 'Corvette';
-
-$lunits[7]->name = 'Croiseur';
-$lunits[7]->desc = 'Croiseur';
-
-$lunits[8]->name = 'Esperanza';
-$lunits[8]->desc = 'Esperanza';
-
-$lunits[9]->name = 'Destroyer';
-$lunits[9]->desc = 'Destroyer';
-
-$lunits[10]->name = 'Leviathan';
-$lunits[10]->desc = 'Leviathan';
-
-$lunits[11]->name = 'Vaisseau de commerce';
-$lunits[11]->desc = 'Vaisseau de commerce';
-
-$lunits[12]->name = 'Transporteur';
-$lunits[12]->desc = 'Transporteur';
-
-$lunits[14]->name = 'Behemoth';
-$lunits[14]->desc = 'Behemoth';
-
-$lunits[15]->name = 'Aurora';
-$lunits[15]->desc = 'Aurora';
-
-$lunits[16]->name = 'Serenity SR6';
-$lunits[16]->desc = 'Serenity SR6';
-
-$lunits[19]->name = 'Colonisateur';
-$lunits[19]->desc = 'Colonisateur';
-
-$lunits[21]->name = 'Tour. à laser léger';
-$lunits[21]->desc = 'Tour. à laser léger';
-
-$lunits[22]->name = 'Tour. à laser lourd';
-$lunits[22]->desc = 'Tour. à laser lourd';
-
-$lunits[23]->name = 'Canon à ion';
-$lunits[23]->desc = 'Canon à ion';
-
-$lunits[24]->name = 'Canon antimatière';
-$lunits[24]->desc = 'Canon antimatière';
-
-$lunits[25]->name = 'BNLMNA';
-$lunits[25]->desc = 'Batterie nucléaire de lance-missile nanobot antimatière';
-?>
+<?php$lunits = [	1	=> (object) [		'name' => 'Chasseur léger',		'desc' => 'Chasseur léger'	],	2	=> (object) [		'name' => 'Chasseur lourd',		'desc' => 'Chasseur lourd'	],	3	=> (object) [		'name' => 'Exo-chasseur',		'desc' => 'Exo-chasseur'	],	4	=> (object) [		'name' => 'Serenity',		'desc' => 'Serenity'	],	5	=> (object) [		'name' => 'Satellite espion',		'desc' => 'Satellite espion'	],	6	=> (object) [		'name' => 'Corvette',		'desc' => 'Corvette'	],	7	=> (object) [		'name' => 'Croiseur',		'desc' => 'Croiseur'	],	8	=> (object) [		'name' => 'Esperanza',		'desc' => 'Esperanza'	],	9	=> (object) [		'name' => 'Destroyer',		'desc' => 'Destroyer'	],	10	=> (object) [		'name' => 'Leviathan',		'desc' => 'Leviathan'	],	11	=> (object) [		'name' => 'Vaisseau de commerce',		'desc' => 'Vaisseau de commerce'	],	12	=> (object) [		'name' => 'Transporteur',		'desc' => 'Transporteur'	],	14	=> (object) [		'name' => 'Behemoth',		'desc' => 'Behemoth'	],	15	=> (object) [		'name' => 'Aurora',		'desc' => 'Aurora'	],	16	=> (object) [		'name' => 'Serenity SR6',		'desc' => 'Serenity SR6'	],	19	=> (object) [		'name' => 'Colonisateur',		'desc' => 'Colonisateur'	],	21	=> (object) [		'name' => 'Tour. à laser léger',		'desc' => 'Tour. à laser léger'	],	22	=> (object) [		'name' => 'Tour. à laser lourd',		'desc' => 'Tour. à laser lourd'	],	23	=> (object) [		'name' => 'Canon à ion',		'desc' => 'Canon à ion'	],	24	=> (object) [		'name' => 'Canon antimatière',		'desc' => 'Canon antimatière'	],	25	=> (object) [		'name' => 'BNLMNA',		'desc' => 'Batterie nucléaire de lance-missile nanobot antimatière'	],];?>

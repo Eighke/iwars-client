@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Titanium Mine',	'desc' => 'The metals are very important elements in the construction of buildings and fleet. Titanium mines used to extract metals that will achieve these buildings.'];?>

@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Réacteur du bouclier',	'desc' => 'Ce sont les réacteurs permettant d\'alimenter le bouclier énergétique. Sans eux le bouclier ne pourrait être mise en route.'];?>

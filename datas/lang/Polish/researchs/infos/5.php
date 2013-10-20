@@ -1,0 +1,1 @@
+<?php$research	= (object) [	'name' => 'Zwiększona Pojemność Ładowni',	'desc' => 'Zwiększona Pojemność Ładowni'];?>

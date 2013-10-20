@@ -1,0 +1,1 @@
+<?php$unit	= (object) [	'name' => 'Light Laser Tower',	'desc' => 'Light Laser Tower'];?>

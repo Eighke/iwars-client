@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Reattore a fusione',	'desc' => 'Consente agli scudi di difesa del tuo pianeta di essere riforniti di energia. Senza di esso non risulta possibile poter essere realizzato tutto l\'impianto di schermatura.'];?>

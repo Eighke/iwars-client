@@ -1,0 +1,1 @@
+<?php$build	= (object) [	'name' => 'Bouclier énergétique',	'desc' => 'Créé un bouclier énergétique permettant d\'empêcher les troupes terrestre de rentrer temps qu\'il est actif. Seules des attaques spatiales ou certaines armes peuvent le désactiver.'];?>
