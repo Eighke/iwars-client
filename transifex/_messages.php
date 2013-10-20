@@ -36,6 +36,12 @@ function convert_messages($lang, $entry, $type, $file) {
 		ksort($item);
 
 		foreach ($item as $sid => $sub) {
+
+			$pattern[] = '#\[a href=(.*?)\](.*?)\[/a\]#ms';
+			$replace[] = '<a href="$1">$2</a>';
+
+			$sub['body'] = preg_replace($pattern, $replace, $sub['body']);
+
 			$gArray .= '		'. $sid .'	=> (object) ['."\r";
 			$gArray .= "			'title' => '". str_replace("'", "\\'", $sub['title']) ."',"."\r";
 			$gArray .= "			'body' => '". str_replace("'", "\\'", $sub['body']) ."'"."\r";
