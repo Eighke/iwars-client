@@ -13,6 +13,7 @@
  */
 require '_items.php';
 require '_pages.php';
+require '_messages.php';
 
 define('PATH_CONVERT', '../datas/lang/');
 
@@ -39,6 +40,8 @@ foreach ($langs as $lang) {
 				convert_items($lang, $entry, $type, $file);
 			elseif ($type == 'page')
 				convert_page($lang, $entry, $type, $file);
+			elseif ($type == 'messages')
+				convert_messages($lang, $entry, $type, $file);
 		}
 	}
 }
