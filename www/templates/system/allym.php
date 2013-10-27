@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version		2013-10-27 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -18,41 +18,60 @@ if (!session_id()) exit();
 <?php if ($requests = $this->getData('requests')) : ?>
 <h2><?php echo ILang::_('Request'); ?></h2>
 <div class="block">
-	<div class="bg3">
-		<span class="left" style="width:140px"><?php echo ILang::_('Name'); ?></span>
-		<span class="left" style="width:110px"><?php echo ILang::_('Rank'); ?></span>
-		<span style="width:110px"><?php echo ILang::_('Points'); ?></span>
-	</div>
-	<?php foreach($requests as $request) : ?>
-	<div class="bg<?php echo $request->class; ?>">
-		<span class="left" style="width:140px"><a href="./player.php?id=<?php echo $request->usrId; ?>"><?php echo $request->usrName; ?></a></span>
-		<span class="left" style="width:110px"><?php echo $request->allyGroup; ?></span>
-		<span class="left" style="width:110px"><?php echo $request->totalPoints; ?></span>
-		<span><?php if ($this->user->getACL('requests')) : ?><a href="?accept=<?php echo $request->usrId; ?>"><?php echo ILang::_('Accept'); ?></a> | <a href="?reject=<?php echo $request->usrId; ?>"><?php echo ILang::_('Reject'); ?></a><?php else : ?>&nbsp;<?php endif; ?></span>
-	</div>
-	<?php endforeach; ?>
+	<table class="table table-striped">
+		<thead class="bg3">
+			<tr>
+				<th><?php echo ILang::_('Name'); ?></th>
+				<th><?php echo ILang::_('Rank'); ?></th>
+				<th><?php echo ILang::_('Points'); ?></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach($requests as $request) : ?>
+			<tr>
+				<td><a href="./player.php?id=<?php echo $request->usrId; ?>"><?php echo $request->usrName; ?></a></td>
+				<td><?php echo $request->allyGroup; ?></td>
+				<td><?php echo $request->totalPoints; ?></td>
+				<td class="text-right">
+					<?php if ($this->user->getACL('requests')) : ?><a href="?accept=<?php echo $request->usrId; ?>" class="btn btn-sm btn-success glyphicon glyphicon-ok" title="<?php echo ILang::_('Accept'); ?>"></a>
+					<a href="?reject=<?php echo $request->usrId; ?>" class="btn btn-sm btn-danger glyphicon glyphicon-remove" title="<?php echo ILang::_('Reject'); ?>"></a><?php else : ?>&nbsp;<?php endif; ?></td>
+			</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
 </div>
 <?php endif; ?>
 <h2><?php echo ILang::_('Members'); ?></h2>
 <div>
-	<div class="bg3">
-		<span class="left" style="width:140px"><?php echo ILang::_('Name'); ?></span>
-		<span class="left" style="width:110px"><?php echo ILang::_('Rank'); ?></span>
-		<span class="left" style="width:110px"><?php echo ILang::_('Development'); ?></span>
-		<span style="width:110px"><?php echo ILang::_('Fight'); ?></span>
+	<div class="table-responsive">
+		<table class="table">
+			<thead class="bg3">
+				<tr>
+					<th><?php echo ILang::_('Name'); ?></th>
+					<th><?php echo ILang::_('Rank'); ?></th>
+					<th><?php echo ILang::_('Development'); ?></th>
+					<th><?php echo ILang::_('Fight'); ?></th>
+					<th></th>
+				</tr>
+			</thead>
+			<?php if ($members = $this->getData('members')) : ?>
+			<tbody>
+				<?php foreach($members as $member) : ?>
+				<tr class="<?php echo $member->class; ?>">
+					<td><a href="./player.php?id=<?php echo $member->id; ?>"><?php echo $member->name; ?></a></td>
+					<td><?php echo $member->groupName; ?></td>
+					<td><?php echo $member->devPoints; ?></td>
+					<td><?php echo $member->unitPoints; ?></td>
+					<td class="text-right">
+						<?php if ($this->user->getACL('promote')) : ?><a href="?promote=<?php echo $member->id; ?>" class="btn btn-sm btn-default glyphicon glyphicon-chevron-up" title="<?php echo ILang::_('Promote'); ?>"></a>
+						<a href="?demote=<?php echo $member->id; ?>" class="btn btn-sm btn-default glyphicon glyphicon-chevron-down" title="<?php echo ILang::_('Demote'); ?>"></a><?php endif; ?>
+						<?php if ($this->user->getACL('eject') && $member->id != $this->user->id) : ?><a href="?eject=<?php echo $member->id; ?>" class="btn btn-sm btn-danger glyphicon glyphicon-minus" title="<?php echo ILang::_('Eject'); ?>"></a><?php endif; ?>
+					</td>
+				</tr>
+				<?php endforeach; ?>
+			</tbody>
+			<?php endif; ?>
+		</table>
 	</div>
-	<?php if ($members = $this->getData('members')) : ?>
-	<?php foreach($members as $member) : ?>
-	<div class="<?php echo $member->class; ?>">
-		<span class="left" style="width:140px"><a href="./player.php?id=<?php echo $member->id; ?>"><?php echo $member->name; ?></a></span>
-		<span class="left" style="width:110px"><?php echo $member->groupName; ?></span>
-		<span class="left" style="width:110px"><?php echo $member->devPoints; ?></span>
-		<span class="left" style="width:110px"><?php echo $member->unitPoints; ?></span>
-		<span>
-			<?php if ($this->user->getACL('promote')) : ?><a href="?promote=<?php echo $member->id; ?>" class="i-up"><span>Promote</span></a> <a href="?demote=<?php echo $member->id; ?>" class="i-down"><span>Demote</span></a> | <?php endif; ?>
-			<?php if ($this->user->getACL('eject') && $member->id != $this->user->id) : ?><a href="?eject=<?php echo $member->id; ?>" class="i-cancel"><span><?php echo ILang::_('Eject'); ?></span></a><?php else : ?>&nbsp;<?php endif; ?>
-		</span>
-	</div>
-	<?php endforeach; ?>
-	<?php endif; ?>
 </div>

@@ -1,4 +1,9 @@
 <page>
+	<config>
+		<header>none</header>
+		<menu>none</menu>
+		<footer>none</footer>
+	</config>
 	<head>
 		<media type="js">
 			<name>jquery.form</name>

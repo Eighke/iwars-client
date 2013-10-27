@@ -9,30 +9,40 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version		2013-10-27 - Eighke
  */
 if (!session_id()) exit();
 ?>
 <h1><?php echo ILang::_('Search'); ?></h1>
 <?php $this->renderMsgs(); ?>
-<form action="search.php" method="POST">
-	<div class="contenant">
+<form action="search.php" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label for="field-name" class="col-xs-5 control-label"><?php echo ILang::_('EnterName:'); ?></label>
+				<div class="input-group col-xs-6">
+					<span class="input-group-addon glyphicon glyphicon-user"></span>
+					<input type="text" name="name" id="field-name" class="form-control" value="<?php echo $this->getData('name'); ?>" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="field-ally" class="col-xs-5 control-label"><?php echo ILang::_('Ally:'); ?></label>
+				<div class="input-group col-xs-6">
+					<span class="input-group-addon glyphicon glyphicon-flag"></span>
+					<select name="ally" id="field-ally" class="form-control">
+						<option value=""></option>
+						<?php foreach ($this->getData('alliances') as $alliance) : ?>
+						<option value="<?php echo $alliance->id; ?>"<?php echo $this->getData('ally') == $alliance->id ? ' selected="selected"' : NULL; ?>><?php echo $alliance->name; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+		<div class="contenant">
 		<div class="center">
-			<div><?php echo ILang::_('EnterName:'); ?> <input type="text" name="name" value="<?php echo $this->getData('name'); ?>" /></div><br />
-			<div><?php echo ILang::_('Ally'); ?>
-				<select name="ally">
-					<option value=""></option>
-					<?php foreach ($this->getData('alliances') as $alliance) : ?>
-					<option value="<?php echo $alliance->id; ?>"<?php echo $this->getData('ally') == $alliance->id ? ' selected="selected"' : NULL; ?>><?php echo $alliance->name; ?></option>
-					<?php endforeach; ?>
-				</select>
-			</div><br />
 			<div><input type="submit" value="Rechercher" name="search" /></div>
 		</div>
 	</div>
 </form>
-<h2><?php echo ILang::_('Result'); ?></h2>
 <?php if ($results = $this->getData('results')) : ?>
+<h2><?php echo ILang::_('Result'); ?></h2>
 <div class="content">
 	<div class="bg_3">
 		<div class="left" style="width:150px;">Nom</div>

@@ -1,10 +1,4 @@
 <page>
 	<head>
-		<media type="js">
-			<name>jquery.ui-custom</name>
-		</media>
-		<media type="js">
-			<name>tooltip</name>
-		</media>
 	</head>
 </page>

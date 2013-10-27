@@ -31,7 +31,6 @@ $(document).ready(function(){
 });
 
 var cache = {};
-var loader = false;
 
 $('.elem-name a').click(function(e){
 	e.preventDefault();
@@ -48,10 +47,6 @@ $('.elem-name a').click(function(e){
 		cache[id] = contenant.detach();
 		cache[call].appendTo('#sticky').fadeIn('fast');
 	} else {
-
-		if (loader == false) {
-			loader = $('<div>', {'class': 'loader'});
-		}
 
 		$.ajax({
 			url: './scripts/json/techno.php',

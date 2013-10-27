@@ -4,84 +4,55 @@
  * Subpackage	System
  * File			login.php
  *
- * Licence		GNU General Public License version 3; see http://www.gnu.org/licenses/lgpl-3.0.en.html
- * Copyright	Copyright (C) 2005 - 2012 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric Vandebeuque (fred.vdb@newebtime.com)
+ * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
+ * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2012-11-17 - Eighke
+ * Version		2013-10-19 - Eighke
  */
-if (!session_id()) exit();
 ?>
-<!--  Wrapper -->
-<div id="wrapper">
-	<!-- Main Block -->
-	<div id="main">
-		<!-- Top -->
-		<div class="top">
-			<div class="left"></div>
-			<div class="center"></div>
-			<div class="right"></div>
-		</div>
-		<!-- /Top -->
-		<!-- Middle -->
-		<div class="middle">
-			<div class="outer">
-				<div class="inner">
-					<div class="main">
-						<h1><?php echo ILang::_('Connection'); ?></h1>
-						<?php $this->renderMsgs(); ?>
-						<form id="loginForm" name="loginForm" method="post" action="login.php">
-							<div id="step-lang" class="step">
-								<div class="fields">
-									<div class="label">
-										<label for="field-login"><?php echo ILang::_('Login'); ?></label>
-									</div>
-									<div class="field">
-										<input type="text" name="login" id="field-login" class="required" />
-									</div>
-								</div>
-								<div class="fields">
-									<div class="label">
-										<label for="field-pwd"><?php echo ILang::_('Password'); ?></label>
-									</div>
-									<div class="field">
-										<input type="password" name="pwd" id="field-pwd" class="required" />
-									</div>
-								</div>
-							</div>
-							<div id="navigation">
-								<hr />
-								<input class="navigation_button" id="next" value="<?php echo ILang::_('Submit'); ?>" type="submit" />
-							</div>
-						</form>
-						<div id="data"></div>
-					</div>
+<h1><?php echo ILang::_('Connection'); ?></h1>
+<?php $this->renderMsgs(); ?>
+<form id="loginForm" name="loginForm" method="post" action="login.php" role="form">
+	<div id="step-lang" class="step">
+		<div class="col-xs-12 col-sm-6">
+			<div class="form-group">
+				<div class="input-group">
+					<label for="field-login" class="input-group-addon"><span class="glyphicon glyphicon-user"></span></label>
+					<input type="text" name="MLogin" id="field-login" class="form-control" placeholder="<?php echo ILang::_('Login'); ?>" required />
+					<span class="tip input-group-addon" data-toggle="tooltip" content="<?php echo ILang::_('tipLogin'); ?>">
+						<i class="glyphicon glyphicon-question-sign"></i>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<label for="field-pwd" class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></label>
+					<input type="password" name="MPassword" id="field-pwd" class="form-control" placeholder="<?php echo ILang::_('Password'); ?>" required minlength="4" />
+					<span class="tip input-group-addon" data-toggle="tooltip" content="<?php echo ILang::_('tipPassword'); ?>">
+						<i class="glyphicon glyphicon-question-sign"></i>
+					</span>
 				</div>
 			</div>
 		</div>
-		<!-- /Middle -->
-	    <script type="text/javascript">
-	
-			$(function(){
-				$("#loginForm").formwizard({
-					textSubmit: '<?php echo ILang::_('Submit'); ?>',
-					textNext: '<?php echo ILang::_('Submit'); ?>',
-				 	historyEnabled : true,
-				 	validationEnabled: true,
-				 	focusFirstInput : true,
-				 }
-				);
-	  		});
-		</script>
-		<!-- Bottom -->
-		<div class="bottom">
-			<div class="left"></div>
-			<div class="center"></div>
-			<div class="right"></div>
+		<div class="col-xs-12 col-sm-4 pull-right">
+			<ul class="list-unstyled">
+				<li>Password lost ?</li>
+				<li>Login lost ?</li>
+				<li class="divider"></li>
+				<li><a href="inscription.php">No account yet?</a></li>
+			</ul>
 		</div>
-		<!-- /Bottom -->
 	</div>
-	<!-- /Main Block -->
-</div>
-<!--  /Wrapper -->
+	<div id="navigation">
+		<hr />
+		<input class="navigation_button" id="next" value="<?php echo ILang::_('Submit'); ?>" type="submit" />
+	</div>
+</form>
+<div id="data"></div>
+
+<script type="text/javascript">
+	var submit	= <?php echo ILang::_('Submit'); ?>;
+	var next	= <?php echo ILang::_('Submit'); ?>;
+</script>

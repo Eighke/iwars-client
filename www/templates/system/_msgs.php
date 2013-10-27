@@ -9,15 +9,15 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2012-11-16 - Eighke
+ * Version		2013-10-26 - Eighke
  */
 if (!session_id()) exit();
 ?>
 <!-- #Message -->
 <div id="messages">
-	<?php if ($this->haveMsgs('error')) : ?><div class="msg error"><?php echo $this->getMsgs('error'); ?></div><?php endif; ?>
-	<?php if ($this->haveMsgs('info')) : ?><div class="msg info"><?php echo $this->getMsgs('info'); ?></div><?php endif; ?>
-	<?php if ($this->haveMsgs('valid')) : ?><div class="msg valid"><?php echo $this->getMsgs('valid'); ?></div><?php endif; ?>
-	<?php if ($this->haveMsgs('warning')) : ?><div class="msg warning"><?php echo $this->getMsgs('warning'); ?></div><?php endif; ?>
+	<?php if ($this->haveMsgs('error')) : ?><div class="alert alert-danger"><?php echo $this->getMsgs('error'); ?></div><?php endif; ?>
+	<?php if ($this->haveMsgs('info')) : ?><div class="alert alert-info"><?php echo $this->getMsgs('info'); ?></div><?php endif; ?>
+	<?php if ($this->haveMsgs('valid')) : ?><div class="alert alert-success"><?php echo $this->getMsgs('valid'); ?></div><?php endif; ?>
+	<?php if ($this->haveMsgs('warning')) : ?><div class="alert alert-warning"><?php echo $this->getMsgs('warning'); ?></div><?php endif; ?>
 </div>
 <!-- /#Message -->

@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-06-17 - Eighke
+ * Version		2013-10-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -23,9 +23,14 @@ if (!session_id()) exit();
 <?php if($actions = $this->getData('self')) : ?>
 <div class="moves">
 	<?php foreach($actions as $action) : ?>
-	<div class="<?php echo $action->class; ?>">
-		<span class="left"><?php echo $action->wait; ?> | <?php echo $action->msg; ?></span> <?php if ($action->cancel) : ?><span class="right">[ <a href="?cancel=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a> ]</span> <?php endif; ?>
-		<span class=spacer>&nbsp;</span>
+	<div class="<?php echo $action->class; ?> tip pleft" data-toggle="tooltip" content="<?php echo ILang::_($action->type); ?>::Units: <?php echo $action->unit; ?>&lt;br /&gt;<?php if (isset($action->ress)) : ?>&lt;b&gt;T:&lt;/b&gt; <?php echo $action->ress[0]; ?>&lt;br /&gt; &lt;b&gt;S:&lt;/b&gt; <?php echo $action->ress[1]; ?>&lt;br /&gt; &lt;b&gt;E:&lt;/b&gt; <?php echo $action->ress[3]; ?>&lt;br /&gt; &lt;b&gt;H:&lt;/b&gt; <?php echo $action->ress[2]; ?><?php endif; ?>">
+		<span class="left">
+			<span class="countdown" time="<?php echo time()+$action->uTime; ?>"><?php echo $action->wait; ?></span>
+			| <?php echo $action->msg; ?></span>
+		<?php if ($action->cancel) : ?>
+		<span class="right button"><a href="?task=cancel&id=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a></span>
+		<?php endif; ?>
+		<span class="clr">&nbsp;</span>
 	</div>
 	<?php endforeach; ?>
 </div>
@@ -34,8 +39,14 @@ if (!session_id()) exit();
 <?php if($actions = $this->getData('other')) : ?>
 <div class="moves">
 	<?php foreach($actions as $action) : ?>
-	<div class="<?php echo $action->class; ?>">
-		<?php echo $action->wait; ?> | <?php echo $action->msg[0]; ?> <?php echo $action->X1; ?>:<?php echo $action->Y1; ?>:<?php echo $action->Z1; ?> <?php echo $action->msg[1]; ?> <?php echo $action->X2; ?>:<?php echo $action->Y2; ?>:<?php echo $action->Z2; ?> <?php echo ILang::_('WithOrder'); ?> <?php echo $action->type; ?> <?php if ($action->cancel) : ?><span class="right">[ <a href="?cancel=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a> ]</span> <?php endif; ?>
+	<div class="<?php echo $action->class; ?> tip pleft" data-toggle="tooltip" content="<?php echo ILang::_($action->type); ?>::Units: <?php echo $action->unit; ?>&lt;br /&gt;<?php if (isset($action->ress)) : ?>&lt;b&gt;T:&lt;/b&gt; <?php echo $action->ress[0]; ?>&lt;br /&gt; &lt;b&gt;S:&lt;/b&gt; <?php echo $action->ress[1]; ?>&lt;br /&gt; &lt;b&gt;E:&lt;/b&gt; <?php echo $action->ress[3]; ?>&lt;br /&gt; &lt;b&gt;H:&lt;/b&gt; <?php echo $action->ress[2]; ?><?php endif; ?>">
+		<span class="left">
+			<span class="countdown" time="<?php echo time()+$action->uTime; ?>"><?php echo $action->wait; ?></span>
+			| <?php echo $action->msg; ?></span>
+		<?php if ($action->cancel) : ?>
+		<span class="right button"><a href="?task=cancel&id=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a></span>
+		<?php endif; ?>
+		<span class="clr">&nbsp;</span>
 	</div>
 	<?php endforeach; ?>
 </div>

@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-06-17 - Eighke
+ * Version		2013-10-17 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -21,11 +21,11 @@ if (!session_id()) exit();
 </div>
 <?php endif; ?>
 
-<h2><?php echo ILang::_('UnitsMove'); ?></h2>
 <?php if($actions = $this->getData('actions')) : ?>
+<h2><?php echo ILang::_('UnitsMove'); ?></h2>
 <div class="moves">
 	<?php foreach($actions as $action) : ?>
-	<div class="<?php echo $action->class; ?> tip pleft" title="<?php echo ILang::_($action->type); ?>::Units: <?php echo $action->unit; ?>&lt;br /&gt;<?php if (isset($action->ress)) : ?>&lt;b&gt;T:&lt;/b&gt; <?php echo $action->ress[0]; ?>&lt;br /&gt; &lt;b&gt;S:&lt;/b&gt; <?php echo $action->ress[1]; ?>&lt;br /&gt; &lt;b&gt;E:&lt;/b&gt; <?php echo $action->ress[3]; ?>&lt;br /&gt; &lt;b&gt;H:&lt;/b&gt; <?php echo $action->ress[2]; ?><?php endif; ?>">
+	<div class="<?php echo $action->class; ?> tip pleft" data-toggle="tooltip" content="<?php echo ILang::_($action->type); ?>::Units: <?php echo $action->unit; ?>&lt;br /&gt;<?php if (isset($action->ress)) : ?>&lt;b&gt;T:&lt;/b&gt; <?php echo $action->ress[0]; ?>&lt;br /&gt; &lt;b&gt;S:&lt;/b&gt; <?php echo $action->ress[1]; ?>&lt;br /&gt; &lt;b&gt;E:&lt;/b&gt; <?php echo $action->ress[3]; ?>&lt;br /&gt; &lt;b&gt;H:&lt;/b&gt; <?php echo $action->ress[2]; ?><?php endif; ?>">
 		<span class="left">
 			<span class="countdown" time="<?php echo time()+$action->uTime; ?>"><?php echo $action->wait; ?></span>
 			| <?php echo $action->msg; ?></span>
@@ -38,11 +38,14 @@ if (!session_id()) exit();
 </div>
 <div class="center"><a href="index.php" class="button"><?php echo ILang::_('SeeAllMoves'); ?></a></div>
 <?php else : ?>
-<div class="center bold"><?php echo ILang::_('NoMove'); ?></div>
+<div class="alert alert-info btn-toolbar">
+	<strong class=""><?php echo ILang::_('NoMove'); ?></strong>
+	<a href="move.php" class="btn btn-default pull-right btn-xs" title="<?php echo ILang::_('ViewFleets'); ?>"><span class="glyphicon glyphicon-plane"></span></a>
+</div>
 <?php endif; ?>
 
-<h2><?php echo ILang::_('Buildings'); ?></h2>
 <?php if($builds = $this->getData('builds')) : ?>
+<h2><?php echo ILang::_('Buildings'); ?></h2>
 <div class="wrk">
 	<div>
 		<span class="bld_nb">#</span>
@@ -67,32 +70,38 @@ if (!session_id()) exit();
 </div>
 <?php if (count($builds) == 20) : ?><div class="center">[ <a href="?all=1"><?php echo ILang::_('SeeAllBuilds'); ?></a> ]</div><?php endif; ?>
 <?php else : ?>
-<div class="center bold"><?php echo ILang::_('NoBuild'); ?></div>
+<div class="alert alert-info btn-toolbar">
+	<strong class=""><?php echo ILang::_('NoBuild'); ?></strong>
+	<a href="builds.php" class="btn btn-default pull-right btn-xs" title="<?php echo ILang::_('ViewBuilds'); ?>"><span class="glyphicon glyphicon-home"></span></a>
+</div>
+
 <?php endif; ?>
 
 <h2><?php echo ILang::_('InfosOf'); ?> <?php echo $this->town->loc['X']; ?>:<?php echo $this->town->loc['Y']; ?>:<?php echo $this->town->loc['Z']; ?></h2>
 <div>
-	<div class="imgpl left center">
-		<?php if (file_exists( $this->town->getLogo() )) : ?>
-		<img src="<?php echo $this->town->getLogo(); ?>" />
-		<?php else : ?>
-		<img src="./skin/pl_default.jpg" />
-		<?php endif; ?>
-		<div class="upload">
-			<div class="<?php echo isset($_GET['upload']) ? NULL : 'hidden'; ?>">
-				<form action="./main.php" enctype="multipart/form-data" method="POST">
-					<div>
-						<span><?php echo ILang::_('FileSpec'); ?></span>
-						<span><input type="file" size="20" name="logo" /></span>
-						<span><input type="submit" name="act_logo" value="<?php echo ILang::_('Upload'); ?>" /></span>
-						<span class="clr">&nbsp;</span>
-					</div>
-				</form>
+	<div class="imgpl text-center col-xs-12 col-sm-8">
+		<div>
+			<?php if (file_exists( $this->town->getLogo() )) : ?>
+			<img src="<?php echo $this->town->getLogo(); ?>" class="img-responsive" />
+			<?php else : ?>
+			<img src="./skin/pl_default.jpg" class="img-responsive" />
+			<?php endif; ?>
+			<div class="upload">
+				<div style="<?php echo isset($_GET['upload']) ? NULL : 'display:none;'; ?>">
+					<form action="./main.php" enctype="multipart/form-data" method="POST">
+						<div>
+							<span><?php echo ILang::_('FileSpec'); ?></span>
+							<span><input type="file" size="20" name="logo" /></span>
+							<span><input type="submit" name="act_logo" value="<?php echo ILang::_('Upload'); ?>" /></span>
+							<span class="clr">&nbsp;</span>
+						</div>
+					</form>
+				</div>
+				<span><a href="?upload=1" class="button"><?php echo ILang::_('Upload'); ?></a></span>
 			</div>
-			<span><a href="?upload=1" class="button"><?php echo ILang::_('Upload'); ?></a></span>
 		</div>
 	</div>
-	<div class="left lcol">
+	<div class="col-xs-6 col-sm-4">
 		<h2><?php echo ILang::_('Planet'); ?></h2>
 		<div>
 			<div><span class="bold"><?php echo ILang::_('BuildPoints'); ?></span> <span class="right"><?php echo ILang::number($this->town->points); ?></span></div>
@@ -100,8 +109,8 @@ if (!session_id()) exit();
 		<div class="bnorm">
 			<div class="bg3">
 				<span class="left" style="width:87px">&nbsp;</span>
-				<span class="left center" style="width:40px;"><a class="tip help" title="<?php echo ILang::_('TipStock'); ?>"><?php echo ILang::_('Stock'); ?></a></span>
-				<span class="aright" style="display:inline-block;width:75px"><a class="tip help" title="<?php echo ILang::_('TipProduction'); ?>"><?php echo ILang::_('Production'); ?></a></span>
+				<span class="left center" style="width:40px;"><a class="tip help" data-toggle="tooltip" content="<?php echo ILang::_('TipStock'); ?>"><?php echo ILang::_('Stock'); ?></a></span>
+				<span class="aright" style="display:inline-block;width:75px"><a class="tip help" data-toggle="tooltip" content="<?php echo ILang::_('TipProduction'); ?>"><?php echo ILang::_('Production'); ?></a></span>
 			</div>
 			<div class="bg2">
 				<span class="left" style="width:87px"><?php echo ILang::_('Titanium'); ?></span>
@@ -126,11 +135,11 @@ if (!session_id()) exit();
 			<div class="bg3"><a href="./ress.php"><?php echo ILang::_('MoreInfos'); ?></a></div>
 		</div><br /><br />
 	</div>
-	<div class="left lcol">
+	<div class="col-xs-6 col-sm-4">
 		<h2><?php echo ILang::_('Empire'); ?></h2>
 		<div>
-			<div><span class="bold"><a title="<?php echo ILang::_('TipPower'); ?>" class="tip help"><?php echo ILang::_('Power'); ?></a></span> <span class="right"><?php echo $this->getData('empire')->power; ?>%</span></div>
-			<div><span class="bold"><a title="<?php echo ILang::_('TipPlanets'); ?>" class="tip help"><?php echo ILang::_('Planets'); ?></a></span> <span class="right"><?php echo $this->getData('empire')->planets; ?> / <?php echo $this->getData('empire')->maxColo; ?></span></div>
+			<div><span class="bold"><a data-toggle="tooltip" content="<?php echo ILang::_('TipPower'); ?>" class="tip help"><?php echo ILang::_('Power'); ?></a></span> <span class="right"><?php echo $this->getData('empire')->power; ?>%</span></div>
+			<div><span class="bold"><a data-toggle="tooltip" content="<?php echo ILang::_('TipPlanets'); ?>" class="tip help"><?php echo ILang::_('Planets'); ?></a></span> <span class="right"><?php echo $this->getData('empire')->planets; ?> / <?php echo $this->getData('empire')->maxColo; ?></span></div>
 		</div><br />
 		<div>
 			<div><span class="bold"><?php echo ILang::_('BuildPoints'); ?></span> <span class="right"><?php echo ILang::number($this->getData('empire')->points['buildPoints']); ?></span></div>
@@ -145,54 +154,67 @@ if (!session_id()) exit();
 </div>
 <hr class="clr" />
 
+<?php if($cWorks = $this->getData('cWorks')) : ?>
 <h2><?php echo ILang::_('Construction'); ?></h2>
 <div class="contenant">
 	<div class="dark">
+		<?php if($build = $cWorks->build) : ?>
 		<div class="bg1">
 			<span class="left" style="width:90px;"><?php echo ILang::_('Building'); ?></span>
-			<span class="left"> <?php if($build = $this->getData('cWorks')->build) : ?> <?php echo ILang::build($build->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $build->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $build->uTime; ?>"><?php echo $build->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+			<span class="left"> <?php echo ILang::build($build->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $build->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $build->uTime; ?>"><?php echo $build->time; ?></span></span>
 			<span class="clr">&nbsp;</span>
 		</div>
+		<?php endif; ?>
+		<?php if($tech = $cWorks->tech) : ?>
 		<div class="bg2">
 			<span class="left" style="width:90px;"><?php echo ILang::_('Research'); ?></span>
-			<span class="left"> <?php if($tech = $this->getData('cWorks')->tech) : ?> <?php echo ILang::research($tech->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $tech->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $tech->uTime; ?>"><?php echo $tech->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+			<span class="left"> <?php echo ILang::research($tech->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $tech->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $tech->uTime; ?>"><?php echo $tech->time; ?></span></span>
 			<span class="clr">&nbsp;</span>
 		</div>
+		<?php endif; ?>
+		<?php if($unit = $cWorks->factory) : ?>
 		<div class="bg1">
 			<span class="left" style="width:90px;"><?php echo ILang::_('Factory'); ?></span>
-			<span class="left"> <?php if($unit = $this->getData('cWorks')->factory) : ?> <?php echo ILang::unit($unit->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+			<span class="left"> <?php echo ILang::unit($unit->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span></span>
 			<span class="clr">&nbsp;</span>
 		</div>
+		<?php endif; ?>
+		<?php if($unit = $cWorks->workshop) : ?>
 		<div class="bg2">
 			<span class="left" style="width:90px;"><?php echo ILang::_('Workshop'); ?></span>
-			<span class="left"> <?php if($unit = $this->getData('cWorks')->workshop) : ?> <?php echo ILang::unit($unit->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span> <?php else : ?> <?php echo ILang::_('Nonee'); ?> <?php endif; ?></span>
+			<span class="left"> <?php echo ILang::unit($unit->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span></span>
 			<span class="clr">&nbsp;</span>
 		</div>
+		<?php endif; ?>
+		<?php if($unit = $cWorks->plaform) : ?>
+		<div class="bg2">
+			<span class="left" style="width:90px;"><?php echo ILang::_('Platform'); ?></span>
+			<span class="left"> <?php echo ILang::unit($unit->id, 'name'); ?> </span><span class="right"><?php echo ILang::_('Level'); ?> <?php echo $unit->wrkNb; ?> ~ <?php echo ILang::_('TimeLeft:'); ?> <span class="countdown" offset="<?php echo $unit->uTime; ?>"><?php echo $unit->time; ?></span></span>
+			<span class="clr">&nbsp;</span>
+		</div>
+		<?php endif; ?>
 	</div>
 </div><br />
+<?php endif; ?>
 
 <?php if ($this->town->unit) : ?>
 <h2><?php echo ILang::_('Garnison'); ?></h2>
-<div class="contenant thumbs">
+<div class="contenant thumbs row">
 	<?php foreach ($this->town->unit as $id => $nb) : ?>
-	<div>
+	<div class="col-xs-4 col-sm-3">
+		<div class="thumbnail">
 		<a href="unit.php?id=<?php echo $id; ?>">
 			<span class="top"><?php echo ILang::number($nb); ?></span>
-			<img src="<?php echo SKIN; ?>unit/u<?php echo $id; ?>k10.jpg" />
+			<img src="<?php echo SKIN; ?>unit/u<?php echo $id; ?>k10.jpg" class="img-responsive" />
 			<span class="bottom"><?php echo ILang::unit($id, 'name'); ?></span>
 		</a>
+		</div>
 	</div>
 	<?php endforeach; ?>
 	<hr class="clr" />
 </div>
 <?php endif; ?>
-<script src="<?php echo PATH_TMPLS; ?>system/main.js"></script>
+
 <script type="text/javascript">
-	$(".countdown").countDown({
-		dayText : ' ',
-		daysText : ' ',
-		displayDays : false,
-		displayZeroDays : false,
-		serverTime : <?php echo time(); ?>
-	});
+	var serverTime = <?php echo time(); ?>;
 </script>

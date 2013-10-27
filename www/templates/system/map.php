@@ -38,9 +38,9 @@ if (!session_id()) exit();
 					$x = $i;
 					?>
 				<?php if ($line[$j]) : ?>
-				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip gd_<?php if ($case['usrId'] == $usr->id) { echo 'self'; } else if ($case['allyId'] == $ally->id) { echo 'ally'; } else { echo 'other'; } ?>" title="<?php echo $this->getData('X').':'.$this->getData('Y').':'.$case['z']; ?> - <?php echo $case['buildPoints']; ?> pts::<?php echo $case['usrName']; ?> (<?php echo $case['userPoints']; ?> pts)"><a href="p_town.php?id=<?php echo $case['twnId']; ?>"><img src="<?php echo SKIN.'imgs/'.$case['twnImg']; ?>.png" alt="" /></a></div>
+				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip gd_<?php if ($case['usrId'] == $usr->id) { echo 'self'; } else if ($case['allyId'] == $ally->id) { echo 'ally'; } else { echo 'other'; } ?>" data-toggle="tooltip" content="<?php echo $this->getData('X').':'.$this->getData('Y').':'.$case['z']; ?> - <?php echo $case['buildPoints']; ?> pts::<?php echo $case['usrName']; ?> (<?php echo $case['userPoints']; ?> pts)"><a href="p_town.php?id=<?php echo $case['twnId']; ?>"><img src="<?php echo SKIN.'imgs/'.$case['twnImg']; ?>.png" alt="" /></a></div>
 				<?php else : ?>
-				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip <?php if ($grid[$x][$j]) { echo 'gd2_'. $grid[$x][$j]; } ?>" title="<?php echo $this->getData('X').':'.$this->getData('Y').':'.($x+($j-1)*17); ?>"><a><img src="<?php echo SKIN; ?>imgs/mempty.gif" alt="" /></a></div>
+				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip <?php if ($grid[$x][$j]) { echo 'gd2_'. $grid[$x][$j]; } ?>" data-toggle="tooltip" content="<?php echo $this->getData('X').':'.$this->getData('Y').':'.($x+($j-1)*17); ?>"><a><img src="<?php echo SKIN; ?>imgs/mempty.gif" alt="" /></a></div>
 				<?php endif; ?>
 			
 			<?php endfor; ?>

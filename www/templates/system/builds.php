@@ -126,13 +126,6 @@ if (!session_id()) exit();
 	</div>
 </div>
 <div class="clr"></div>
-<script src="<?php echo PATH_TMPLS; ?>system/builds.js"></script>
 <script type="text/javascript">
-	$(".countdown").countDown({
-		dayText : ' ',
-		daysText : ' ',
-		displayDays : false,
-		displayZeroDays : false,
-		serverTime : <?php echo time(); ?>
-	});
+	var serverTime = <?php echo time(); ?>;
 </script>

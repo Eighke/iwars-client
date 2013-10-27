@@ -6,3 +6,11 @@ $('.upload a').click(function(e){
 
 	e.preventDefault();
 });
+
+$(".countdown").countDown({
+	dayText : ' ',
+	daysText : ' ',
+	displayDays : false,
+	displayZeroDays : false,
+	serverTime : serverTime
+});

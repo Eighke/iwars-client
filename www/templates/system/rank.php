@@ -9,99 +9,126 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version		2013-10-18 - Eighke
  */
 if (!session_id()) exit();
 ?>
 <h1><?php echo ILang::_('Highscore'); ?></h1>
 <?php $this->renderMsgs(); ?>
-<div class="center">
-	<?php echo ILang::_('By'); ?> <a href="?rank=player" class="button"><?php echo ILang::_('Players'); ?></a> <a href="?rank=ally" class="button"><?php echo ILang::_('Alliances'); ?></a>
-</div><br />
-<div class="center">
-	<form>
-		<select name="page" onChange="this.form.submit();">
-			<?php for($i = 1; $i <= $this->getData('pageMax'); $i++) : ?>
-			<option value="<?php echo $i; ?>"<?php echo ( $i == $this->getData('page') ? ' selected="selected"' : '' ); ?>><?php echo (($i-1)*100)+1; ?>-<?php echo ($i*100); ?></option>
-			<?php endfor; ?>
-		</select>
-	</form>
-</div>
-<div>
-	<?php if ($this->getData('type') == 'ally') : ?>
-	<div class="bg3">
-		<div class="rank-id">#</div>
-		<div class="rank-name"><?php echo ILang::_('Name'); ?></div>
-		<?php if ($this->conf['game']->rankType == 1) : ?>
-		<div class="rank-build"><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=devs"><?php echo ILang::_('Development'); ?></a></div>
-		<div class="rank-unit"><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=units"><?php echo ILang::_('Unit'); ?></a></div>
-		<?php endif; ?>
-		<div class="rank-total"><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=total"><?php echo $this->conf['game']->rankType == 1 ? ILang::_('Total') : ILang::_('Fight'); ?></a></div>
-		<div class="rank-tech"><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=ptsmmbs"><?php echo ILang::_('/members'); ?></a></div>
-		<div class="rank-planet"><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=mmbs"><?php echo ILang::_('Members'); ?></a></div>
-		<div class="clr"></div>
+
+<div class="panel panel-primary">
+	<div class="panel-heading panel-collapse">
+		<strong><a data-toggle="collapse" data-target="#options">Options
+			<span class="glyphicon glyphicon-chevron-down pull-right"></span></a></strong>
 	</div>
-	<?php $i=$this->getData('offset')+1; foreach($this->getData('ranks') as $rank) : ?>
-	<div class="bg<?php echo $rank->class; ?>" <?php echo $this->alliance->id == $rank->allyId ? ' style="background:#74674c;"' : NULL; ?>>
-		<div class="rank-id <?php echo $rank->grank < $i ? 'rkdown' : ($rank->grank > $i ? 'rkup' : 'rkequal'); ?>"><?php echo $i++; ?></div><?php //TODO: Mettre une fonction ?>
-		<div class="rank-name">
-			<div><a href="./ally.php?id=<?php echo $rank->allyId; ?>"><?php echo $ally->id == $rank->allyId ? '<span style="color:#fff"><b>'. subtext($rank->allyName, 18) .'</b></span>' : subtext($rank->allyName, 18); ?></a></div>
-			<div>[#<a href="./ally.php?id=<?php echo $rank->allyId; ?>"><?php echo $rank->allyTag; ?></a>]</div>
+	<div id="options" class=" collapse">
+		<div class="panel-body">
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label class="col-lg-2 control-label"><?php echo ILang::_('Highscore'); ?></label>
+					<div class="col-lg-2">
+						<a href="?rank=player" class="btn btn-primary form-control"><?php echo ILang::_('Players'); ?></a>
+					</div>
+					<div class="col-lg-2">
+						<a href="?rank=ally" class="btn btn-primary form-control"><?php echo ILang::_('Alliances'); ?></a></p>
+					</div>
+					<div class="col-lg-2">
+						<a href="?rank=ally" class="btn btn-primary form-control"><?php echo ILang::_('Planets'); ?></a></p>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword" class="col-lg-2 control-label">Top</label>
+					<div class="col-lg-4">
+						<select name="page" onChange="this.form.submit();" class="form-control">
+							<?php for($i = 1; $i <= $this->getData('pageMax'); $i++) : ?>
+							<option value="<?php echo $i; ?>"<?php echo ( $i == $this->getData('page') ? ' selected="selected"' : '' ); ?>><?php echo (($i-1)*100)+1; ?>-<?php echo ($i*100); ?></option>
+							<?php endfor; ?>
+						</select>
+					</div>
+				</div>
+			</form>
 		</div>
-		<?php if ($this->conf['game']->rankType == 1) : ?>
-		<div class="rank-build"><?php echo ILang::number($rank->devPoints); ?></div>
-		<div class="rank-unit"><?php echo ILang::number($rank->unitPoints); ?></div>
-		<?php endif; ?>
-		<div class="rank-total"><?php echo ILang::number($rank->totalPoints); ?></div>
-		<div class="rank-tech"><?php echo ILang::number($rank->mmbsPoints); ?><?//=?></div>
-		<div class="rank-planet"><?php echo $rank->allyUsers; ?></div>
-		<div class="clr"></div>
 	</div>
-	<?php endforeach; ?>
-	<?php else : ?>
-	<div class="bg3">
-		<div class="rank-id">#</div>
-		<div class="rank-name"><?php echo ILang::_('Name'); ?></div>
-		<?php if ($this->conf['game']->rankType == 1) : ?>
-		<div class="rank-build"><a href="?page=<?php echo $this->getData('page'); ?>&by=builds"><?php echo ILang::_('Building'); ?></a></div>
-		<div class="rank-tech"><a href="?page=<?php echo $this->getData('page'); ?>&by=researchs"><?php echo ILang::_('Research'); ?></a></div>
+	<div class="table-responsive">
+		<table class="table table-striped">
+		<?php if ($this->getData('type') == 'ally') : ?>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th><?php echo ILang::_('Name'); ?></th>
+					<th><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=devs"><?php echo ILang::_('Development'); ?></a></th>
+					<th><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=units"><?php echo ILang::_('Unit'); ?></a></th>
+					<th><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=total"><?php echo $this->conf['game']->rankType == 1 ? ILang::_('Total') : ILang::_('Fight'); ?></a></th>
+					<th><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=ptsmmbs"><?php echo ILang::_('/members'); ?></a></th>
+					<th><a href="?rank=ally&page=<?php echo $this->getData('page'); ?>&by=mmbs"><?php echo ILang::_('Members'); ?></a></th>
+				</tr>
+			</thead>
+			<tbody>
+		<?php
+			$i = $this->getData('offset')+1;
+			foreach($this->getData('ranks') as $rank) : ?>
+				<tr class="<?php echo $this->alliance->id == $rank->allyId ? 'success' : NULL; ?>">
+					<td><?php echo $i++; ?><span class="<?php echo $rank->grank < $i ? 'rkdown' : ($rank->grank > $i ? 'rkup' : 'rkequal'); ?>"></span></td><?php //TODO: Mettre une fonction ?>
+					<td>
+						<div><a href="./ally.php?id=<?php echo $rank->allyId; ?>"><?php echo $ally->id == $rank->allyId ? '<span style="color:#fff"><b>'. subtext($rank->allyName, 18) .'</b></span>' : subtext($rank->allyName, 18); ?></a></div>
+						<div><span class="label label-primary">#<a href="./ally.php?id=<?php echo $rank->allyId; ?>"><?php echo $rank->allyTag; ?></a></span></div>
+					</td>
+					<td><?php echo ILang::number($rank->devPoints); ?></td>
+					<td><?php echo ILang::number($rank->unitPoints); ?></td>
+					<td><?php echo ILang::number($rank->totalPoints); ?></td>
+					<td><?php echo ILang::number($rank->mmbsPoints); ?></td>
+					<td><?php echo $rank->allyUsers; ?></td>
+				</tr>
+		<?php endforeach; ?>
+			</tbody>
+		<?php else : ?>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th><?php echo ILang::_('Name'); ?></th>
+					<th><a href="?page=<?php echo $this->getData('page'); ?>&by=builds"><?php echo ILang::_('Building'); ?></a></th>
+					<th><a href="?page=<?php echo $this->getData('page'); ?>&by=researchs"><?php echo ILang::_('Research'); ?></a></th>
+					<th><a href="?page=<?php echo $this->getData('page'); ?>&by=units"><?php echo ILang::_('Unit'); ?></a></th>
+					<th><a href="?page=<?php echo $this->getData('page'); ?>&by=total"><?php echo $this->conf['game']->rankType == 1 ? ILang::_('Total') : ILang::_('Fight'); ?></a></th>
+					<th><a href="?page=<?php echo $this->getData('page'); ?>&by=twns"><?php echo ILang::_('Planet'); ?></a></th>
+				</tr>
+			</thead>
+			<tbody>
+		<?php
+			$i = $this->getData('offset')+1;
+			foreach($this->getData('ranks') as $rank) : ?>
+		<?php if ($rank->usrGroup == -2) : ?>
+				<tr class="danger">
+		<?php elseif ($rank->allyId == $this->alliance->id) : ?>
+				<tr class="<?php echo $rank->usrId==$this->user->id ? 'active' : 'success'; ?>">
+		<?php else : ?>
+				<tr>
 		<?php endif; ?>
-		<div class="rank-unit"><a href="?page=<?php echo $this->getData('page'); ?>&by=units"><?php echo ILang::_('Unit'); ?></a></div>
-		<div class="rank-total"><a href="?page=<?php echo $this->getData('page'); ?>&by=total"><?php echo $this->conf['game']->rankType == 1 ? ILang::_('Total') : ILang::_('Fight'); ?></a></div>
-		<div class="rank-planet"><a href="?page=<?php echo $this->getData('page'); ?>&by=twns"><?php echo ILang::_('Planet'); ?></a></div>
-		<div class="clr"></div>
-	</div>
-	<?php $i=$this->getData('offset')+1; foreach($this->getData('ranks') as $rank) : ?>
-	<?php if ($rank->usrGroup == -2) : ?>
-	<div class="bg3">
-	<?php elseif ($rank->allyId == $this->alliance->id) : ?>
-	<div class="bg<?php echo $rank->class; ?>"<?php echo $rank->usrId==$this->user->id ? ' style="background:#74674c;"' : ' style="background:#50744c;"'; ?>>
-	<?php else : ?>
-	<div class="bg<?php echo $rank->class; ?>">
-	<?php endif; ?>
-		<div class="rank-id <?php echo $rank->grank < $i ? 'rkdown' : ($rank->grank > $i ? 'rkup' : 'rkequal'); ?>"><?php echo $i++; ?></div>
-		<div class="rank-name">
-			<div><a href="./player.php?id=<?php echo $rank->usrId; ?>"><?php echo $this->user->id == $rank->usrId ? '<span style="color:#fff"><b>'. subtext($rank->usrName, 18) .'</b></span>' : subtext($rank->usrName, 18); ?></a></div>
-			<div>[#<a href="./ally.php?id=<?php echo $rank->allyId; ?>"><?php echo $rank->allyTag; ?></a>]</div>
-		</div>
-		<?php if ($this->conf['game']->rankType == 1) : ?>
-		<div class="rank-build"><?php echo ILang::number($rank->buildPoints); ?></div>
-		<div class="rank-tech"><?php echo ILang::number($rank->techPoints); ?></div>
+					<td><?php echo $i++; ?><span class="<?php echo $rank->grank < $i ? 'rkdown' : ($rank->grank > $i ? 'rkup' : 'rkequal'); ?>"></span></td><?php //TODO: Mettre une fonction ?>
+					<td>
+						<div><a href="./player.php?id=<?php echo $rank->usrId; ?>"><?php echo $this->user->id == $rank->usrId ? '<span style="color:#fff"><b>'. subtext($rank->usrName, 18) .'</b></span>' : subtext($rank->usrName, 18); ?></a></div>
+						<div>[#<a href="./ally.php?id=<?php echo $rank->allyId; ?>"><?php echo $rank->allyTag; ?></a>]</div>
+					</td>
+					<td><?php echo ILang::number($rank->buildPoints); ?></td>
+					<td><?php echo ILang::number($rank->techPoints); ?></td>
+					
+					<td><?php echo ILang::number($rank->unitPoints); ?></td>
+					<td><?php echo ILang::number($rank->totalPoints); ?></td>
+					<td><?php echo ILang::number($rank->usrTowns); ?></td>
+				</tr>
+		<?php endforeach; ?>
+			</tbody>
 		<?php endif; ?>
-		<div class="rank-unit"><?php echo ILang::number($rank->unitPoints); ?></div>
-		<div class="rank-total"><?php echo ILang::number($rank->totalPoints); ?></div>
-		<div class="rank-planet"><?php echo ILang::number($rank->usrTowns); ?></div>
-		<div class="clr"></div>
+		</table>
 	</div>
-	<?php endforeach; ?>
-	<?php endif; ?>
-</div>
-<div class="center">
-	<form>
-		<select name="page" onChange="this.form.submit();">
-			<?php for($i = 1; $i <= $this->getData('pageMax'); $i++) : ?>
-			<option value="<?php echo $i; ?>"<?php echo ( $i == $this->getData('page') ? ' selected="selected"' : '' ); ?>><?php echo (($i-1)*100)+1; ?>-<?php echo ($i*100); ?></option>
-			<?php endfor; ?>
-		</select>
-	</form>
+	<div class="panel-footer">
+		<form class="col-xs-5 col-sm-3 pull-right" role="form">
+			<select name="page" onChange="this.form.submit();" class="form-control">
+				<?php for($i = 1; $i <= $this->getData('pageMax'); $i++) : ?>
+				<option value="<?php echo $i; ?>"<?php echo ( $i == $this->getData('page') ? ' selected="selected"' : '' ); ?>><?php echo (($i-1)*100)+1; ?>-<?php echo ($i*100); ?></option>
+				<?php endfor; ?>
+			</select>
+		</form>
+		<hr class="clr clearfix"/>
+	</div>
 </div>
