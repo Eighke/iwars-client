@@ -4,112 +4,41 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 85px;
+	height: 82px;
 	border: 1px solid #000;
 	position: fixed;
-	background: rgba(1, 18, 38, 0.5);
+	background: url('../imgs/bg-top.jpg') 50% 0% no-repeat fixed;
 	z-index: 2;
 }
 
 #header {
 	top: 0;
-	width: 990px;
+	width: 1000px;
 	height: 75px;
 	position: absolute;
 	line-height: 1.8em;
 	position: fixed;
 	z-index: 2;
 }
+#header nav {
+	margin-top:29px;
+	margin-bottom:0;
+}
 #header a {
 	color: #a0dfff;
 	border: 0px;
 }
-	#header a:hover {
-		color: #6CFFFF;
-	}
 
 #topmenu {
 	left: 0;
 	width: 100%;
 	height: 30px;
 	padding: 0;
-	text-align: right;
+
 	color: #fff;
 	border-bottom: 2px solid #7190ab;
-	background: rgba(1, 18, 38, 0.5);
+	background: #011226;
 	position: fixed;
-}
-
-#topmenu > span {
-	display: inline-block;
-}
-
-#topmenu span:first-child {
-	padding: 6px 10px 2px;
-
-	border:1px solid #7190ab;
-	border-top:0;
-	border-bottom:0;
-	background:#4B637C;
-	font-weight: bold;
-	font-size: 11px;
-}
-
-.options {
-	height:30px;
-	margin-right: 5px;
-	float: right;
-
-	border-left: 1px solid #7190ab;
-}
-.options > a {
-	height: 30px;
-	width: 30px;
-	margin-left: 3px;
-	display: inline-block;
-	background: url(../imgs/options.png) 50% 50% no-repeat;
-}
-	.options:hover > a {
-		background-color: #2A3847;
-	}
-
-.nbmp {
-}
-.nbmp > a {
-	width:21px;
-	height:25px;
-	margin: 5px 10px 0px;
-	display:inline-block;
-	font-weight:bold;
-	text-align:center;
-	background:url(../imgs/msgs.png) no-repeat -26px 0px;
-}
-	.nbmp a:hover {
-		text-decoration:none;
-	}
-
-.options ul,
-.nbmp ul {
-	position:absolute;
-	top:30px;
-	right:5px;
-	margin:0;
-	padding:0 20px;
-
-	background:#2A3847;
-	border:1px solid #7190ab;
-	border-top:0;
-	list-style-type: none;
-	visibility: hidden;
-}
-	.options:hover ul,
-	.nbmp:hover ul {
-		visibility: visible;
-	}
-.option li,
-.nbmp li {
-	margin: 0;
-	padding: 0;
 }
 
 #header-menu {
@@ -136,26 +65,28 @@
 
 #ress {
 	width: auto;
-	height: 15px;
+
 	line-height: 15px;
-	margin: 23px 10px 0 0;
 	padding: 10px;
 	float: right;
-	background: rgba(1, 18, 38, 0.3);
-	border: 1px solid #7190ab;
-	border-bottom: 0;
+	background: rgba(1, 18, 38, 1);
+	border-top: 1px solid #7190ab;
+}
+#ress > div > div {
+	display: inline-block;
+	padding: 4px 10px 3px;
 }
 
 #ress ul {
+	float:right;
+
 	list-style-type: none;
 	margin:0;
 	padding:0;
 }
 #ress ul li {
 	display:inline-block;
-}
-#ress ul li + li {
-	margin-left: 15px;
+	margin-right: 15px;
 }
 	#ress li span + span {
 		margin-left: 5px;

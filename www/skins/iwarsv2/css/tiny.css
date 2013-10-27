@@ -1,0 +1,189 @@
+body {
+	background-attachment: scroll;;
+}
+
+
+#header {
+	width: 100%;
+}
+
+/* Light Tmpl */
+#header-menu > ul {
+	background: red;
+	float: none;
+	position: absolute;
+	top: -20px;
+}
+#header-menu > ul li {
+	display:none;
+}
+#header-menu > ul:hover li {
+	display:block;
+}
+.options ul, .nbmp ul {
+	padding:10px;
+}
+.options ul a, .nbmp ul a {
+	display: block;
+	padding:5px 10px;
+}
+
+/***
+ * Menu Block
+ **/
+#menu {
+	padding:0;
+	width: 76%;
+
+	background:none;
+	border:0;
+	position: fixed;
+	top:0;
+	z-index:1000;
+}
+#menu .m-coords {
+	margin:10px 0 0 0;
+}
+#menu select {
+	height: 27px;
+}
+#menu li {
+	text-indent:0;
+}
+#menu li a, #menu li a:hover {
+	color: #a0dfff;
+}
+
+#menu .navbar {
+	min-height:52px;
+}
+#menu .dropdown {
+	float:left;
+}
+#menu .dropdown-menu {
+	min-width:0px;
+}
+/***
+ * /Menu Block
+ **/
+
+#top {
+	height: 63px;
+}
+
+#ress {
+	margin: 0;
+
+	line-height: 12px;
+	padding: 4px 8px;
+	font-size:10px;
+}
+
+#main {
+	width: 100%;
+	float: none;
+}
+	.top .left, .top .right, .bottom .left, .bottom .right   {
+		width:0;
+	}
+	.top .center, .bottom .center {
+		width:100%;
+	}
+
+.outer, .inner {
+	background: none;
+}
+
+.inner .main {
+	margin: 0;
+	padding: 0 23px;
+}
+
+
+#wrapper {
+	width: auto;
+	padding-top:75px;
+}
+
+#container {
+	width: auto;
+}
+
+/***
+ * Footer Block
+ **/
+#footer {
+	float: none;
+	width: 100%;
+	margin: 20px auto 0 auto;
+	padding-bottom: 20px;
+
+	text-align: center;
+}
+/***
+ * /Footer Block
+ **/
+
+/***
+ * Block
+ **/
+.left_aside > div {
+	width: 90%;
+}
+.left_aside > div img {
+	display:none;
+}
+
+#sticky > div > h2:after {
+	content: " \25BC"; 
+}
+#sticky > div > div {
+	display:none;
+}
+#sticky > div > h2:hover + div {
+	display:block;
+}
+
+/* Thumbs */
+.thumbs span.bottom {
+	opacity:1;
+}
+/***
+ * /Block
+ **/
+#header nav {
+	margin-top:0;
+}
+#topmenu, #top {
+	display:none;
+}
+
+/***
+ * Work
+ **/
+.bld_nb {
+	display:none;
+}
+
+.bld_name {
+	width: 200px;
+}
+
+.bld_time {
+	text-align: center;
+	width: 60px;
+}
+
+.bld_end {
+	width: 120px;
+	margin: 0 0 0 20px;
+}
+
+.bld_cent {
+	text-align: right;
+	width: 42px
+}
+
+/***
+ * /Work
+ **/

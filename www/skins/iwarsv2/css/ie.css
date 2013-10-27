@@ -1,0 +1,213 @@
+.opacite {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#330000ff,endColorstr=#330000ff);
+	zoom: 1;
+}
+
+h1 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C273B5F,endColorstr=#4C273B5F);
+	zoom: 1;
+
+	border: 1px solid #022042;
+}
+
+input[type=text], input[type=file], input[type=password], input[type=submit], input[type=reset], textarea, select {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C061623,endColorstr=#4C061623);
+	zoom: 1;
+}
+
+.left_aside > div {
+	border: 1px solid #011226;
+
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C011226,endColorstr=#4C011226);
+	zoom: 1;
+}
+
+.bg1 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33011226,endColorstr=#33011226);
+	zoom: 1;
+}
+.bg2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2011226,endColorstr=#B2011226);
+	zoom: 1;
+}
+.bg3 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99260101,endColorstr=#99260101);
+	zoom: 1;
+}
+
+.online {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9950A142,endColorstr=#9950A142);
+	zoom: 1;
+
+	border-bottom: 1px solid #50A142;
+}
+.idle {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99A18342,endColorstr=#99A18342);
+	zoom: 1;
+
+	border-bottom: 1px solid #A18342;
+}
+.offline {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99A14242,endColorstr=#99A14242);
+	zoom: 1;
+
+	border-bottom: 1px solid #A14242;
+}
+
+.thumbs span.top {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F4E6C80,endColorstr=#7F4E6C80);
+	zoom: 1;
+}
+.thumbs span.bottom {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	zoom: 1;
+}
+
+.button a, a.button {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33273B5F,endColorstr=#33273B5F);
+	zoom: 1;
+
+	border: 1px solid #022042;
+	border-bottom: 1px solid #02300A;
+}
+	.button a:hover, a.button:hover {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66273B5F,endColorstr=#66273B5F);
+		zoom: 1;
+
+		border-color: #022042;
+	}
+
+.div_content > div, .content {
+	border: 1px solid #011226;
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C011226,endColorstr=#4C011226);
+	zoom: 1;
+}
+
+.subcontent {
+	border: 1px solid #022042;
+
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C273B5F,endColorstr=#4C273B5F);
+	zoom: 1;
+}
+
+.wrk {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C436995,endColorstr=#4C436995);
+	zoom: 1;
+}
+
+div.msg {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C011226,endColorstr=#4C011226);
+	zoom: 1;
+}
+
+label.error {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C011226,endColorstr=#4C011226);
+	zoom: 1;
+}
+
+#menu {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66011226,endColorstr=#66011226);
+	zoom: 1;
+
+	border: 1px solid #022042;
+}
+
+	.inner .main {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66011226,endColorstr=#66011226);
+		zoom: 1;
+	}
+
+div.Attack_1 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99EDED09,endColorstr=#99EDED09);
+	zoom: 1;
+}
+div.Attack_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99EB0000,endColorstr=#99EB0000);
+	zoom: 1;
+}
+
+div.Back_1, div.Back_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9972A3F2,endColorstr=#9972A3F2);
+	zoom: 1;
+}
+div.Base_1, div.Base_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9965CF61,endColorstr=#9965CF61);
+	zoom: 1;
+}
+div.Park_1, div.Park_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9965CF61,endColorstr=#9965CF61);
+	zoom: 1;
+}
+div.Colon_1, div.Colon_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9965CF61,endColorstr=#9965CF61);
+	zoom: 1;
+}
+div.Port_1, div.Port_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9965CF61,endColorstr=#9965CF61);
+	zoom: 1;
+}
+div.Spy_1, div.Spy_2 {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99CABB48,endColorstr=#99CABB48);
+	zoom: 1;
+}
+
+.notices span, .notices > div:first-child label {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99011226,endColorstr=#99011226);
+	zoom: 1;
+
+	border: 1px solid #011226;
+}
+
+.checked + span {
+	border-color: #7AB6FB;
+}
+
+.msg-body {
+	border: 1px solid #011226;
+
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C011226,endColorstr=#4C011226);
+	zoom: 1;
+}
+
+#light #top {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F011226,endColorstr=#7F011226);
+	zoom: 1;
+}
+
+#ress {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C011226,endColorstr=#4C011226);
+	zoom: 1;
+}

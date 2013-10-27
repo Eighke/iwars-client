@@ -1,0 +1,55 @@
+body {
+	background-attachment: scroll;
+}
+
+#header {
+	width: 100%;
+}
+
+#header-menu > ul {
+	float: none;
+	position: absolute;
+	top: -20px;
+}
+
+/***
+ * Menu Block
+ **/
+#menu {
+	margin-left: 5px;
+	padding:0;
+	width: 33.33333333333333%;
+
+	background:none;
+	border:0;
+	position: fixed;
+	top:0;
+	z-index:1000;
+}
+#menu .m-coords {
+	margin:0 0 2px 0;
+}
+#menu select {
+	height: 27px;
+}
+#menu li {
+	text-indent:0;
+}
+#menu li a, #menu li a:hover {
+	color: #a0dfff;
+}
+
+/***
+ * /Menu Block
+ **/
+#main {
+	float: none;
+}
+
+#wrapper {
+	width: auto;
+}
+
+#container {
+	width: auto;
+}
