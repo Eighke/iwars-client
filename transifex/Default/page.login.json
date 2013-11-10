@@ -4,5 +4,6 @@
   "Login": "Login",
   "Password": "Password",
   "Submit": "Submit",
-  "BadLogin": "Incorrect login or password"
+  "BadLogin": "Incorrect login or password",
+  "ActCreated": "Your account is created, you can log in right now!"
 }

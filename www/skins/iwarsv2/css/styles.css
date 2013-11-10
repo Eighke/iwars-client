@@ -477,6 +477,15 @@ div.valid {
 	text-align: center;
 }
 
+.line {
+	padding-left:12px;
+	background: url(../imgs/1.gif) 0 6xp no-repeat;
+}
+.end {
+	padding-left:12px;
+	background: url(../imgs/2.gif) 0 4px no-repeat;
+}
+
 /***
  * Page: Map
  **/
