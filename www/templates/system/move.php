@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-27 - Eighke
+ * Version		2013-10-31 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -81,7 +81,7 @@ if (!session_id()) exit();
 		<div class="form-group">
 			<label for="field-R2" class="col-xs-6 col-sm-4 control-label"><?php echo ILang::_('Water'); ?></label>
 			<div class="col-xs-6 col-sm-4">
-				<input type="text" name="R4" id="field-R4" value="<?php echo $this->getData('R3'); ?>" class="form-control" />
+				<input type="text" name="R4" id="field-R4" value="<?php echo $this->getData('R4'); ?>" class="form-control" />
 			</div>
 		</div>
 		<div class="form-group">

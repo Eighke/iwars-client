@@ -57,11 +57,11 @@ else
 } , "This login has already been registered");
 
 function hideOrToggle(id) {
-	$("#screen-googled,#screen-iwars,#screen-space4k").hide();
+	$("#screen-iwarsv2,#screen-space4k").hide();
 	if(id !== undefined && id !== ""){
 		$("#screen-" + id).fadeIn(1000);
 	} else {
-		$("#screen-iwars").fadeIn(1000);
+		$("#screen-iwarsv2").fadeIn(1000);
 	}
 }
 

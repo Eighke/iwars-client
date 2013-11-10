@@ -15,24 +15,25 @@
 
 <h1><?php echo ILang::_('Inscription'); ?></h1>
 <?php $this->renderMsgs(); ?>
-<form id="inscriptionForm" method="post" action="inscription.php" class="bbq">
+<form id="inscriptionForm" method="post" action="inscription.php" class="bbq form-horizontal">
 	<div id="step-lang" class="step">
 		<h2><?php echo ILang::_('Step1'); ?></h2>
 		<div class="content">
 			<?php echo ILang::_('ChooseLanguage'); ?>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-lang"><?php echo ILang::_('Language'); ?></label>
-				<div><?php echo ILang::_('InfoLanguage'); ?></div>
-			</div>
-			<div class="field">
-				<select id="field-lang" name="lang" class="required">
-					<option value="English"<?php echo ( $this->user->lang == "English" ? ' selected="selected"' : '' );?>>English</option>
-					<option value="French"<?php echo ( $this->user->lang == "French" ? ' selected="selected"' : '' );?>>Français</option>
-					<option value="Italian"<?php echo ( $this->user->lang == "Italian" ? ' selected="selected"' : '' );?>>Italiano</option>
-					<option value="Polish"<?php echo ( $this->user->lang == "Polish" ? ' selected="selected"' : '' );?>>Polska</option>
+		<div class="form-group">
+			<label for="field-lang" class="col-xs-4 control-label">
+				<?php echo ILang::_('Language'); ?>
+				
+			</label>
+			<div class="col-xs-5">
+				<select id="field-lang" name="lang" class="form-control" onChange="window.location='inscription.php?lang='+this.value" required>
+					<option value="English"<?php echo ( $this->user->lang == "English" ? ' selected="selected"' : '' ); ?>>English</option>
+					<option value="French"<?php echo ( $this->user->lang == "French" ? ' selected="selected"' : '' ); ?>>Français</option>
+					<option value="Italian"<?php echo ( $this->user->lang == "Italian" ? ' selected="selected"' : '' ); ?>>Italiano</option>
+					<option value="Polish"<?php echo ( $this->user->lang == "Polish" ? ' selected="selected"' : '' ); ?>>Polska</option>
 				</select>
+				<p class="help-block"><?php echo ILang::_('InfoLanguage'); ?></p>
 			</div>
 		</div>
 	</div>
@@ -41,39 +42,32 @@
 		<div class="content">
 			<?php echo ILang::_('InfoLogin'); ?>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-login"><?php echo ILang::_('Login'); ?></label>
-			</div>
-			<div class="field">
-				<input type="text" id="field-login" name="login" class="required" />
-			</div>
-		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-pseudo"><?php echo ILang::_('Nickname'); ?></label>
-				<div><?php echo ILang::_('InfoNickname'); ?></div>
-			</div>
-			<div class="field">
-				<input type="text" id="field-pseudo" name="pseudo" class="required" />
+		<div class="form-group">
+			<label for="field-login" class="col-xs-4 control-label"><?php echo ILang::_('Login'); ?></label>
+			<div class="col-xs-5">
+				<input type="text" id="field-login" name="login" class="form-control" required />
+				<p class="help-block"><?php echo ILang::_(' '); ?></p>
 			</div>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-pwd"><?php echo ILang::_('Password'); ?></label>
-				<div><?php echo ILang::_('InfoPassword'); ?></div>
-			</div>
-			<div class="field">
-				<input type="password" id="field-pwd" name="pwd" class="required" />
+		<div class="form-group">
+			<label for="field-pseudo" class="col-xs-4 control-label"><?php echo ILang::_('Nickname'); ?></label>
+			<div class="col-xs-5">
+				<input type="text" id="field-pseudo" name="pseudo" class="form-control" required />
+				<p class="help-block"><?php echo ILang::_('InfoNickname'); ?></p>
 			</div>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-pwd2"><?php echo ILang::_('Confirmation'); ?></label>
-				<div><?php echo ILang::_('InfoConfirm'); ?></div>
+		<div class="form-group">
+			<label for="field-pwd" class="col-xs-4 control-label"><?php echo ILang::_('Password'); ?></label>
+			<div class="col-xs-5">
+				<input type="password" id="field-pwd" name="pwd" class="form-control" required />
+				<p class="help-block"><?php echo ILang::_('InfoPassword'); ?></p>
 			</div>
-			<div class="field">
-				<input type="password" id="field-pwd2" name="pwd2" class="required" />
+		</div>
+		<div class="form-group">
+			<label for="field-pwd2" class="col-xs-4 control-label"><?php echo ILang::_('Confirmation'); ?></label>
+			<div class="col-xs-5">
+				<input type="password" id="field-pwd2" name="pwd2" class="form-control" required />
+				<p class="help-block"><?php echo ILang::_('InfoConfirm'); ?></p>
 			</div>
 		</div>
 	</div>
@@ -82,13 +76,11 @@
 		<div class="content">
 			<span class="italic bold"><?=ILang::_('Optional'); ?></span> - <?php echo ILang::_('RecordEmail'); ?>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-email"><?=ILang::_('Email'); ?></label>
-				<div><?php echo ILang::_('InfoEmail'); ?></div>
-			</div>
-			<div class="field">
-				<input type="text" id="field-email" name="email" value="<?=$this->user->email?>" class="email" />
+		<div class="form-group">
+			<label for="field-email" class="col-xs-4 control-label"><?php echo ILang::_('Email'); ?></label>
+			<div class="col-xs-5">
+				<input type="text" id="field-email" name="email" class="form-control" />
+				<p class="help-block"><?php echo ILang::_('InfoEmail'); ?></p>
 			</div>
 		</div>
 		<div class="clr">
@@ -104,13 +96,10 @@
 		<div class="content">
 			<?php echo ILang::_('ChooseGraphs'); ?>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-skin"><?=ILang::_('Skin'); ?></label>
-				<div><?php echo ILang::_('InfoTheme'); ?></div>
-			</div>
-			<div class="field">
-				<select id="field-skin" name="skin" class="required">
+		<div class="form-group">
+			<label for="field-skin" class="col-xs-4 control-label"><?php echo ILang::_('Skin'); ?></label>
+			<div class="col-xs-5">
+				<select id="field-skin" name="skin" class="form-control" required>
 					<optgroup label="Official">
 						<option value="iwarsv2"<?=( $this->user->skin == "iwarsv2" ? ' selected="selected"' : '' );?>>Classique</option>
 						<option value="space4k"<?=( $this->user->skin == "space4k" ? ' selected="selected"' : '' );?>>Space4K</option>
@@ -121,25 +110,23 @@
 						<option value="light"<?=( $this->user->skin == "light" ? ' selected="selected"' : '' );?>>Light</option>
 					</optgroup>
 				</select>
+				<p class="help-block"><?php echo ILang::_('InfoTheme'); ?></p>
 			</div>
 		</div>
-		<div class="fields">
-			<div class="label">
-				<label for="field-tmpl"><?=ILang::_('Template'); ?></label>
-				<div><?php echo ILang::_('InfoInterface'); ?></div>
-			</div>
-			<div class="field">
-				<select id="field-tmpl" name="tmpl" class="required">
+		<div class="form-group">
+			<label for="field-tmpl" class="col-xs-4 control-label"><?php echo ILang::_('Template'); ?></label>
+			<div class="col-xs-5">
+				<select id="field-tmpl" name="tmpl" class="form-control" required>
 					<option value="light"<?=( $this->user->tmpl == "light" ? ' selected="selected"' : '' );?>>Simple</option>
 					<option value="iwars"<?=( $this->user->tmpl == "iwars" ? ' selected="selected"' : '' );?>">Normale</option>
 					<option value="space4k"<?=( $this->user->tmpl == "space4k" ? ' selected="selected"' : '' );?>>Space4K</option>
 				</select>
+				<p class="help-block"><?php echo ILang::_('InfoInterface'); ?></p>
 			</div>
 		</div>
 		<hr class="clr" />
 		<div>
-			<div id="screen-googled">ScreenShoot Googled</div>
-			<div id="screen-iwars">ScreenShoot Classique</div>
+			<div id="screen-iwarsv2">ScreenShoot Classique</div>
 			<div id="screen-space4k">ScreenShoot Space4k</div>
 		</div>
 	</div>
@@ -152,7 +139,6 @@
 <div id="data"></div>
 
 <script type="text/javascript">
-
 	var xDfe = <?php echo crypt_key; ?>;
 	var submit = <?php echo ILang::_('Submit'); ?>;
 	var next = <?php echo ILang::_('Next'); ?>;
