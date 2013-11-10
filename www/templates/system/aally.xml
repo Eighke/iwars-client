@@ -1,7 +1,13 @@
 <page>
 	<head>
 		<media type="js">
+			<name>jquery.sceditor.bbcode.min</name>
+		</media>
+		<media type="js">
 			<name>jquery-charcount</name>
+		</media>
+		<media type="css">
+			<name>sceditor/buttons.min</name>
 		</media>
 	</head>
 </page>

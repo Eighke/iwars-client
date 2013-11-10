@@ -75,8 +75,8 @@ input[type=text], input[type=file], input[type=password], input[type=submit], in
 	}
 
 textarea {
-	width: 80%;
-	height: 200px;
+	width: 100%;
+	min-height: 300px;
 }
 
 option, option:focus, option:hover {
@@ -107,6 +107,8 @@ optgroup {
 }
 .help-block {
 	color:#D0F1FF;
+	font-size:90%;
+	font-weight:normal;
 }
 
 /***

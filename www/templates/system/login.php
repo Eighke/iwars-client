@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-19 - Eighke
+ * Version		2013-10-28 - Eighke
  */
 ?>
 <h1><?php echo ILang::_('Connection'); ?></h1>
@@ -37,12 +37,20 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-4 pull-right">
+			<select class="form-control" onChange="window.location='login.php?lang='+this.value">
+				<option>Language</option>
+				<option value="English">English</option>
+				<option value="French">Français</option>
+				<option value="Italian">Italiano</option>
+				<option value="Polski">Polski</option>
+				<option value="Thai">ไทย</option>
+			</select><br />
 			<ul class="list-unstyled">
 				<li>Password lost ?</li>
 				<li>Login lost ?</li>
 				<li class="divider"></li>
 				<li><a href="inscription.php">No account yet?</a></li>
-			</ul>
+			</ul><br />
 		</div>
 	</div>
 	<div id="navigation">
