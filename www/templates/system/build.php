@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-07-07 - Eighke
+ * Version		2013-11-10 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -46,7 +46,7 @@ if (!session_id()) exit();
 	<? endforeach; ?>
 </div>
 <? endif; ?>
-<? if ($advanced = ILang::build($this->getData('build')->id, 'advanced')) : ?>
+<? if ($advanced = $this->getData('build')->advanced) : ?>
 <h2><?php echo ILang::_('Advanced'); ?></h2>
 <div>
 	<?php

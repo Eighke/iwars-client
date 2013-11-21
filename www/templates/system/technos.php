@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-06-17 - Eighke
+ * Version		2013-11-03 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -125,14 +125,6 @@ if (!session_id()) exit();
 </div>
 <div class="clr"></div>
 <?php endif; ?>
-
-<script src="<?php echo PATH_TMPLS; ?>system/technos.js"></script>
 <script type="text/javascript">
-	$(".countdown").countDown({
-		dayText : ' ',
-		daysText : ' ',
-		displayDays : false,
-		displayZeroDays : false,
-		serverTime : <?php echo time(); ?>
-	});
+	var serverTime = <?php echo time(); ?>;
 </script>

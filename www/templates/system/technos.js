@@ -68,3 +68,11 @@ $('.elem-name a').click(function(e){
 		});
 	}
 });
+
+$(".countdown").countDown({
+	dayText : ' ',
+	daysText : ' ',
+	displayDays : false,
+	displayZeroDays : false,
+	serverTime : serverTime
+});
