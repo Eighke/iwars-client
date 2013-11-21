@@ -9,7 +9,7 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-28 - Eighke
+ * Version		2013-11-01 - Eighke
  */
 ?>
 <h1><?php echo ILang::_('Connection'); ?></h1>
@@ -61,6 +61,6 @@
 <div id="data"></div>
 
 <script type="text/javascript">
-	var submit	= <?php echo ILang::_('Submit'); ?>;
-	var next	= <?php echo ILang::_('Submit'); ?>;
+	var submit	= "<?php echo ILang::_('Submit'); ?>";
+	var next	= "<?php echo ILang::_('Submit'); ?>";
 </script>

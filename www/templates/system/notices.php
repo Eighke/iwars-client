@@ -9,43 +9,50 @@
  * Contrib		Frédéric V. (fred.vdb@newebtime.com)
  * 				Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version		2013-11-09 - Eighke
  */
 if (!session_id()) exit();
 ?>
 <h1><?php echo ILang::_('Messaging'); ?></h1>
 <?php $this->renderMsgs(); ?>
 <div class="center">
-	<?php echo ILang::_('Folder:'); ?>
 	<?php foreach($this->getData('types') as $key => $type) : ?>
-	[ <?php if($this->getData('filter') != $key) : ?><a href="./notices.php?f=<?php echo $key; ?>"><?php echo ILang::_($type->name); ?></a><?php else: ?><?php echo ILang::_($type->name); ?><?php endif; ?> (<?php echo (int) $type->newMsg; ?>) ]
-	<?php endforeach; ?> | [ <a href="./notices.php?f=all"><?php echo ILang::_('All'); ?></a> ]<br />
-	Action : [ <a href="./notices.php?act=allread"><?php echo ILang::_('MarkAllRead'); ?></a> ]
-</div><br />
-<h2><?php echo ILang::_('Messages'); ?></h2>
+	<a href="./notices.php?f=<?php echo $key; ?>" class="btn btn-<?php echo $this->getData('filter') != $key ? 'primary' : 'default' ?>"><?php echo ILang::_($type->name); ?> <i class="badge"><?php echo (int) $type->newMsg; ?></i></a>
+	<?php endforeach; ?> <a href="./notices.php?f=all" class="btn btn-primary"><?php echo ILang::_('All'); ?></a>
+</div>
+<hr />
+
 <div>
+	<h2><?php echo ILang::_('Messages'); ?></h2>
 	<form action="notices.php" method="POST">
+		<div class="block">
+			<a href="./notices.php?act=allread"  class="btn btn-default"><i class="glyphicon glyphicon-check"></i> <?php echo ILang::_('MarkAllRead'); ?></a>
+			<div class="pull-right form-inline">
+				<div class="form-group">
+					<select name="action" class="form-control">
+						<option value="delete"><?php echo ILang::_('Delete'); ?></option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="<?php echo ILang::_('Send'); ?>" class="form-control" />
+				</div>
+			</div>
+		</div>
 		<?php if ($msgs = $this->getData('msgs')) : ?>
 		<div class="notices f_checkbox">
 			<div>
 				<label class="reverse">
-					<input type="checkbox" onClick="FancyForm.reverse()" />
-					<?php echo ILang::_('InvertSelect'); ?>
+					<input type="checkbox" id="reverse" />
+					<strong><?php echo ILang::_('InvertSelect'); ?></strong>
 				</label>
-				<div class="right">
-					<select name="action">
-						<option value="delete"><?php echo ILang::_('Delete'); ?></option>
-					</select> |
-					<input type="submit" value="<?php echo ILang::_('Send'); ?>" />
-				</div>
 			</div>
 			<?php foreach($msgs as $msg) : ?>
-			<div>
+			<div class="notice">
 				<label><input type="checkbox" name="msg[<?php echo $msg->id; ?>]" /></label>
 				<span class="msg-title">
-					<?php if ($msg->archived == 'Y') : ?> [A] <?php endif; ?><a onClick="IWMsg.view(<?php echo $msg->id; ?>);" class="<?php echo $msg->new == 'Y' ? 'read_N' : FALSE?>" href="?id=<?php echo $msg->id; ?>"><?php echo ftext($msg->title); ?></a>
-					<div class="right button"><a href="notices.php?task=delete&id=<?php echo $msg->id; ?>"><?php echo ILang::_('Delete'); ?></a></div>
-					<div class="date"><?php echo date('Y-m-d H:i:s', $msg->date); ?></div>
+					<?php if ($msg->archived == 'Y') : ?> [A] <?php endif; ?><a class="<?php echo $msg->new == 'Y' ? 'read_N' : FALSE?>" href="?id=<?php echo $msg->id; ?>"><?php echo ftext($msg->title); ?></a>
+					<div class="pull-right button"><a href="notices.php?task=delete&id=<?php echo $msg->id; ?>" title="<?php echo ILang::_('Delete'); ?>" class="glyphicon glyphicon-trash"> </a></div>
+					<div class="date"><?php echo date('d M y - H:i:s', $msg->date); ?></div>
 				</span>
 				<?php if ($this->getData('msg')->id == $msg->id) : ?>
 				<div class="msg-body">
@@ -57,30 +64,20 @@ if (!session_id()) exit();
 			<div class="clr"></div>
 		</div><br />
 		<?php if ($this->user->premium == 1) : ?>
-		<div class="center button">
-			<?php if ($this->getData('page') != 1) : ?>
-			<a href="?page=1"><<</a> <a href="?page=<?php echo ($this->getData('page') - 1); ?>"><</a>
-			<?php endif; ?>
-			<?php if ($this->getData('page') == 1) : ?>
-				1
-				<?php if ($this->getData('pageMax') > 1) : ?>
-				<a href="?page=2">2</a>
+		<div class="text-center">
+			<ul class="pagination">
+				<?php if ($this->getData('page') != 1) : ?>
+				<li><a href="?page=1">&laquo;&laquo;</a></li>
+				<li><a href="?page=<?php echo ($this->getData('page') - 1); ?>">&laquo;</a></li>
+				<li><a href="?page=<?php echo ($this->getData('page') - 1); ?>"><?php echo ($this->getData('page') - 1); ?></a></li>
 				<?php endif; ?>
-				<?php if ($this->getData('pageMax') > 2) : ?>
-				<a href="?page=3">3</a>
+				<li class="active"><a><?php echo $this->getData('page'); ?></a></li>
+				<?php if ($this->getData('page') != $this->getData('pageMax')) : ?>
+				<li><a href="?page=<?php echo ($this->getData('page') + 1); ?>"><?php echo ($this->getData('page') + 1); ?></a></li>
+				<li><a href="?page=<?php echo ($this->getData('page') + 1); ?>">&raquo;</a></li>
+				<li><a href="?page=<?php echo $this->getData('pageMax'); ?>">&raquo;&raquo;</a></li>
 				<?php endif; ?>
-			<?php elseif ($this->getData('page') != $this->getData('pageMax')) : ?>
-			<a href="?page=<?php echo ($this->getData('page') - 1); ?>"><?php echo ($this->getData('page') - 1); ?></a> <?php echo $this->getData('page'); ?> <a href="?page=<?php echo ($this->getData('page') + 1); ?>"><?php echo ($this->getData('page') + 1); ?></a>
-			<?php else : ?>
-				<a href="?page=<?php echo ($this->getData('pageMax') - 2); ?>">
-				<?php if ($this->getData('pageMax') > 2) : ?>
-					<?php echo ($this->getData('pageMax') - 2); ?></a>
-				<?php endif; ?>
-				<a href="?page=<?php echo ($this->getData('pageMax') - 1); ?>"><?php echo ($this->getData('pageMax') - 1); ?></a> <?php echo $this->getData('pageMax'); ?>
-			<?php endif; ?>
-			<?php if ($this->getData('page') != $this->getData('pageMax')) : ?>
-			<a href="?page=<?php echo ($this->getData('page') + 1); ?>">></a> <a href="?page=<?php echo $this->getData('pageMax'); ?>">>></a>
-			<?php endif; ?>
+			</ul>
 		</div>
 		<?php endif; ?>
 		<?php else : ?>
@@ -89,8 +86,3 @@ if (!session_id()) exit();
 	</form>
 	<div class="clr"></div>
 </div>
-
-<?php if($msgs) : ?>
-<script type="text/javascript" src="./scripts/js/moocheck.js"></script>
-<script type="text/javascript" src="./scripts/js/msg.js"></script>
-<?php endif; ?>

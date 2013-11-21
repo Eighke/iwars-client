@@ -1,7 +1,10 @@
 <page>
 	<head>
 		<media type="js">
-			<name>mootools</name>
+			<name>jquery.icheck.min</name>
+		</media>
+		<media type="css">
+			<name>icheck/polaris/polaris</name>
 		</media>
 	</head>
 </page>

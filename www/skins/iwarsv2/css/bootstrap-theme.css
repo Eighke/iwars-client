@@ -31,6 +31,7 @@ h1 {
 }
 h2 {
 	margin-bottom:10px;
+	font-size:2em;
 }
 hr {
 	border: 0;
@@ -284,7 +285,7 @@ optgroup {
  * Alert
  **/
 .alert {
-	padding: 15px 25px;
+	padding: 8px 25px;
 	margin: 0 -24px 20px -23px;
 	border-radius: 0;
 	border-width: 2px 0;
@@ -299,6 +300,30 @@ optgroup {
 	background-color: rgba(26, 80, 107, 0.8);
 	border-color: #d9edf7;
 }
+.alert-dismissable .close {
+	right: -15px;
+	opacity:.5;
+}
+
+/***
+ * Pagination
+ **/
+.pagination {
+	margin: 10px 0;
+}
+.pagination>li>a, .pagination>li>span {
+	color: #fff;
+	background-color: rgba(1, 18, 38, 0.2);
+	border-color: #0D283D;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus,
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+	background-color: #1E5986;
+	border-color: #0D283D;
+}
+
+
 
 @media (min-width: 768px) {
 	.navbar {
