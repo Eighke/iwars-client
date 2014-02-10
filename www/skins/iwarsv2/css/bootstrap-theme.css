@@ -222,6 +222,8 @@ optgroup {
 	border:0;
 	background:none;
 	font-size: 14px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .popover.top {

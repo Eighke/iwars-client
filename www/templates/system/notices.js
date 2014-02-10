@@ -26,7 +26,7 @@ $('.msg-title > a').click(function(e){
 
 		load = loadPage.loadJSON('./notices.php', {id: callId, view: 'item', format: 'json'});
 		load.done(function(response) {
-			pageDOM = $('<div/>', {class: 'msg-body'}).text(response.item.text).hide();
+			pageDOM = $('<div/>', {class: 'msg-body'}).html(response.item.text).hide();
 			pageDOM.appendTo(call.parent().parent()).fadeIn('fast');
 	
 			call.removeClass();
