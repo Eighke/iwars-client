@@ -1,8 +1,8 @@
 <?php$lang += array (
-  'BadLogin' => 'Incorrect login or password',
-  'Submit' => 'Submit',
-  'Next' => 'Next',
-  'Connection' => 'Connection',
   'Login' => 'Login',
+  'BadLogin' => 'Nieprawidłowy login lub hasło',
+  'Connection' => 'Połącz',
   'Password' => 'Hasło',
+  'Submit' => 'Wyślij',
+  'Next' => 'Dalej',
 );?>

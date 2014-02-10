@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Serenity SR6',	'desc' => 'Description::Serenity SR6'];?>
+<?php$unit	= (object) [	'name' => 'SENTIH SR6',	'desc' => 'Comunemente chiamato "SR6" questa nave è la nave Serenity 2.0. E\' stata costruita con leghe di metallo scoperte su pianeti lontano di una vicina galassia. Questa lega è stata usata per garantire la nostra evoluzione.'];?>

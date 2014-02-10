@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Raider',	'desc' => 'Description::Space Cruser'];?>
+<?php$unit	= (object) [	'name' => 'Raider',	'desc' => 'Questo vascello è stato il primo a combinare la capacità di trasporto e la capacità di incassare gli attacchi grazie al suo scafo rinforzato. Dotato di otto laser leggeri e due pesanti. Lo scafo, composto di cinue livelli di blindatura, sostiene anche gli attacchi delle armi al plasma'];?>

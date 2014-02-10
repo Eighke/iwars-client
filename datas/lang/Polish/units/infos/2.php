@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Assault Fighter',	'desc' => 'Description::Assault Fighter'];?>
+<?php$unit	= (object) [	'name' => 'Myśliwiec Szturmowy',	'desc' => 'Statek klasy Skaut. Wyposażony jest w 3 pokładowe lasery, oraz ma lepsze opancerzenie od lekkiego myśliwca.'];?>

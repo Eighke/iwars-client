@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Light Laser Tower',	'desc' => 'Description::Light Laser Tower'];?>
+<?php$unit	= (object) [	'name' => 'Lekkie Działo Laserowe',	'desc' => 'Lekka wersja energetycznej defensywnej broni. Wieża jest słabo opancerzona i uderza promieniem energii we wrogie statki. Jeżeli do twojej planety zbliżą sie statki rozpoznawcze albo sondy, bateria tej wieży zaprowadzi porządek na orbicie.'];?>

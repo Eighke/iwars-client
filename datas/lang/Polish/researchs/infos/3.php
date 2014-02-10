@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Napęd podprzestrzenny',	'desc' => 'Napęd podprzestrzenny'];?>
+<?php$research	= (object) [	'name' => 'Napęd Podprzestrzenny',	'desc' => 'Oszczędny i szybki napęd dla dużych statków.'];?>

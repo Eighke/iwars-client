@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::City Center',	'desc' => 'Description::City Center'];?>
+<?php$build	= (object) [	'name' => 'Centrum Dowodzenia',	'desc' => 'W Centrum Dowodzenia podejmowane są decyzje w sprawach najwyższej wagi. To właśnie w nim, w specjalnie wydzielonym skrzydle budynku swoją siedzibę ma władca planety. Koordynuje ono także budowę wszystkich budynków. Im wyżej jest rozbudowane, tym szybciej inne budynki powstaną.'];?>

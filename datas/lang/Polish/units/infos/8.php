@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Esperanza',	'desc' => 'Description::Esperanza'];?>
+<?php$unit	= (object) [	'name' => 'Esperanza',	'desc' => 'Wyposażone w 2 lasery oraz działko plazmowe są idealnymi statkami do patrolowania orbity. Esperanzy wykazały się już nieraz jako ochrona skrzydłowa dla ciężkich statków.'];?>

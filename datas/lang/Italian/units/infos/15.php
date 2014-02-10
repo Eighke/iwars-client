@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Aurora',	'desc' => 'Description::Aurora'];?>
+<?php$unit	= (object) [	'name' => 'AquilaX',	'desc' => 'Una delle armi più potenti progettate da l\'Essere Umano, questa nave terrorizza per il suo armamento e per la sua stazza.'];?>

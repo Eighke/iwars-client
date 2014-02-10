@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Silicon Plant',	'desc' => 'Silicon Plant'];?>
+<?php$build	= (object) [	'name' => 'Kopalnia Krzemu',	'desc' => 'Krzem to jeden z najważniejszych i najcenniejszych surowców. Krzem jest używany we wszelkich elektronicznych urządzeniach; upewnij się, że zawsze masz jego zapasy na planecie.'];?>

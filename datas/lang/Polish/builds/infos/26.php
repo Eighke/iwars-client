@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Reactor Shield',	'desc' => 'Description::Reactor Shield'];?>
+<?php$build	= (object) [	'name' => 'Reaktor Fuzyjny',	'desc' => 'Zaopatruje Pole Siłowe w energię.'];?>

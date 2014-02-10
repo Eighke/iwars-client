@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Serenity SR6',	'desc' => 'Description::Serenity SR6'];?>
+<?php$unit	= (object) [	'name' => 'Serenity SR6',	'desc' => 'Pochodzenie tego statku okrywa tajemnica. Najprawdopodobniej spadł on tysiące lat temu na naszą planetę, jednak dopiero niedawno nasi naukowcy go odnaleźli. Jest on tak wysoce zaawansowany technicznie, że jeszcze 20 lat temu nie wiedziano co z nim zrobić.'];?>

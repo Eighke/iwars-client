@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Usine de vaisseaux',	'desc' => 'L\'usine de vaisseaux permet la construction des vaisseaux légers, comme les chasseurs et vaisseaux de commerce.'];?>
+<?php$build	= (object) [	'name' => 'Usine de vaisseaux',	'desc' => 'L\'usine de vaisseaux permet la construction des vaisseaux légers, comme les chasseurs et vaisseaux de commerce. Augmenter le niveau de l\'usine permettra de construire les vaisseaux plus rapidement.'];?>

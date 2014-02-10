@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Energy Shield',	'desc' => 'Description::Energy Shield'];?>
+<?php$build	= (object) [	'name' => 'Pole Siłowe',	'desc' => 'Zwiększa siłę obronną wieżyczek obronnych oraz statków stacjonujących na planecie.'];?>

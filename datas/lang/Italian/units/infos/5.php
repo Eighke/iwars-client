@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Satellite spia',	'desc' => 'Satellite spia'];?>
+<?php$unit	= (object) [	'name' => 'Satellite spia',	'desc' => 'Questo piccolo satellite è stato progettato per essere in grado di spiare il pianeta nemico senza essere visto. La sua piccola dimensione e la sua velocità eccezionale lo rendono un ottimo veicolo.'];?>

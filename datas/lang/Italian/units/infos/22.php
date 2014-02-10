@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Assault Laser Tower',	'desc' => 'Description::Assault Laser Tower'];?>
+<?php$unit	= (object) [	'name' => 'Torre Laser pesante',	'desc' => 'Questa torre è la seconda linea tra le batterie di difesa. Essa utilizza un laser di nuova generazione capace di concentrare più potenza ed ha un costo di fabbricazione relativamente basso.'];?>

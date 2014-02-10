@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Antimatter Canon',	'desc' => 'Description::Antimatter Canon'];?>
+<?php$unit	= (object) [	'name' => 'Działo Antymaterii',	'desc' => 'Najsilniejsza defensywna broń energetyczna. Wieżyczka antymaterii jest tak potężna, że jej sile nie oprze się nawet potężne krążowniki nieprzyjaciela, jeśli tylko znajdą się w jej zasięgu.'];?>

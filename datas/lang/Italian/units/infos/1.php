@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Sciacallo',	'desc' => 'Sciacallo'];?>
+<?php$unit	= (object) [	'name' => 'Sciacallo',	'desc' => 'Piccoli vascelli ideati per proteggere le basi del pianeta. Sono spesso usati per attaccare a bassa quota. Queste sono  navi a basso costo ma molto utili per le attività di base.'];?>

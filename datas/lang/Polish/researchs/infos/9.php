@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Technika Kamuflażu',	'desc' => 'Technika Kamuflażu'];?>
+<?php$research	= (object) [	'name' => 'Technika Kamuflażu',	'desc' => 'Im wyższy poziom tej techniki, tym trudniej zostać zauważonym przez wroga.'];?>

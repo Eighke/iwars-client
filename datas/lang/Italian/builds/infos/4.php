@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Raffineria di silicio',	'desc' => 'Raffineria di silicio'];?>
+<?php$build	= (object) [	'name' => 'Raffineria di silicio',	'desc' => 'Il silicio è una lega appositamente studiata per rafforzare le corazze delle tue astronavi. La raffineria di silicio viene usata per ottenere il materiale necessario ad ottenere tale scopo.'];?>

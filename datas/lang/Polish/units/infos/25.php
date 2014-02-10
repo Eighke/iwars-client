@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::NANML',	'desc' => 'Description::Nuclar Antimatter Nanobot Missile Launcher'];?>
+<?php$unit	= (object) [	'name' => 'NANML',	'desc' => 'Przez całe lata rozwijano defensywne bronie energetyczne. Twórcy tej wyrzutni stwierdzili jednak, że może warto postawić na inną technologię, a mianowicie - na potężne rakiety balistyczne. Jest to jedna z najpotężniejszych broni konwencjonalnych w całym wszechświecie.'];?>

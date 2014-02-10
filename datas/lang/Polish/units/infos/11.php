@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Commerce Spaceship',	'desc' => 'Description::Commerce Spaceship'];?>
+<?php$unit	= (object) [	'name' => 'Statek Handlowy',	'desc' => 'Handel jest ważnym elementem gospodarki; Aby móc się rozwijać, konieczny jest przewóz surowców pomiędzy planetami. Umożliwia to właśnie Statek handlowy.'];?>

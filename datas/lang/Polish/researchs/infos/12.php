@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Wiązanie Energii',	'desc' => 'Wiązanie Energii'];?>
+<?php$research	= (object) [	'name' => 'Wiązanie Energii',	'desc' => 'Poprawia atak i systemy obronne poprzez optymalizowanie systemów energetycznych użytych na statkach.'];?>

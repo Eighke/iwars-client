@@ -1,5 +1,5 @@
 <?php$lang += array (
-  'Max' => 'Massimo.',
-  'Production' => 'Produzione',
   'Stock' => 'Stoccaggio',
+  'Production' => 'Produzione',
+  'Max' => 'Massimo',
 );?>

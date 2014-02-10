@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Transport Spaceship',	'desc' => 'Description::Transport Spaceship'];?>
+<?php$unit	= (object) [	'name' => 'Statek Transportowy',	'desc' => 'Większą wersją statków handlowych są transportowce. Mogą one przewozić znacznie więcej surowców, a także - dzięki nowemu napędowi są znacznie szybsze.'];?>

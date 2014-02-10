@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Technika Sensorowa',	'desc' => 'Technika Sensorowa'];?>
+<?php$research	= (object) [	'name' => 'Technika Sensorowa',	'desc' => 'Zwiększa promień widzialnego obszaru.'];?>

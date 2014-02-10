@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Space Cruser',	'desc' => 'Description::Space Cruser'];?>
+<?php$unit	= (object) [	'name' => 'Krążownik Kosmiczny',	'desc' => 'Krążowniki to skrzyżowanie ciężkich myśliwców z Lekkimi niszczycielami. Uzbrojone są w 8 lekkich i 2 ciężkie lasery pokładowe. Krążowniki są na tyle mocno opancerzone, że są w stanie stawić czoła nawet atakowi plazmowemu.'];?>

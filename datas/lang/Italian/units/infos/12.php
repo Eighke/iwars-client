@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Transport Spaceship',	'desc' => 'Description::Transport Spaceship'];?>
+<?php$unit	= (object) [	'name' => 'Nave Cargo',	'desc' => 'Questo vascello è stato progettato come un ottimo compromesso  tra la nave commerciale e il NOAH.'];?>

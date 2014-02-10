@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Colonizzatrice',	'desc' => 'Colonizzatrice'];?>
+<?php$unit	= (object) [	'name' => 'Colonizzatrice',	'desc' => 'Ogni pianeta, prima o poi, si deve espandere. La colonizzazione di nuove colonie è importante per l\'estrazione di maggiori quantità di risorse e pre una maggiore strategia militare. Le navi colonizzatrici, al loro arrivo, ti permettono di disporre automaticamente di un comando operativo di livello 1.'];?>

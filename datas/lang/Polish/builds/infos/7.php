@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Advanced Hydrogen Synthesizer',	'desc' => 'Description::Advanced Hydrogen Synthesizer'];?>
+<?php$build	= (object) [	'name' => 'Zaawansowy Syntezator Wodoru',	'desc' => 'Przekształca Wodę w Wodór.'];?>

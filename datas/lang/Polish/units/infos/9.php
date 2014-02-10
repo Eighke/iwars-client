@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Destroyer',	'desc' => 'Description::Destroyer'];?>
+<?php$unit	= (object) [	'name' => 'Niszczyciel',	'desc' => 'Niszczyciele wyposażone w technologię maskującą są w stanie stosunkowo blisko podlecieć do wrogich struktur, unikając wykrycia.'];?>

@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::ExoFighter',	'desc' => 'Description::ExoFighter'];?>
+<?php$unit	= (object) [	'name' => 'EgzoMyśliwiec',	'desc' => 'EgzoMyśliwiec, wraz ze swoim uzbrojeniem naprawdę robi wrażenie. Szyk tych statków zniszczył już niejednego wroga.'];?>

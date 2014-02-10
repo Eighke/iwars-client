@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Darwin',	'desc' => 'Darwin'];?>
+<?php$unit	= (object) [	'name' => 'Darwin',	'desc' => 'Questo vascello molto utile è stato concepito come un supporto per aiutare un\'altra nave durante l\'attacco.'];?>

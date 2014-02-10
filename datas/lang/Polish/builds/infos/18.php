@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Vessels Factory',	'desc' => 'Description::Vessels Factory'];?>
+<?php$build	= (object) [	'name' => 'Stocznia',	'desc' => 'Część rozkazów budowy statków trafia tu - do Stoczni. Aby budować statki musisz posiadać ten budynek. Wraz z rozbudową Stoczni, skraca się czas produkcji statków.'];?>

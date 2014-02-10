@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Tjuger',	'desc' => 'Tjuger'];?>
+<?php$unit	= (object) [	'name' => 'Tjuger',	'desc' => 'Vero e proprio salto nel campo della ricerca; la forma del suo serbatoio ricorda la sagoma di un animale di un pianeta sperduto di una lontana galassia; si narra di lui come del "Terrore dello spazio". Sono molto utili nei grandi combattimenti spaziali grazie grazie al proprio armamento e alla protezione del proprio scafo'];?>

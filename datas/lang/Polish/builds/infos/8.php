@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Research Center',	'desc' => 'Description::Research Center'];?>
+<?php$build	= (object) [	'name' => 'Centrum Badawcze',	'desc' => 'Posiadając centrum badawcze na swojej planecie masz możliwość badania wielu rozmaitych technologii; od napędów dla Twoich międzygwiezdnych statków, aż do śmiercionośnej broni, dzięki której staniesz się niepokonany.'];?>

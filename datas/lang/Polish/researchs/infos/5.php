@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Zwiększona Pojemność Ładowni',	'desc' => 'Zwiększona Pojemność Ładowni'];?>
+<?php$research	= (object) [	'name' => 'Zwiększona Pojemność Ładowni',	'desc' => 'Zwiększając poziom tego badania, podwyższasz jednocześnie ładowność wszystkich statków kosmicznych.'];?>
