@@ -1,17 +1,17 @@
 {
     "Development": "Rozwój",
-    "isEjected": "został wyrzucony",
-    "EjectMember?": "Jesteś pewny, że chcesz wyrzucić tego gracza?",
-    "Name": "Imię",
-    "Eject": "Wyrzuć",
     "Confirm": "Potwierdź",
-    "Request": "Odrzuć",
-    "Accept": "Akceptuj",
     "Fight": "Flota",
-    "isAccepted": "jest teraz członkiem twojego sojuszu.",
-    "Points": "Punkty",
+    "Eject": "Wyrzuć",
+    "EjectMember?": "Jesteś pewny, że chcesz wyrzucić tego gracza?",
+    "Name": "Nazwa",
+    "Accept": "Akceptuj",
     "isRejected": "został odrzucony.",
+    "isAccepted": "jest teraz członkiem twojego sojuszu.",
     "Rank": "Ranga",
+    "isEjected": "został wyrzucony",
+    "Request": "Podanie",
+    "Points": "Punkty",
     "Members": "Członkowie",
-    "Reject": "Podanie"
+    "Reject": "Odrzuć"
 }

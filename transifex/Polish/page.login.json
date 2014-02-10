@@ -1,8 +1,8 @@
 {
-    "BadLogin": "Incorrect login or password",
-    "Submit": "Submit",
-    "Next": "Next",
-    "Connection": "Connection",
     "Login": "Login",
-    "Password": "Hasło"
+    "BadLogin": "Nieprawidłowy login lub hasło",
+    "Connection": "Połącz",
+    "Password": "Hasło",
+    "Submit": "Wyślij",
+    "Next": "Dalej"
 }
