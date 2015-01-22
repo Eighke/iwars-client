@@ -1,8 +1,9 @@
 <?php$lang += array (
-  'Login' => 'Login',
-  'BadLogin' => 'Nieprawidłowy login lub hasło',
   'Connection' => 'Połącz',
+  'Next' => 'Dalej',
+  'Login' => 'Login',
   'Password' => 'Hasło',
   'Submit' => 'Wyślij',
-  'Next' => 'Dalej',
+  'BadLogin' => 'Nieprawidłowy login lub hasło',
+  'ActCreated' => 'Your account is created, you can log in right now!',
 );?>

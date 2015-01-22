@@ -1,6 +1,6 @@
 <?php$lang += array (
-  'Profile' => 'Profilo',
-  'Player' => 'Giocatore',
   'Contact' => 'Contatta',
+  'Player' => 'Giocatore',
+  'Profile' => 'Profilo',
   'SendFleet' => 'Invia una flotta',
 );?>

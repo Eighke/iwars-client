@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Spit',	'desc' => 'Questo vascello, per molti ritenuto una nave ammiraglia, metre per altri una nave trasporto, non si è mai lasciato impressionare dal nemico.'];?>
+<?php$unit	= (object) [	'name' => 'Spit',	'desc' => 'Description::Serenity'];?>

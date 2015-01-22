@@ -1,12 +1,12 @@
 <?php$lang += array (
-  'Life' => 'Life',
-  'Basics' => 'Basics',
-  'Capacity' => 'Capacity',
-  'Consumption' => 'Consumption',
   'Specifications' => 'Specifications',
-  'Current' => 'Current',
-  'Armor' => 'Armor',
-  'Damages' => 'Damages (min/max)',
-  'Time' => 'Time',
   'Speed' => 'Speed',
+  'Time' => 'Time',
+  'Consumption' => 'Consumption',
+  'Current' => 'Current',
+  'Capacity' => 'Capacity',
+  'Basics' => 'Basics',
+  'Damages' => 'Damages (min/max)',
+  'Armor' => 'Armor',
+  'Life' => 'Life',
 );?>

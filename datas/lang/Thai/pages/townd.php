@@ -1,7 +1,7 @@
 <?php$lang += array (
-  'BadPwd' => 'รหัสผ่านไม่ถุกต้อง',
+  'crtPasword' => 'รหัสผ่าน',
   'WeNeedPassword' => 'การเปลี่ยนแปลงทั้งหมดในส่วนนี้ ต้องการการยืนยันรหัสผ่านของคุณ',
-  'crtPasword' => 'Password',
-  'Submit' => 'Submit',
   'UpdateDone' => 'อัพเดทเรียบร้อย',
+  'Submit' => 'ยืนยัน',
+  'BadPwd' => 'รหัสผ่านไม่ถุกต้อง',
 );?>

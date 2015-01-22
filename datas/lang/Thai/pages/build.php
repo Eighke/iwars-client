@@ -1,6 +1,6 @@
 <?php$lang += array (
-  'Information' => 'ข้อมูล',
+  'Level' => 'ระดับ',
   'Time' => 'เวลา',
   'Advanced' => 'ขั้นสูง',
-  'Level' => 'ระดับ',
+  'Information' => 'ข้อมูล',
 );?>

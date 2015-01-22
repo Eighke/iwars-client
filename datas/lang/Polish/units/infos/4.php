@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Serenity',	'desc' => 'Ten ogromny statek służył dawniej tylko imperatorowi. Jego siła i zwrotność przeszły już do legendy.'];?>
+<?php$unit	= (object) [	'name' => 'Serenity',	'desc' => 'Description::Serenity'];?>

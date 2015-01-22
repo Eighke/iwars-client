@@ -1,13 +1,15 @@
 <?php$lang += array (
-  'Specifications' => 'Dane techniczne',
-  'Speed' => 'Prędkość',
-  'Time' => 'Czas',
-  'Consumption' => 'Konsumpcja',
-  'Current' => 'Obecne',
-  'Capacity' => 'Pojemność',
-  'Basics' => 'Bazowe',
   'Unit' => 'Jednostka',
+  'Specifications' => 'Dane techniczne',
+  'Basics' => 'Bazowe',
+  'Current' => 'Obecne',
+  'Time' => 'Czas',
   'Damages' => 'Atak',
-  'Armor' => 'Pancerz',
   'Life' => 'Życie',
+  'Armor' => 'Pancerz',
+  'Speed' => 'Prędkość',
+  'Capacity' => 'Pojemność',
+  'Consumption' => 'Konsumpcja',
+  'Attack' => 'Attack',
+  'Defense' => 'Defense',
 );?>

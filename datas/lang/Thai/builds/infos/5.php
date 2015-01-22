@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Hydrogen Synthesizer',	'desc' => 'Hydrogen(ไฮโดรเจน) Deuterium(ดูเทอเรียม) และ Tritium(ทริเทียม) เป็นธาตุหลักที่สำคัญในกระบวนการสันดาปของเครื่องยนต์ต่างๆ หรือใช้ในปฏิกริยานิวเคลียร์ Synthesizer นี้จะสังเคราะห์ธาตุต่างๆที่จำเป็นเหล่านี้ออกมาได้'];?>
+<?php$build	= (object) [	'name' => 'Hydrogen Synthesizer',	'desc' => 'Description::Hydrogen Synthesizer'];?>

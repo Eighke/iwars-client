@@ -1,12 +1,12 @@
 <?php$lang += array (
-  'Search' => 'Cerca',
-  'EnterName:' => 'Inserisci il nome di un giocatore:',
-  'MsgSent' => 'Messaggio inviato.',
-  'Back' => 'Indietro',
   'Send' => 'Invia',
-  'NewMsg' => 'Nuovo Messaggio',
-  'Title:' => 'Titolo:',
-  'Validate' => 'Convalida',
-  'Recipient:' => 'Destinatario:',
   'NoResult' => 'Nessun risultato.',
+  'Recipient:' => 'Destinatario:',
+  'Search' => 'Cerca',
+  'NewMsg' => 'Nuovo Messaggio',
+  'Validate' => 'Convalida',
+  'MsgSent' => 'Messaggio inviato.',
+  'Title:' => 'Titolo:',
+  'Back' => 'Indietro',
+  'EnterName:' => 'Inserisci il nome di un giocatore:',
 );?>

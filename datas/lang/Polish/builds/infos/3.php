@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Kopalnia Tytanu',	'desc' => 'Ten masywny budynek to Kopalnia Tytanu. Przez cały tydzień, 24h na dobę wydobywany jest tu Tytan - jeden z głównych surowców potrzebnych do budowy statków oraz budynków.'];?>
+<?php$build	= (object) [	'name' => 'Kopalnia Tytanu',	'desc' => 'Description::Titanium Mine'];?>

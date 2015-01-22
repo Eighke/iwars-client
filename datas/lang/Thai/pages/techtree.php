@@ -1,4 +1,4 @@
 <?php$lang += array (
-  'Units' => 'Units',
   'TechsTree' => 'Techs Tree',
+  'Units' => 'Units',
 );?>

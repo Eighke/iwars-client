@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Kosmiczna Korweta',	'desc' => 'Korweta jest dobrze opancerzonym małym statkiem wieloczynnościowym. Najczęściej stosowany jest do przenoszenia surowców i szturmowania planet wroga, ponieważ posiada pojemną ładownię.'];?>
+<?php$unit	= (object) [	'name' => 'Kosmiczna Korweta',	'desc' => 'Description::Spacel Corvette'];?>

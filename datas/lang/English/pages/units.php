@@ -1,13 +1,15 @@
 <?php$lang += array (
-  'NoFactory' => 'You need vessels factory',
   'BuildNow' => 'Build',
-  'NoResources' => 'You don\'t have necessary resources!',
+  'Time' => 'Time',
   'End' => 'End',
   'Ships' => 'Ships',
-  'NoWorkshop' => 'You need orbital workshop',
-  'FactoryLimit' => 'Your factory need to be evolve to start new units.',
+  'Total' => 'Total',
+  'Max' => 'Max',
+  'NoResources' => 'You don\'t have necessary resources!',
   'Usine1Empty' => 'No build in work',
-  'Time' => 'Time',
   'Usine2Empty' => 'No build in work',
+  'NoFactory' => 'You need vessels factory',
+  'FactoryLimit' => 'Your factory need to be evolve to start new units.',
+  'NoWorkshop' => 'You need orbital workshop',
   'WorkshopLimit' => 'Your workshop need to be evolve to start new units.',
 );?>

@@ -1,15 +1,15 @@
 <?php$lang += array (
-  'Information' => 'Information',
-  'NoResources' => 'Vous n\'avez pas assez de ressource disponible !',
-  'End' => 'Fin',
-  'ResearchNow' => 'Rechercher',
   'Level' => 'Niveau',
-  'Detail' => 'Détail',
-  'Queue' => 'File d\'attente',
-  'CancelAll' => 'Tout annuler',
+  'NoResearchCenter' => 'Vous n\'avez pas le centre de recherche adapté',
   'Time' => 'Temps',
-  'Cancel' => 'Annuler',
-  'NoResearchCenter' => 'Vous n\'avez pas le centre adapté',
+  'End' => 'Fin',
+  'NoResources' => 'Vous n\'avez pas assez de ressource disponible !',
+  'ResearchNow' => 'Rechercher',
   'InProgress' => 'Vous avez déjà une recherche en cours.',
+  'Cancel' => 'Annuler',
+  'Detail' => 'Détail',
+  'CancelAll' => 'Tout annuler',
+  'Queue' => 'File d\'attente',
   'Advanced' => 'Avancé',
+  'Information' => 'Information',
 );?>

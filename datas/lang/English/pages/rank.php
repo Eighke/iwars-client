@@ -1,11 +1,11 @@
 <?php$lang += array (
   'Development' => 'Development',
-  '/members' => '/members',
-  'Total' => 'Total',
-  'Name' => 'Name',
   'Fight' => 'Fight',
-  'Players' => 'Players',
-  'Members' => 'Members',
   'Alliances' => 'Alliances',
+  'Name' => 'Name',
+  'Total' => 'Total',
+  '/members' => '/members',
+  'Players' => 'Players',
   'Unit' => 'Unit',
+  'Members' => 'Members',
 );?>
