@@ -9,5 +9,7 @@
 	"Armor": "Armor",
 	"Speed": "Speed",
 	"Capacity": "Capacity",
-	"Consumption": "Consumption"
+	"Consumption": "Consumption",
+	"Attack": "Attack",
+	"Defense": "Defense"
 }

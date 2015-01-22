@@ -1,8 +1,8 @@
 {
-    "MaxFolder": "Vous avez déjà quatre dossiers.",
-    "EnterName:": "Entrez le nom du dossier :",
-    "FolderCreated": "Dossier créé",
     "Create": "Créer",
+    "MaxFolder": "Vous avez déjà quatre dossiers.",
+    "NewFolder": "Nouveau dossier",
     "Back": "Retour",
-    "NewFolder": "Nouveau dossier"
+    "EnterName:": "Entrez le nom du dossier :",
+    "FolderCreated": "Dossier créé"
 }

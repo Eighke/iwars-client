@@ -1,8 +1,8 @@
 {
-    "Rename": "Rename",
-    "Time:": "Time:",
     "Coordinates": "Coordinates",
-    "Points": "Points",
+    "Delete": "Delete",
+    "Time:": "Time:",
     "Action": "Action",
-    "Delete": "Delete"
+    "Points": "Points",
+    "Rename": "Rename"
 }

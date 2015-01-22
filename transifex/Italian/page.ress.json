@@ -1,5 +1,6 @@
 {
-    "Stock": "Stoccaggio",
     "Production": "Produzione",
-    "Max": "Massimo"
+    "Stock": "Stoccaggio",
+    "Max": "Massimo",
+    "Protect": "Protect"
 }

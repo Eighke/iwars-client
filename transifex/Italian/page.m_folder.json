@@ -1,8 +1,8 @@
 {
-    "MaxFolder": "Hai già 4 cartelle.",
-    "EnterName:": "Inserisci il nome della cartella:",
-    "FolderCreated": "Cartella creata",
     "Create": "Crea",
+    "MaxFolder": "Hai già 4 cartelle.",
+    "NewFolder": "Nuova cartella",
     "Back": "Indietro",
-    "NewFolder": "Nuova cartella"
+    "EnterName:": "Inserisci il nome della cartella:",
+    "FolderCreated": "Cartella creata"
 }

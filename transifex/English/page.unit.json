@@ -1,13 +1,15 @@
 {
-    "Life": "Life",
+    "Unit": "Unit",
+    "Specifications": "Specifications",
     "Basics": "Basics",
+    "Current": "Current",
+    "Time": "Time",
+    "Damages": "Damages",
+    "Life": "Life",
+    "Armor": "Armor",
+    "Speed": "Speed",
     "Capacity": "Capacity",
     "Consumption": "Consumption",
-    "Specifications": "Specifications",
-    "Current": "Current",
-    "Armor": "Armor",
-    "Damages": "Damages",
-    "Time": "Time",
-    "Speed": "Speed",
-    "Unit": "Unit"
+    "Attack": "Attack",
+    "Defense": "Defense"
 }
