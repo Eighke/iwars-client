@@ -29,7 +29,7 @@
   'Points' => 'Punti',
   'Rank' => 'Grado',
   'Delete' => 'Cancella',
-  'Website' => 'Website',
+  'Website' => 'Pagina Web',
   'ApplyRequest' => 'Fai richiesta',
   'NoApplyRequest' => 'Nessuna richiesta fatta',
   'SeeMembers' => 'Vedi la lista dei membri',

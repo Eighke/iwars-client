@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Tecnologia dello spionaggio',	'desc' => 'Tecnologia dello spionaggio'];?>
+<?php$research	= (object) [	'name' => 'Tecnologia dello spionaggio',	'desc' => 'Migliora l\'efficienza delle sonde spia'];?>

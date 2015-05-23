@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Diplomazia',	'desc' => 'Diplomazia'];?>
+<?php$research	= (object) [	'name' => 'Diplomazia',	'desc' => 'Aumento la forza nel combattimento che sarà diminuita fondando nuove colonie'];?>

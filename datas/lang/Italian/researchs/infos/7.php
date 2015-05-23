@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Propulsione iperspaziale avanzata',	'desc' => 'Propulsione iperspaziale avanzata'];?>
+<?php$research	= (object) [	'name' => 'Propulsione iperspaziale avanzata',	'desc' => 'Propulsione ad alta tecnologia. E\' usata dalle AquilaX, dai Noah e dai SENTIH'];?>

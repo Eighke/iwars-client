@@ -6,7 +6,7 @@
     "Result": "Risultato",
     "Informations": "Informazioni",
     "Power": "Potenza",
-    "FightPoints": "Punti di battaglia",
+    "FightPoints": "Punti combattimento",
     "PointsLost": "Punti persi",
     "TotalPoints": "Punti totali",
     "Victory": "Vittoria",
@@ -15,5 +15,5 @@
     "Attacker": "Attaccante",
     "Defender": "Difensore",
     "CombatReport": "Resoconto del combattimento",
-    "Archive": "Archive"
+    "Archive": "Archivio"
 }

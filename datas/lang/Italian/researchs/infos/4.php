@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Tecnologia della colonizzazione',	'desc' => 'Tecnologia della colonizzazione'];?>
+<?php$research	= (object) [	'name' => 'Tecnologia della colonizzazione',	'desc' => 'Per ogni livello raggiunto, può essere colonizzato un maggior numero di pianeti. '];?>

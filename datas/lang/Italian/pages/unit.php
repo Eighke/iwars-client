@@ -10,6 +10,6 @@
   'Speed' => 'Velocità',
   'Capacity' => 'Capienza',
   'Consumption' => 'Consumo',
-  'Attack' => 'Attack',
-  'Defense' => 'Defense',
+  'Attack' => 'Attacco',
+  'Defense' => 'Difesa',
 );?>

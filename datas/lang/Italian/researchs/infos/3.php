@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Propulsione iperspaziale',	'desc' => 'Propulsione iperspaziale'];?>
+<?php$research	= (object) [	'name' => 'Propulsione iperspaziale',	'desc' => 'Aumenta la velocità delle navi come Tjuger o Cougar'];?>

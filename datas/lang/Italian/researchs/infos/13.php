@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Ionizzatore',	'desc' => 'Ionizzatore'];?>
+<?php$research	= (object) [	'name' => 'Ionizzatore',	'desc' => 'Aumenta i valori di attacco e di difesa delle navi più moderne e delle torri '];?>

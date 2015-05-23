@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Sistemi elettrici',	'desc' => 'Sistemi elettrici'];?>
+<?php$research	= (object) [	'name' => 'Sistemi elettrici',	'desc' => 'Aumenta i valori di attacco e di difesa di vascelli e torri '];?>
