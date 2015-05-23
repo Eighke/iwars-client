@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Tecnologia della schermatura',	'desc' => 'Tecnologia della schermatura'];?>
+<?php$research	= (object) [	'name' => 'Tecnologia della schermatura',	'desc' => 'Migliora la potenza degli scudi delle navi e delle torri'];?>

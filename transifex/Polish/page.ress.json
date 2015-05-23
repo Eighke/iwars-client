@@ -1,5 +1,6 @@
 {
-    "Max": "Max.",
     "Production": "Wydobycie",
-    "Stock": "W magazynie"
+    "Stock": "W magazynie",
+    "Max": "Max.",
+    "Protect": "Protect"
 }

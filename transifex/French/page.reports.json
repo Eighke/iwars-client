@@ -1,16 +1,19 @@
 {
-    "Unarchive": "Déarchiver",
-    "NotYourReport": "Ce rapport n'est pas le vôtre",
-    "All": "Tout",
-    "Archived": "Archivé",
     "Reports": "Rapports",
-    "NoReport": "Aucun rapport archivé",
-    "ReportUnarch": "Rapport désarchivé",
+    "Archive": "Archiver",
+    "Archived": "Archivé",
+    "Unarchive": "Déarchiver",
+    "Unarchived": "Déarchivé",
+    "Publish": "Publier",
+    "Unpublish": "Dépublier",
+    "Published": "Publié",
+    "All": "Tout",
     "View": "Voir",
     "UnarchReport": "Rapport non archivé",
-    "AlreadyArchived": "Ce rapport est déjà archivé",
+    "NoReport": "Aucun rapport archivé",
     "FullArch": "Vous avez déjà 20 rapports archivés",
+    "ReportUnarch": "Rapport désarchivé",
     "ReportArch": "Rapport archivé",
-    "Archive": "Archiver",
-    "Unarchived": "Déarchivé"
+    "AlreadyArchived": "Ce rapport est déjà archivé",
+    "NotYourReport": "Ce rapport n'est pas le vôtre"
 }

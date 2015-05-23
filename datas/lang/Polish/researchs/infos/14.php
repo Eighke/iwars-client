@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Strzał Eksplozywny',	'desc' => 'Strzał Eksplozywny'];?>
+<?php$research	= (object) [	'name' => 'Strzał Eksplozywny',	'desc' => 'Podwyższa siłę pocisków wybuchowych.'];?>

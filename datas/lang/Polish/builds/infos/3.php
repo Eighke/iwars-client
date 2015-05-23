@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Titanium Mine',	'desc' => 'Titanium Mine'];?>
+<?php$build	= (object) [	'name' => 'Kopalnia Tytanu',	'desc' => 'Description::Titanium Mine'];?>

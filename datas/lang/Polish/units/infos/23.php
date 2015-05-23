@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Ion Canon',	'desc' => 'Description::Ion Canon'];?>
+<?php$unit	= (object) [	'name' => 'Działo Jonowe',	'desc' => 'Ta wyrzutnia przeznaczona jest do obrony planety przed małymi grupkami floty nieprzyjaciela; Strzela ona skoncentrowaną wiązką promieni, uszkadzając elektronikę wrogich statków.'];?>

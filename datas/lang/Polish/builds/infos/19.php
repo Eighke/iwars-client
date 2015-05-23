@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Platform of defense',	'desc' => 'Description::Platform of defense'];?>
+<?php$build	= (object) [	'name' => 'Orbitalna Stacja Obronna',	'desc' => 'Wiele wież obronnych może być wybudowanych na tym budynku. Czas konstrukcji wieżyczek obronnych jest uzależniony od poziomu rozbudowy Stacji.'];?>

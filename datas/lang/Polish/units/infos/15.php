@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Aurora',	'desc' => 'Description::Aurora'];?>
+<?php$unit	= (object) [	'name' => 'Aurora',	'desc' => 'Aurora to ostatni już statek tej klasy. Rozwój statków tej klasy sprawił, że ten model jest jednym z najpotężniejszych okrętów wojennych w całym wszechświecie.'];?>

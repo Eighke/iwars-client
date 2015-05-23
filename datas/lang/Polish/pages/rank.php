@@ -1,11 +1,11 @@
 <?php$lang += array (
-  'Development' => 'Rozwój',
-  '/members' => '/na członka',
-  'Total' => 'Razem',
-  'Name' => 'Nazwa',
-  'Fight' => 'Fight',
-  'Players' => 'Gracze',
-  'Members' => 'Członkowie',
+  'Development' => 'Budynki',
+  'Fight' => 'Walka',
   'Alliances' => 'Sojusze',
+  'Name' => 'Nazwa',
+  'Total' => 'Łącznie',
+  '/members' => '/na gracza',
+  'Players' => 'Gracze',
   'Unit' => 'Jednostki',
+  'Members' => 'Osób',
 );?>

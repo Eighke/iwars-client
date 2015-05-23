@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Napęd Fałdowania Przestrzeni',	'desc' => 'Napęd Fałdowania Przestrzeni'];?>
+<?php$research	= (object) [	'name' => 'Napęd Fałdowania Przestrzeni',	'desc' => 'Jest to najnowocześniejszy napęd w całej galaktyce.'];?>

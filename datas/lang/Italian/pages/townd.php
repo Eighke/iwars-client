@@ -1,7 +1,7 @@
 <?php$lang += array (
-  'BadPwd' => 'La password inserita non corretta.',
-  'WeNeedPassword' => 'Tutte le modifiche in questa sezione richiedono la tua password.',
   'crtPasword' => 'Password',
-  'Submit' => 'Accetta',
+  'WeNeedPassword' => 'Tutte le modifiche in questa sezione richiedono la tua password.',
   'UpdateDone' => 'Aggiornato con successo.',
+  'Submit' => 'Accetta',
+  'BadPwd' => 'La password inserita non corretta.',
 );?>

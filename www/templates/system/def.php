@@ -22,9 +22,9 @@ if (!session_id()) exit();
 			<span><b><?php echo ILang::unit($this->getData('unit')->id, 'name'); ?></b> - <i><?php echo $this->getData('unit')->points; ?> <?php echo ILang::_('points'); ?></i></span>
 		</div>
 		<div>
-			<?php if ($this->getData('unit')->ress[1]) : ?><span class="left line" style="margin-left:10px; width:85px;"><?php echo ILang::_('Titanium'); ?></span><span><?php echo $this->getData('unit')->ress[1]; ?></span><br /><?php endif; ?>
-			<?php if ($this->getData('unit')->ress[2]) : ?><span class="left line" style="margin-left:10px; width:85px;"><?php echo ILang::_('Silicon'); ?></span><span><?php echo $this->getData('unit')->ress[2]; ?></span><br /><?php endif; ?>
-			<?php if ($this->getData('unit')->ress[3]) : ?><span class="left line" style="margin-left:10px; width:85px;"><?php echo ILang::_('Hydrogen'); ?></span><span><?php echo $this->getData('unit')->ress[3]; ?></span><br /><?php endif; ?>
+			<?php if ($this->getData('unit')->ress[1]) : ?><span class="left line" style="margin-left:10px; width:85px;"><?php echo ILang::_('Titanium'); ?></span><span><?php echo ILang::number($this->getData('unit')->ress[1]); ?></span><br /><?php endif; ?>
+			<?php if ($this->getData('unit')->ress[2]) : ?><span class="left line" style="margin-left:10px; width:85px;"><?php echo ILang::_('Silicon'); ?></span><span><?php echo ILang::number($this->getData('unit')->ress[2]); ?></span><br /><?php endif; ?>
+			<?php if ($this->getData('unit')->ress[3]) : ?><span class="left line" style="margin-left:10px; width:85px;"><?php echo ILang::_('Hydrogen'); ?></span><span><?php echo ILang::number($this->getData('unit')->ress[3]); ?></span><br /><?php endif; ?>
 			<span class="left end" style="margin-left:10px; width:85px;"><?php echo ILang::_('Time'); ?></span><span><?php echo IWUnit::getFormatTime($this->getData('unit')->time); ?></span><br />
 			<span>&nbsp;</span>
 		</div>
@@ -40,28 +40,13 @@ if (!session_id()) exit();
 		</div>
 		<div class="bg1">
 			<span class="left" style="width: 150px;"><?php echo ILang::_('Damages'); ?></span>
-			<span class="left" style="width: 70px;"><?php echo $this->getData('unit')->dmgs; ?></span>
-			<span><?php echo $this->getData('unitEvolve')->dmgs; ?></span>
+			<span class="left" style="width: 70px;"><?php echo ILang::number($this->getData('unit')->dmgs); ?></span>
+			<span><?php echo ILang::number($this->getData('unitEvolve')->dmgs); ?></span>
 		</div>
 		<div class="bg2">
 			<span class="left" style="width: 150px;"><?php echo ILang::_('Life'); ?></span>
-			<span class="left" style="width: 70px;"><?php echo $this->getData('unit')->life; ?></span>
-			<span><?php echo $this->getData('unitEvolve')->life; ?></span>
-		</div>
-		<div class="bg1">
-			<span class="left" style="width: 150px;"><?php echo ILang::_('Speed'); ?></span>
-			<span class="left" style="width: 70px;"><?php echo $this->getData('unit')->speed; ?></span>
-			<span><?php echo $this->getData('unitEvolve')->speed; ?></span>
-		</div>
-		<div class="bg2">
-			<span class="left" style="width: 150px;"><?php echo ILang::_('Capacity'); ?></span>
-			<span class="left" style="width: 70px;"><?php echo $this->getData('unit')->cap; ?></span>
-			<span><?php echo $this->getData('unitEvolve')->cap; ?></span>
-		</div>
-		<div class="bg1">
-			<span class="left" style="width: 150px;"><?php echo ILang::_('Consumption'); ?></span>
-			<span class="left" style="width: 70px;"><?php echo $this->getData('unit')->cons; ?></span>
-			<span><?php echo $this->getData('unitEvolve')->cons; ?></span>
+			<span class="left" style="width: 70px;"><?php echo ILang::number($this->getData('unit')->life); ?></span>
+			<span><?php echo ILang::number($this->getData('unitEvolve')->life); ?></span>
 		</div>
 	</div>
 </div>

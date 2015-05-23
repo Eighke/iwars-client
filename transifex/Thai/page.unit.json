@@ -1,13 +1,15 @@
 {
-    "Life": "พลังชีวิต",
+    "Unit": "ยาน",
+    "Specifications": "รายละเอียด",
     "Basics": "พื้นฐาน",
+    "Current": "ปัจจุบัน",
+    "Time": "เวลา",
+    "Damages": "พลังโจมตี",
+    "Life": "พลังชีวิต",
+    "Armor": "เกราะ",
+    "Speed": "ความเร็ว",
     "Capacity": "ขนาดบรรทุก",
     "Consumption": "การเผาผลาญ",
-    "Specifications": "รายละเอียด",
-    "Current": "ปัจจุบัน",
-    "Armor": "เกราะ",
-    "Damages": "พลังโจมตี",
-    "Time": "เวลา",
-    "Speed": "ความเร็ว",
-    "Unit": "ยาน"
+    "Attack": "Attack",
+    "Defense": "Defense"
 }

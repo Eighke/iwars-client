@@ -1,7 +1,7 @@
 <?php$lang += array (
-  'BadPwd' => 'Nieprawidłowe hasło.',
-  'WeNeedPassword' => 'Wszystkie zmiany muszą być potwierdzone hasłem.',
   'crtPasword' => 'Hasło',
-  'Submit' => 'Submit',
+  'WeNeedPassword' => 'Wszystkie zmiany muszą być potwierdzone hasłem.',
   'UpdateDone' => 'Aktualizacja zakończona.',
+  'Submit' => 'Wyślij',
+  'BadPwd' => 'Nieprawidłowe hasło.',
 );?>

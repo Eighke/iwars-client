@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Proiettili esplosivi',	'desc' => 'Proiettili esplosivi'];?>
+<?php$research	= (object) [	'name' => 'Proiettili esplosivi',	'desc' => 'Assegna un bonus di attacco alle navi e alle torri con armi esplosive'];?>

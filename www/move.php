@@ -1,15 +1,13 @@
 <?php
 /**
- * Package		~
- * Subpackage	~
- * File			move.php
+ * Package      ~
+ * Subpackage   ~
+ * File         move.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
- *
- * Version		2013-02-19 - Eighke
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric Vandebeuque (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  */
 session_start();
 

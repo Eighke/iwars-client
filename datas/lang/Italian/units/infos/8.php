@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Cougar',	'desc' => 'Cougar'];?>
+<?php$unit	= (object) [	'name' => 'Cougar',	'desc' => 'Equipaggiato con due batterie laser ed un cannone al plasma; è molto indicato come nave da pattuglia, perfetta per la difesa orbitale. E\' anche molto utile come scorta alle grandi navi da battaglia.'];?>

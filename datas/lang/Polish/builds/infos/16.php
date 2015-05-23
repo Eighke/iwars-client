@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Name::Water tank',	'desc' => 'Description::Water tank'];?>
+<?php$build	= (object) [	'name' => 'Zbiornik Wodny',	'desc' => 'Ten budynek służy do magazynowania Wody.'];?>

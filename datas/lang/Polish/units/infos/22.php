@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Assault Laser Tower',	'desc' => 'Description::Assault Laser Tower'];?>
+<?php$unit	= (object) [	'name' => 'Szturmowe Działo Laserowe',	'desc' => 'Te działo, w porównaniu do swojego poprzednika, jest ciężej opancerzone i uzbrojone. Działa laserowe mogą być montowane na budynkach i chronić Twoją planetę przed atakiem.'];?>

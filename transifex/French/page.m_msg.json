@@ -1,12 +1,12 @@
 {
-    "Search": "Rechercher",
-    "EnterName:": "Entrer le nom du joueur :",
-    "MsgSent": "Message envoyé.",
-    "Back": "Retour",
     "Send": "Envoyer",
-    "NewMsg": "Nouveau message",
-    "Title:": "Titre :",
-    "Validate": "Valider",
+    "NoResult": "Aucun résultat.",
     "Recipient:": "Destinataire :",
-    "NoResult": "Aucun résultat."
+    "Search": "Rechercher",
+    "NewMsg": "Nouveau message",
+    "Validate": "Valider",
+    "MsgSent": "Message envoyé.",
+    "Title:": "Titre :",
+    "Back": "Retour",
+    "EnterName:": "Entrer le nom du joueur :"
 }

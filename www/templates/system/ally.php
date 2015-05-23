@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			ally.php
+ * Package      Templates
+ * Subpackage   System
+ * File         ally.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-06-15 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -19,15 +19,15 @@ if (!session_id()) exit();
 <div class="center">
 	<?php if ($this->getData('alliance')->leaderId != $this->user->id) : ?>
 	<div>
-		<?php if ($this->getData('alliance')->id == 0) : ?><a href="./cally.php" class="button"><?php echo ILang::_('JoinAlly'); ?></a><?php else : ?> <a href="./ally.php?quit=1"  class="button"><?php echo ILang::_('ExitAlly'); ?></a><?php endif; ?>
-		<a href="./mally.php" class="button"><?php echo ILang::_('MakeAlly'); ?></a>
+		<?php if ($this->getData('alliance')->id == 0) : ?><a href="./cally.php" class="button" data-load="cache"><?php echo ILang::_('JoinAlly'); ?></a><?php else : ?> <a href="./ally.php?quit=1" class="button" data-load="cache"><?php echo ILang::_('ExitAlly'); ?></a><?php endif; ?>
+		<a href="./mally.php" class="button" data-load="cache"><?php echo ILang::_('MakeAlly'); ?></a>
 	</div>
 	<?php endif; ?>
 	<?php if ($this->getData('alliance')->leaderId == $this->user->id) : ?>
-	<div><a href="./aally.php" class="button"><?php echo ILang::_('Administration'); ?></a> <a href="./diplomacy.php" class="button"><?php echo ILang::_('Diplomacy'); ?></a></div><br />
+	<div><a href="./aally.php" class="button" data-load="cache"><?php echo ILang::_('Administration'); ?></a> <a href="./diplomacy.php" class="button" data-load="cache"><?php echo ILang::_('Diplomacy'); ?></a></div><br />
 	<div>
 		<?php if ($this->getData('requests')) : ?>
-		<strong>( <a href="./allym.php"><?php echo ILang::_('ApplyRequest'); ?></a> )</strong>
+		<strong>( <a href="./allym.php" data-load="cache"><?php echo ILang::_('ApplyRequest'); ?></a> )</strong>
 		<?php else : ?>
 		( <?php echo ILang::_('NoApplyRequest'); ?> )
 		<?php endif; ?>
@@ -44,11 +44,11 @@ if (!session_id()) exit();
 <h2><?php echo $this->getData('alliance')->name; ?> [#<?php echo $this->getData('alliance')->tag; ?>]</h2>
 <div class="content">
 	<dl>
-		<dt><?php echo ILang::_('Leader:'); ?></dt> <dd><a href="player.php?id=<?php echo $this->getData('alliance')->leaderId; ?>"><?php echo $this->getData('alliance')->leaderName; ?></a></dd>
+		<dt><?php echo ILang::_('Leader:'); ?></dt> <dd><a href="player.php?id=<?php echo $this->getData('alliance')->leaderId; ?>" data-load="cache"><?php echo $this->getData('alliance')->leaderName; ?></a></dd>
 		<dt><?php echo ILang::_('Members:'); ?></dt>
 			<dd>
 				<?php echo ILang::number($this->getData('alliance')->members); ?>
-				<span class="">&nbsp;<a href="./allym.php<?php echo $this->getData('get') ? '?id='.$this->getData('get') : NULL; ?>" class="button"><?php echo ILang::_('SeeMembers'); ?></a></span>
+				<span class="">&nbsp;<a href="./allym.php<?php echo $this->getData('get') ? '?id='.$this->getData('get') : NULL; ?>" class="button" data-load="cache"><?php echo ILang::_('SeeMembers'); ?></a></span>
 			</dd>
 		<?php if (!empty($this->getData('alliance')->link)) : ?><dt><?php echo ILang::_('Website'); ?></dt> <dd><a href="<?php echo $this->getData('alliance')->link; ?>"><?php echo ILang::_('Link'); ?></a></dd><?php endif; ?>
 	</dl>
@@ -82,7 +82,7 @@ if (!session_id()) exit();
 			<dd class="bold"><?php echo ILang::_('Type'); ?></dd>
 		<?php foreach ($pacts as $type => $tpacts) : ?>
 		<?php foreach ($tpacts as $pact) :  ?>
-		<dt class="bold"><a href="ally.php?id=2"><?php echo $pact->allyName; ?></a></dt>
+		<dt class="bold"><a href="ally.php?id=<?php echo $pact->allyId; ?>" data-load="cache"><?php echo $pact->allyName; ?></a></dt>
 			<dd><?php echo $pact->date != 0 ? date('d M Y, H:i:s', $pact->date) : 'Unlimited'; ?></dd>
 			<dd><?php echo ILang::_($type); ?></dd>
 			<?php endforeach; ?>
@@ -95,7 +95,7 @@ if (!session_id()) exit();
 	<?php if ($this->getData('get') || $this->getData('desc')) : ?>
 	<?php echo ftext($this->getData('alliance')->desc); ?>
 	<?php else : ?>
-	<div class="center"><strong>( <a href="./ally.php?desc=1"><?php echo ILang::_('SeeDescription'); ?></a> )</strong></div>
+	<div class="center"><strong>( <a href="./ally.php?desc=1" data-load="cache"><?php echo ILang::_('SeeDescription'); ?></a> )</strong></div>
 	<?php endif; ?>
 </div>
 <div class="clr"></div>
@@ -107,9 +107,9 @@ if (!session_id()) exit();
 <h2>Miaou</h2>
 <div>
 	<div class="center">
-		<form action="ally.php" method="POST">
+		<form action="ally.php?task=sendMessage" method="POST">
 			<textarea name="msg" id="msg"></textarea><br />
-			<input type="submit" name="chat" value="<?php echo ILang::_('Send'); ?>" /> - <?php echo ILang::_('Character'); ?> : </span><span id="msg_counter" class="counter">500</span>
+			<input type="submit" name="chat" value="<?php echo ILang::_('Send'); ?>" /> - <?php echo ILang::_('Character'); ?> : <span id="msg_counter" class="counter">500</span>
 		</form>
 	</div>
 	<?php if($chats = $this->getData('chats')) : ?>
@@ -118,7 +118,7 @@ if (!session_id()) exit();
 		<div class="left bg3" style="width:150px; padding:4px; margin-right:4px;<?php echo $chat->usrId == $this->user->id ? 'background:#74674c;' : NULL; ?>">
 			<div><b><?php echo $chat->usrName; ?></b></div>
 			<div><i>(<?php echo fdate($chat->date, 1); ?>)</i></div>
-			<?php if ($this->getData('alliance')->leaderId == $this->user->id) : ?><div><a href="?del=<?php echo $chat->id; ?>">[<?php echo ILang::_('Delete'); ?>]</a></div><?php endif; ?>
+			<?php if ($this->getData('alliance')->leaderId == $this->user->id) : ?><div><a href="ally.php?task=deleteMessage&amp;msg=<?php echo $chat->id; ?>" data-load="cache">[<?php echo ILang::_('Delete'); ?>]</a></div><?php endif; ?>
 		</div>
 		<div style="margin-left:158px;padding:4px;"><?php echo fQuickText($chat->body); ?></div>
 		<div class="clr"></div>
@@ -132,7 +132,3 @@ if (!session_id()) exit();
 </div>
 <?php endif; ?>
 <?php endif; ?>
-
-<script type="text/javascript">
-	$("#msg").charCount();
-</script>

@@ -1,7 +1,7 @@
 <?php$lang += array (
-  'AreLeader' => 'Jesteś liderem sojuszu, nie możesz go teraz zmienić.',
-  'RequestSend' => 'Podanie o dołączenie do tego sojuszu zostało wysłane.',
   'Join' => 'Dołącz',
   'Name' => 'Nazwa',
+  'AreLeader' => 'Jesteś liderem sojuszu, nie możesz go teraz zmienić.',
   'ChangeAlliance' => 'Zmień sojusz',
+  'RequestSend' => 'Podanie o dołączenie do tego sojuszu zostało wysłane.',
 );?>

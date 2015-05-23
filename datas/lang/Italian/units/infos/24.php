@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Antimatter Canon',	'desc' => 'Description::Antimatter Canon'];?>
+<?php$unit	= (object) [	'name' => 'Torretta al plasma',	'desc' => 'Questa è una potente arma da fuoco dal costo relativamente basso, con una grande potenza e un tempo di realizzazione molto bassa. Si tratta di una risorsa importante durante una guerra.'];?>

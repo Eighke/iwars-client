@@ -1,12 +1,12 @@
 <?php$lang += array (
-  'Life' => 'Integrità strutturale',
-  'Basics' => 'Base',
-  'Capacity' => 'Capienza',
-  'Consumption' => 'Consumo',
   'Specifications' => 'Specifiche tecniche',
-  'Current' => 'Attuale',
-  'Armor' => 'Armamenti',
-  'Damages' => 'Danni (min/max)',
-  'Time' => 'Tempo',
   'Speed' => 'Velocità',
+  'Time' => 'Tempo',
+  'Consumption' => 'Consumo',
+  'Current' => 'Attuale',
+  'Capacity' => 'Capienza',
+  'Basics' => 'Base',
+  'Damages' => 'Danni (min/max)',
+  'Armor' => 'Armamenti',
+  'Life' => 'Integrità strutturale',
 );?>

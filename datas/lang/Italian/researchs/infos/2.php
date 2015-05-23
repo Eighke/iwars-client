@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Propulsione a ioni',	'desc' => 'Propulsione a ioni'];?>
+<?php$research	= (object) [	'name' => 'Propulsione a ioni',	'desc' => 'Propulsione standard per navi come il Raider o la Colonizzatrice. '];?>

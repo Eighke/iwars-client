@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Ion Canon',	'desc' => 'Description::Ion Canon'];?>
+<?php$unit	= (object) [	'name' => 'Torre EMP',	'desc' => 'Scoperto da un ricercatore rimasto segreto, questa torre di difesa è il terzo livello di difesa planetaria. Esso utilizza un nuovo laser più evoluto con migliori risultati.'];?>

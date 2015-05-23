@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Laser leggero',	'desc' => 'Laser leggero'];?>
+<?php$unit	= (object) [	'name' => 'Torretta laser leggera',	'desc' => 'Questa difesa utilizza un laser per distruggere le navi nemiche. E\' la prima difesa ad entrare in azione.'];?>

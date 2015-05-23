@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			units.php
+ * Package      Templates
+ * Subpackage   System
+ * File         units.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-06-15 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -22,7 +22,7 @@ if (!session_id()) exit();
 	<div class="one_two div_content">
 		<div style="margin-<?php echo ++$j%2 == 0 ? 'right' : 'left' ; ?>:5px;">
 			<span class="item" style="float:left; width:230px; margin:0 0 2px 0;">
-				<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total'); ?> <?php echo ILang::number($this->town->getUnit($item->id)); ?>)<br />
+				<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>" data-load="cache"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total'); ?> <?php echo ILang::number($this->town->getUnit($item->id)); ?>)<br />
 				<i><?php echo ILang::unit($item->id, 'desc'); ?></i> <br />
 				<span class="line"><?php echo $item->ress[1] ? ILang::_('T').': '.ILang::number($item->ress[1]).' &nbsp;' : FALSE; ?> <?php echo $item->ress[2] ? ILang::_('S').': '. ILang::number($item->ress[2]) .' &nbsp;' : FALSE; ?> <?php echo $item->ress[3] ? ILang::_('H').': '. ILang::number($item->ress[3]) : FALSE; ?></span><br />
 				<span class="end"><?php echo ILang::_('Time'); ?>: <?php echo IWUnit::getFormatTime($item->time/($this->getData('center')->UT*$this->conf['time_coef'])); ?></span>
@@ -56,7 +56,7 @@ if (!session_id()) exit();
 	<div class="one_two div_content">
 		<div style="margin-<?php echo ++$j%2 == 0 ? 'right' : 'left' ; ?>:5px;">
 			<span class="item" style="float:left; width:230px; margin:0 0 2px 0;">
-				<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total'); ?> <?php echo ILang::number($this->town->getUnit($item->id)); ?>)<br />
+				<b><a class="nolink" href="unit.php?id=<?php echo $item->id; ?>" data-load="cache"><?php echo ILang::unit($item->id, 'name'); ?></a></b> (<?php echo ILang::_('Total'); ?> <?php echo ILang::number($this->town->getUnit($item->id)); ?>)<br />
 				<i><?php echo ILang::unit($item->id, 'desc'); ?></i> <br />
 				<span class="line"><?php echo $item->ress[1] ? ILang::_('T').': '.ILang::number($item->ress[1]).' &nbsp;' : FALSE; ?> <?php echo $item->ress[2] ? ILang::_('S').': '. ILang::number($item->ress[2]) .' &nbsp;' : FALSE; ?> <?php echo $item->ress[3] ? ILang::_('H').': '. ILang::number($item->ress[3]) : FALSE; ?></span><br />
 				<span class="end"><?php echo ILang::_('Time'); ?>: <?php echo IWUnit::getFormatTime($item->time/($this->getData('center')->UB*$this->conf['time_coef'])); ?></span>

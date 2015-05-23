@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Plateforme de défense',	'desc' => 'La plateforme de défense permet la création de défense sur la planète.'];?>
+<?php$build	= (object) [	'name' => 'Plateforme de défense',	'desc' => 'La plateforme de défense permet la création de défense sur la planète. En l\'améliorant, les défenses seront construites plus rapidement.'];?>

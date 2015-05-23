@@ -1,7 +1,7 @@
 {
-    "BadPwd": "Nieprawidłowe hasło.",
-    "WeNeedPassword": "Wszystkie zmiany muszą być potwierdzone hasłem.",
     "crtPasword": "Hasło",
-    "Submit": "Submit",
-    "UpdateDone": "Aktualizacja zakończona."
+    "WeNeedPassword": "Wszystkie zmiany muszą być potwierdzone hasłem.",
+    "UpdateDone": "Aktualizacja zakończona.",
+    "Submit": "Wyślij",
+    "BadPwd": "Nieprawidłowe hasło."
 }

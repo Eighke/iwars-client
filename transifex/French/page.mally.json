@@ -1,12 +1,12 @@
 {
-    "AllianceCreation": "Création d'une alliance",
+    "Name:": "Nom :",
     "WarnLeaveAlly": "Attention en créant une alliance vous quitterez automatiquement l'actuelle.",
-    "FormError": "Vous n'avez pas rempli correctement le formulaire.",
     "NowLeader": "Vous êtes maintenant le dirigeant de",
-    "CreationDone": "Création complète.",
-    "AllyExist": "Cette alliance ou ce tag existe déjà.",
     "Tag:": "Tag :",
-    "BadName": "Nom d'alliance ou tag incorrecte.",
     "AreLeader": "Vous êtes le leader de votre alliance, vous ne pouvez pas changer d'alliance.",
-    "Name:": "Nom :"
+    "FormError": "Vous n'avez pas rempli correctement le formulaire.",
+    "AllyExist": "Cette alliance ou ce tag existe déjà.",
+    "BadName": "Nom d'alliance ou tag incorrecte.",
+    "AllianceCreation": "Création d'une alliance",
+    "CreationDone": "Création complète."
 }

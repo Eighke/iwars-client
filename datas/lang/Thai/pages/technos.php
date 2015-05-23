@@ -1,15 +1,15 @@
 <?php$lang += array (
-  'Information' => 'ข้อมูล',
-  'NoResources' => 'คุณมีทรัพยากรที่จำเป็นไม่เพียงพอ!',
-  'End' => 'เสร็จ',
-  'ResearchNow' => 'ค้นคว้า',
   'Level' => 'ระดับ',
-  'Detail' => 'รายละเอียด',
-  'Queue' => 'คิว',
-  'CancelAll' => 'ยกเลิกทั้งหมด',
-  'Time' => 'เวลา',
-  'Cancel' => 'ยกเลิก',
   'NoResearchCenter' => 'คุณต้องการ Research center',
+  'Time' => 'เวลา',
+  'End' => 'เสร็จ',
+  'NoResources' => 'คุณมีทรัพยากรที่จำเป็นไม่เพียงพอ!',
+  'ResearchNow' => 'ค้นคว้า',
   'InProgress' => 'คุณมีการค้นคว้าอยู่ในระหว่างการดำเนินการแล้ว',
+  'Cancel' => 'ยกเลิก',
+  'Detail' => 'รายละเอียด',
+  'CancelAll' => 'ยกเลิกทั้งหมด',
+  'Queue' => 'คิว',
   'Advanced' => 'ขั้นสูง',
+  'Information' => 'ข้อมูล',
 );?>

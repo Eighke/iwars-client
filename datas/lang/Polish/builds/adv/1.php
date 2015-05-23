@@ -1,10 +1,10 @@
 <?php
 $adv_info = [
-	(object) ['level' => 4, 'text' => 'Débloque : Synthétiseur avancé d\'hydrogène'],
-	(object) ['level' => 15, 'text' => 'File d\'attente des bâtiments : 1'],
-	(object) ['level' => 50, 'text' => 'File d\'attente des bâtiments : 2'],
-	(object) ['level' => 80, 'text' => 'Amélioration virtuelle du niveau : 80'],
-	(object) ['level' => 140, 'text' => 'File d\'attente des bâtiments : 3'],
-	(object) ['level' => 200, 'text' => 'Diminution du temps de construction : 100%'],
+	(object) ['level' => 4, 'text' => 'Unlock: Advanced Hydrogen Synthesizer'],
+	(object) ['level' => 15, 'text' => 'Buildings queue: 1'],
+	(object) ['level' => 50, 'text' => 'Buildings queue: 2'],
+	(object) ['level' => 80, 'text' => 'Virtual level improvement: 80'],
+	(object) ['level' => 140, 'text' => 'Buildings queue: 3'],
+	(object) ['level' => 200, 'text' => 'Decrease construction time: 100%'],
 ];
 ?>

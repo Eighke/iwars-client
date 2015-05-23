@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Leviathan',	'desc' => 'Description::Leviathan'];?>
+<?php$unit	= (object) [	'name' => 'Lewiatan',	'desc' => 'Większa wersja statku transportowego. Jest to najbardziej pojemny statek, zdolny pomieścić ogromne ilości ładunku. Jednak jego cena również jest nie mniej ogromna'];?>

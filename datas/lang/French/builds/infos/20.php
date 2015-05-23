@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Chantier orbital',	'desc' => 'Le chantier orbital permet de concevoir les vaisseaux directement dans l\'espace. Cela permet la construction de vaisseaux bien plus important que dans l\'usine de vaisseaux.'];?>
+<?php$build	= (object) [	'name' => 'Chantier orbital',	'desc' => 'Le chantier orbital permet de construire des vaisseaux directement dans l\'espace. Cela permet la construction de vaisseaux bien plus important que dans l\'usine de vaisseaux.'];?>

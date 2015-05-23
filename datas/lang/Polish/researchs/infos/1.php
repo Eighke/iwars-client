@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Napęd Odrzutowy',	'desc' => 'Napęd Odrzutowy'];?>
+<?php$research	= (object) [	'name' => 'Napęd Odrzutowy',	'desc' => 'Ten silnik jest idealny dla małych statków.'];?>

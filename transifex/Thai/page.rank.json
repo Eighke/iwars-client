@@ -1,11 +1,11 @@
 {
     "Development": "การพัฒนา",
-    "/members": "/สมาชิก",
-    "Total": "รวม",
-    "Name": "ชื่อ",
     "Fight": "Fight",
-    "Players": "ผู้เล่น",
-    "Members": "สมาชิก",
     "Alliances": "พันธมิตร",
-    "Unit": "ยาน"
+    "Name": "ชื่อ",
+    "Total": "รวม",
+    "/members": "/สมาชิก",
+    "Players": "ผู้เล่น",
+    "Unit": "ยาน",
+    "Members": "สมาชิก"
 }

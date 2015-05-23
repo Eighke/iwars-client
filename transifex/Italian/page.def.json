@@ -1,12 +1,12 @@
 {
-    "Life": "Integrità strutturale",
-    "Basics": "Base",
-    "Capacity": "Capienza",
-    "Consumption": "Consumo",
     "Specifications": "Specifiche tecniche",
-    "Current": "Attuale",
-    "Armor": "Armamenti",
-    "Damages": "Danni (min/max)",
+    "Speed": "Velocità",
     "Time": "Tempo",
-    "Speed": "Velocità"
+    "Consumption": "Consumo",
+    "Current": "Attuale",
+    "Capacity": "Capienza",
+    "Basics": "Base",
+    "Damages": "Danni (min/max)",
+    "Armor": "Armamenti",
+    "Life": "Integrità strutturale"
 }

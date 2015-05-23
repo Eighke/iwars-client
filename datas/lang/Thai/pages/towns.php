@@ -1,8 +1,8 @@
 <?php$lang += array (
-  'Rename' => 'Rename',
-  'Time:' => 'เวลา:',
   'Coordinates' => 'พิกัด',
-  'Points' => 'คะแนน',
+  'Delete' => 'ลบ',
+  'Time:' => 'เวลา:',
   'Action' => 'คำสั่ง',
-  'Delete' => 'Delete',
+  'Points' => 'คะแนน',
+  'Rename' => 'เปลี่ยนชื่อ',
 );?>

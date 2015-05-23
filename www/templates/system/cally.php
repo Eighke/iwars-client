@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			cally.php
+ * Package      Templates
+ * Subpackage   System
+ * File         cally.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -24,7 +24,7 @@ if (!session_id()) exit();
 <div class="bg<?php echo ($j = $j == 2 ? 1 : 2); ?>">
 	<span class="left" style="width:50px"><?php echo $item->tag; ?></span>
 	<span class="left" style="width:200px"><?php echo qftext($item->name); ?></span>
-	<span style="width:100px"><a class="button" href="?join=<?php echo $item->id; ?>"><?php echo ILang::_('Join'); ?></a></span>
+	<span style="width:100px"><a class="button" href="cally.php?join=<?php echo $item->id; ?>" data-load="cache"><?php echo ILang::_('Join'); ?></a></span>
 </div>
 <?php endforeach; ?>
 <?php endif; ?>

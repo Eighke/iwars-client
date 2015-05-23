@@ -3,6 +3,8 @@
 	"Time": "Time",
 	"End": "End",
 	"Ships": "Ships",
+	"Total": "Total",
+	"Max": "Max",
 	"NoResources": "You don't have necessary resources!",
 	"Usine1Empty": "No build in work",
 	"Usine2Empty": "No build in work",

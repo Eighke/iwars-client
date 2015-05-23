@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Silicon Plant',	'desc' => 'Silicon Plant หรือโรงแร่ซิลิคอน สามารถสกัดแร่ซิลิคอนจากก้อนหิน ไว้ใช้ในงานทางไฟฟ้าต่างๆ'];?>
+<?php$build	= (object) [	'name' => 'Silicon Plant',	'desc' => 'Description::Silicon Plant'];?>

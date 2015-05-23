@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Technika Kolonizacyjna',	'desc' => 'Technika Kolonizacyjna'];?>
+<?php$research	= (object) [	'name' => 'Technika Kolonizacyjna',	'desc' => 'Im wyższy jest poziom tego badania, tym dalsze systemy mogą być zasiedlane.'];?>

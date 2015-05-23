@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			technos.php
+ * Package      Templates
+ * Subpackage   System
+ * File         technos.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-11-03 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -37,7 +37,7 @@ if (!session_id()) exit();
 		<span class="bld_time countdown" offset="<?php echo $work->uTime; ?>"><?php echo $work->time; ?></span>
 		<span class="bld_end"><?php echo MySQLtoFormat($work->end); ?></span>
 		<span class="bld_cent">(<?php echo $key == 0 ? ($work->percent) : 0; ?>%)</span>
-		<div class="bld_cancel button"><a href="?task=cancel&id=<?php echo $work->id; ?>"><?php echo ($key == 0 && $this->getData('work') != 1) ? ILang::_('CancelAll') : ILang::_('Cancel'); ?></a></div>
+		<div class="bld_cancel button"><a href="technos.php?task=cancel&id=<?php echo $work->id; ?>" data-load="cache"><?php echo ($key == 0 && $this->getData('work') != 1) ? ILang::_('CancelAll') : ILang::_('Cancel'); ?></a></div>
 		<div class="clr"></div>
 	<?php endif; ?>
 	</div>
@@ -48,15 +48,15 @@ if (!session_id()) exit();
 	<?php if ($builds = $this->getData('researchs')) : ?>
 	<?php foreach($builds as $build) : ?>
 	<div>
-		<span class="elem-name"><b><a class="nolink" href="?bid=<?php echo $build->id; ?>"><?php echo ILang::research($build->id, 'name'); ?></a></b> (<?php echo $this->user->getTech($build->id); ?>)</span>
+		<span class="elem-name"><b><a class="nolink" href="technos.php?bid=<?php echo $build->id; ?>"><?php echo ILang::research($build->id, 'name'); ?></a></b> (<?php echo $this->user->getTech($build->id); ?>)</span>
 		<?php if(!$this->getData('inWork')
 				& $this->resources[1] >= $build->ress[1]
 				& $this->resources[2] >= $build->ress[2]
-				& $this->resources[3] >= $build->ress[3]) : ?><span class="button right"> <a href="?task=build&id=<?php echo $build->id; ?>&town=<?php echo $this->town->id; ?>"><?echo ILang::_('ResearchNow'); ?></a></span>
+				& $this->resources[3] >= $build->ress[3]) : ?><span class="button right"> <a href="technos.php?task=build&id=<?php echo $build->id; ?>&town=<?php echo $this->town->id; ?>" data-load="cache"><?echo ILang::_('ResearchNow'); ?></a></span>
 		<?php elseif ($this->getData('inWork') == 1
 				& $this->resources[1] >= ceil($build->ress[1]/100)
 				& $this->resources[2] >= ceil($build->ress[2]/100)
-				& $this->resources[3] >= ceil($build->ress[3]/100)) : ?><span class="button right"><a href="?task=build&id=<?php echo $build->id; ?>&town=<?php echo $this->town->id; ?>"><?php echo ILang::_('Queue'); ?></a></span>
+				& $this->resources[3] >= ceil($build->ress[3]/100)) : ?><span class="button right"><a href="technos.php?task=build&id=<?php echo $build->id; ?>&town=<?php echo $this->town->id; ?>" data-load="cache"><?php echo ILang::_('Queue'); ?></a></span>
 		<?php endif; ?>
 		<div class="elem-ress">
 			<span class="line"><?php echo $build->ress[1] ? ILang::_('T').': '.ILang::number($build->ress[1]).' &nbsp;' : FALSE; ?>
@@ -70,7 +70,7 @@ if (!session_id()) exit();
 <div class="one_two left_aside">
 	<div id="sticky">
 		<div id="t<?php echo $tid; ?>">
-			<div class="right button"><a href="research.php?id=<?php echo $tid; ?>"><?php echo ILang::_('Detail'); ?></a></div>
+			<div class="right button"><a href="research.php?id=<?php echo $tid; ?>" data-load="cache"><?php echo ILang::_('Detail'); ?></a></div>
 			<h2><?php echo ILang::research($this->getData('info')->id, 'name'); ?></h2>
 			<div>
 				<div>
@@ -118,7 +118,7 @@ if (!session_id()) exit();
 				?>
 					<div class="bg<?php echo $j; ?>"><span class="left" style="margin: 0 5px; width:71px;"><?php echo ILang::_('Level'); ?> <?php echo $info->level; ?></span><span><?php echo $info->text; ?></span></div>
 				<?php endforeach; ?>
-			</div> 
+			</div>
 			<?php endif; ?>
 		</div>
 	</div>

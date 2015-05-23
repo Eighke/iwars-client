@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Behemoth',	'desc' => 'Description::Behemoth'];?>
+<?php$unit	= (object) [	'name' => 'Behemot',	'desc' => 'Ten krążownik jest tak potężny, że mało kto przeżył z nim spotkanie i może nam o nim opowiedzieć. Niejedna wielka flota ratowała się odwrotem kiedy tylko go zobaczyła.'];?>

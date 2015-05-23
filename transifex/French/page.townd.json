@@ -1,7 +1,7 @@
 {
-    "BadPwd": "Le mot de passe saisi n'est pas valide.",
-    "WeNeedPassword": "Toutes les modifications de cette partie requièrent votre mot de passe.",
     "crtPasword": "Mot de passe",
+    "WeNeedPassword": "Toutes les modifications de cette partie requièrent votre mot de passe.",
+    "UpdateDone": "Mise à jour effectuée.",
     "Submit": "Valider",
-    "UpdateDone": "Mise à jour effectuée."
+    "BadPwd": "Le mot de passe saisi n'est pas valide."
 }

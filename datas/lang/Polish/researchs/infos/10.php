@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Wzmocnienie Opancerzenia',	'desc' => 'Wzmocnienie Opancerzenia'];?>
+<?php$research	= (object) [	'name' => 'Wzmocnienie Opancerzenia',	'desc' => 'Ta technologia wzmacnia opancerzenie statków.'];?>

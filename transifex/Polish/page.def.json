@@ -1,12 +1,12 @@
 {
-    "Life": "Życie",
-    "Basics": "Podstawowe",
-    "Capacity": "Pojemność",
-    "Consumption": "Konsumpcja",
     "Specifications": "Dane techniczne",
-    "Current": "Obecnie",
-    "Armor": "Pancerz",
-    "Damages": "Atak (min/max)",
+    "Speed": "Prędkość",
     "Time": "Czas",
-    "Speed": "Prędkość"
+    "Consumption": "Konsumpcja",
+    "Current": "Obecnie",
+    "Capacity": "Pojemność",
+    "Basics": "Bazowe",
+    "Damages": "Atak (min/max)",
+    "Armor": "Pancerz",
+    "Life": "Życie"
 }

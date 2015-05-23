@@ -1,12 +1,12 @@
 {
-    "Life": "Life",
-    "Basics": "Basics",
-    "Capacity": "Capacity",
-    "Consumption": "Consumption",
     "Specifications": "Specifications",
-    "Current": "Current",
-    "Armor": "Armor",
-    "Damages": "Damages (min/max)",
+    "Speed": "Speed",
     "Time": "Time",
-    "Speed": "Speed"
+    "Consumption": "Consumption",
+    "Current": "Current",
+    "Capacity": "Capacity",
+    "Basics": "Basics",
+    "Damages": "Damages (min/max)",
+    "Armor": "Armor",
+    "Life": "Life"
 }

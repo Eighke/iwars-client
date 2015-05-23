@@ -1,15 +1,15 @@
 <?php$lang += array (
-  'Information' => 'Informacje',
-  'NoResources' => 'Nie masz niezbędnych surowców!',
-  'End' => 'Koniec',
-  'ResearchNow' => 'Badania',
   'Level' => 'Poziom',
-  'Detail' => 'Szczegół',
-  'Queue' => 'Kolejka',
-  'CancelAll' => 'Anuluj całość',
-  'Time' => 'Czas',
-  'Cancel' => 'Anuluj',
   'NoResearchCenter' => 'Potrzebujesz Centrum badań.',
+  'Time' => 'Czas',
+  'End' => 'Koniec',
+  'NoResources' => 'Nie masz niezbędnych surowców!',
+  'ResearchNow' => 'Badania',
   'InProgress' => 'Jesteś już w trakcie badań.',
+  'Cancel' => 'Anuluj',
+  'Detail' => 'Szczegóły',
+  'CancelAll' => 'Anuluj wszystko',
+  'Queue' => 'Kolejka',
   'Advanced' => 'Zaawansowane',
+  'Information' => 'Informacje',
 );?>

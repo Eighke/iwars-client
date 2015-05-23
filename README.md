@@ -16,3 +16,10 @@ Avalable language:
 ## Contributors
 
 * Eighke
+
+## Translators
+
+* Eighke (French, English)
+* Kicha (Polish)
+* Tesoro (Italian)
+* Log (Thai)

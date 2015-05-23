@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Spy Commnication Satellite',	'desc' => 'Description::Spy Commnication Satellite'];?>
+<?php$unit	= (object) [	'name' => 'Satelita Szpiegowski',	'desc' => 'Szybki zwrotny statek, przesyła informacje o innych planetach.'];?>

@@ -21,7 +21,7 @@ $i = $this->getData('i');
 <?php $this->renderMsgs(); ?>
 <div class="content">
 	<div class="contenant">
-		<div><a href="?limit=<?php echo $limit-50; ?>">&lsaquo;&lsaquo; -50 &lsaquo;</a> | <a href="?limit=<?php echo $limit+50; ?>">&rsaquo; +50 &rsaquo;&rsaquo;</a></div>
+		<div><a href="global.php?limit=<?php echo $limit-50; ?>">&lsaquo;&lsaquo; -50 &lsaquo;</a> | <a href="global.php?limit=<?php echo $limit+50; ?>">&rsaquo; +50 &rsaquo;&rsaquo;</a></div>
 		<div class="table-responsive" style="overflow-x: scroll; overflow-y: hidden;">
 			<table class="table table-striped">
 				<thead>

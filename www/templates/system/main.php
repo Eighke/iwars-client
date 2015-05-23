@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			main.php
+ * Package      Templates
+ * Subpackage   System
+ * File         main.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-17 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -30,17 +30,17 @@ if (!session_id()) exit();
 			<span class="countdown" time="<?php echo time()+$action->uTime; ?>"><?php echo $action->wait; ?></span>
 			| <?php echo $action->msg; ?></span>
 		<?php if ($action->cancel) : ?>
-		<span class="right button"><a href="?task=cancel&id=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a></span>
+		<span class="right button"><a href="main.php?task=cancel&id=<?php echo $action->id; ?>" data-load="cache"><?php echo ILang::_('Cancel'); ?></a></span>
 		<?php endif; ?>
 		<span class="clr">&nbsp;</span>
 	</div>
 	<?php endforeach; ?>
 </div>
-<div class="center"><a href="index.php" class="button"><?php echo ILang::_('SeeAllMoves'); ?></a></div>
+<div class="center"><a href="index.php" class="button" data-load="cache"><?php echo ILang::_('SeeAllMoves'); ?></a></div>
 <?php else : ?>
 <div class="alert alert-info btn-toolbar">
 	<strong class=""><?php echo ILang::_('NoMove'); ?></strong>
-	<a href="move.php" class="btn btn-default pull-right btn-xs" title="<?php echo ILang::_('ViewFleets'); ?>"><span class="glyphicon glyphicon-plane"></span></a>
+	<a href="move.php" class="btn btn-default pull-right btn-xs" title="<?php echo ILang::_('ViewFleets'); ?>" data-load="cache"><span class="glyphicon glyphicon-plane"></span></a>
 </div>
 <?php endif; ?>
 
@@ -68,11 +68,11 @@ if (!session_id()) exit();
 	</div>
 	<?php endforeach; ?>
 </div>
-<?php if (count($builds) == 20) : ?><div class="center">[ <a href="?all=1"><?php echo ILang::_('SeeAllBuilds'); ?></a> ]</div><?php endif; ?>
+<?php if (count($builds) == 20) : ?><div class="center">[ <a href="main.php?all=1" data-load="cache"><?php echo ILang::_('SeeAllBuilds'); ?></a> ]</div><?php endif; ?>
 <?php else : ?>
 <div class="alert alert-info btn-toolbar">
 	<strong class=""><?php echo ILang::_('NoBuild'); ?></strong>
-	<a href="builds.php" class="btn btn-default pull-right btn-xs" title="<?php echo ILang::_('ViewBuilds'); ?>"><span class="glyphicon glyphicon-home"></span></a>
+	<a href="builds.php" class="btn btn-default pull-right btn-xs" title="<?php echo ILang::_('ViewBuilds'); ?>" data-load="cache"><span class="glyphicon glyphicon-home"></span></a>
 </div>
 
 <?php endif; ?>
@@ -88,16 +88,16 @@ if (!session_id()) exit();
 			<?php endif; ?>
 			<div class="upload">
 				<div style="<?php echo isset($_GET['upload']) ? NULL : 'display:none;'; ?>">
-					<form action="./main.php" enctype="multipart/form-data" method="POST">
+					<form action="main.php?task=upload" enctype="multipart/form-data" method="POST">
 						<div>
 							<span><?php echo ILang::_('FileSpec'); ?></span>
 							<span><input type="file" size="20" name="logo" /></span>
-							<span><input type="submit" name="act_logo" value="<?php echo ILang::_('Upload'); ?>" /></span>
+							<span><input type="submit" value="<?php echo ILang::_('Upload'); ?>" /></span>
 							<span class="clr">&nbsp;</span>
 						</div>
 					</form>
 				</div>
-				<span><a href="?upload=1" class="button"><?php echo ILang::_('Upload'); ?></a></span>
+				<span><a href="main.php?upload=1" class="button"><?php echo ILang::_('Upload'); ?></a></span>
 			</div>
 		</div>
 	</div>
@@ -132,7 +132,7 @@ if (!session_id()) exit();
 				<span class="left center<?php echo $this->getData('prod')->R3->stock <= 10 ? ' cvld' : ($this->getData('prod')->R3->stock == 100 ? ' cerr' : ($this->getData('prod')->R3->stock >= 80 ? ' cwrn' : NULL)); ?>" style="width:40px;"><?php echo $this->getData('prod')->R3->stock; ?>%</span>
 				<span class="aright" style="display:inline-block;width:75px"><?php echo ILang::number($this->getData('prod')->R3->factCoef); ?></span>
 			</div>
-			<div class="bg3"><a href="./ress.php"><?php echo ILang::_('MoreInfos'); ?></a></div>
+			<div class="bg3"><a href="./ress.php" data-load="cache"><?php echo ILang::_('MoreInfos'); ?></a></div>
 		</div><br /><br />
 	</div>
 	<div class="col-xs-6 col-sm-4">
@@ -203,7 +203,7 @@ if (!session_id()) exit();
 	<?php foreach ($this->town->unit as $id => $nb) : ?>
 	<div class="col-xs-4 col-sm-3">
 		<div class="thumbnail">
-		<a href="unit.php?id=<?php echo $id; ?>">
+		<a href="unit.php?id=<?php echo $id; ?>" data-load="cache">
 			<span class="top"><?php echo ILang::number($nb); ?></span>
 			<img src="<?php echo SKIN; ?>unit/u<?php echo $id; ?>k10.jpg" class="img-responsive" />
 			<span class="bottom"><?php echo ILang::unit($id, 'name'); ?></span>

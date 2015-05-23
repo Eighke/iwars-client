@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Light Fighter',	'desc' => 'Description::Light Fighter'];?>
+<?php$unit	= (object) [	'name' => 'Lekki Myśliwiec',	'desc' => 'Tani, ale słaby okręt wojenny klasy skaut. Uzbrojony w 2 działka laserowe.'];?>

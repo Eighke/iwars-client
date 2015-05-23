@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Technika Plazmowa',	'desc' => 'Technika Plazmowa'];?>
+<?php$research	= (object) [	'name' => 'Technika Plazmowa',	'desc' => 'Podwyższa skuteczność broni plazmowych.'];?>

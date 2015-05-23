@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Raffineria di silicio',	'desc' => 'Raffineria di silicio'];?>
+<?php$build	= (object) [	'name' => 'Raffineria di silicio',	'desc' => 'Qui i tuoi lavoratori producono la seconda importante risorsa: il Silicio. Effect: Aumenta la produzione di Silicio '];?>

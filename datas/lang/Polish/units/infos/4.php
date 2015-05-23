@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Serenity',	'desc' => 'Serenity'];?>
+<?php$unit	= (object) [	'name' => 'Serenity',	'desc' => 'Description::Serenity'];?>

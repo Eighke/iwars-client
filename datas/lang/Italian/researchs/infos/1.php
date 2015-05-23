@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Propulsione a combustione interna',	'desc' => 'Propulsione a combustione interna'];?>
+<?php$research	= (object) [	'name' => 'Propulsione a combustione',	'desc' => 'Questa è il luogo ove viene eseguita la ricerca e il miglioramento dell\'efficenza della propulsione. '];?>

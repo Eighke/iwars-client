@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Colonizer Spaceship',	'desc' => 'Description::Colonizer Spaceship'];?>
+<?php$unit	= (object) [	'name' => 'Statek Kolonizacyjny',	'desc' => 'Prędzej czy później każde imperium zaczyna myśleć o założeniu kolonii; jest to korzystne zarówno ze względów ekonomicznych (kolonia zasila główną planetę surowcami) jak i militarnych. Statek kolonizacyjny po zasiedleniu planety zamienia się w centrum dowowodzenia.'];?>

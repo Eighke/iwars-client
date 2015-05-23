@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Napęd jonowy',	'desc' => 'Napęd jonowy'];?>
+<?php$research	= (object) [	'name' => 'Napęd jonowy',	'desc' => 'Napęd jonowy jest silniejszym oraz szybszym napędem od odrzutowego.'];?>

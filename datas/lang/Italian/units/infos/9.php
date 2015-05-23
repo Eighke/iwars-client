@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Bombardiere camuffato',	'desc' => 'Bombardiere camuffato'];?>
+<?php$unit	= (object) [	'name' => 'Bombardiere camuffato',	'desc' => 'Il suo punto di forza non è la protezione ma il camuffamento. I bombardieri camuffati sono capaci di avvicinarsi al pianeta obiettivo senza farsi rilevare dalle difese. questo però a discapito dei loro armamenti che, in ogni caso, sono comunque molto pericolosi'];?>

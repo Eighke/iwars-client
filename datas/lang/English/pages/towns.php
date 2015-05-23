@@ -1,8 +1,8 @@
 <?php$lang += array (
-  'Rename' => 'Rename',
-  'Time:' => 'Time:',
   'Coordinates' => 'Coordinates',
-  'Points' => 'Points',
-  'Action' => 'Action',
   'Delete' => 'Delete',
+  'Time:' => 'Time:',
+  'Action' => 'Action',
+  'Points' => 'Points',
+  'Rename' => 'Rename',
 );?>

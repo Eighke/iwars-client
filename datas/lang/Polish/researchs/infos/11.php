@@ -1,1 +1,1 @@
-<?php$research	= (object) [	'name' => 'Technika Ochronna',	'desc' => 'Technika Ochronna'];?>
+<?php$research	= (object) [	'name' => 'Technika Ochronna',	'desc' => 'Wytwarza wokół statków niewidzialne pole siłowe, które wzmacnia ich opancerzenie.'];?>

@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Behemoth',	'desc' => 'Description::Behemoth'];?>
+<?php$unit	= (object) [	'name' => 'AquilaV',	'desc' => 'Vascello da combattimento, da trasporto, da difesa, questa nave sa fare tutto!'];?>

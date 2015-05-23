@@ -1,1 +1,1 @@
-<?php$build	= (object) [	'name' => 'Miniera di Ferro',	'desc' => 'Il ferro, l\'elemento essenziale per la costruzione di edifici e navi. La miniera di ferro viene usata per l\'estrazione del metallo necessario al potenziamento di infrastrutture, flotte e ricerche.'];?>
+<?php$build	= (object) [	'name' => 'Miniera di Ferro',	'desc' => 'Questa costruzione ti permette di incrementare l\'estrazione di ferro. Effect: Aumenta la produzione di Ferro '];?>

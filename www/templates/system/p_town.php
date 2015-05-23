@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			p_town.php
+ * Package      Templates
+ * Subpackage   System
+ * File         p_town.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -20,11 +20,11 @@ if (!session_id()) exit();
 		<?php echo $this->getData('town')->name; ?> : <?php echo $this->getData('town')->loc['X']; ?>:<?php echo $this->getData('town')->loc['Y']; ?>:<?php echo $this->getData('town')->loc['Z']; ?> (<?php echo $this->getData('town')->points; ?> <?php echo ILang::_('points'); ?>)
 	</div><br />
 	<div>
-		<a href="move.php?coords=<?php echo $this->getData('town')->loc['X']; ?>:<?php echo $this->getData('town')->loc['Y']; ?>:<?php echo $this->getData('town')->loc['Z']; ?>"><b><?php echo ILang::_('SendFleet'); ?></b></a>
+		<a href="move.php?coords=<?php echo $this->getData('town')->loc['X']; ?>:<?php echo $this->getData('town')->loc['Y']; ?>:<?php echo $this->getData('town')->loc['Z']; ?>" data-load="cache"><b><?php echo ILang::_('SendFleet'); ?></b></a>
 	</div>
 </div>
 <h2><?php echo ILang::_('Player'); ?></h2>
 <div class="contenant center">
-	<div><strong><?php echo ILang::_('Player'); ?></strong> <span><a href="player.php?id=<?php echo $this->getData('town')->userId; ?>"><?php echo $this->getData('town')->userName; ?></a></span></div>
-	<div><a href="m_msg.php?id=<?php echo $this->getData('town')->userId; ?>"><b><?php echo ILang::_('Contact'); ?></b></a></div>
+	<div><strong><?php echo ILang::_('Player'); ?></strong> <span><a href="player.php?id=<?php echo $this->getData('town')->userId; ?>" data-load="cache"><?php echo $this->getData('town')->userName; ?></a></span></div>
+	<div><a href="m_msg.php?id=<?php echo $this->getData('town')->userId; ?>" data-load="cache"><b><?php echo ILang::_('Contact'); ?></b></a></div>
 </div>

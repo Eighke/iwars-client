@@ -1,13 +1,15 @@
 {
-    "Life": "Integrità strutturale",
+    "Unit": "Unità",
+    "Specifications": "Specifiche",
     "Basics": "Base",
+    "Current": "Corrente",
+    "Time": "Tempo",
+    "Damages": "Danni (min/max)",
+    "Life": "Integrità strutturale",
+    "Armor": "Armamenti",
+    "Speed": "Velocità",
     "Capacity": "Capienza",
     "Consumption": "Consumo",
-    "Specifications": "Specifiche",
-    "Current": "Corrente",
-    "Armor": "Armamenti",
-    "Damages": "Danni (min/max)",
-    "Time": "Tempo",
-    "Speed": "Velocità",
-    "Unit": "Unità"
+    "Attack": "Attacco",
+    "Defense": "Difesa"
 }

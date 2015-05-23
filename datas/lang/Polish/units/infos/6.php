@@ -1,1 +1,1 @@
-<?php$unit	= (object) [	'name' => 'Name::Spacel Corvette',	'desc' => 'SDescription::pacel Corvette'];?>
+<?php$unit	= (object) [	'name' => 'Kosmiczna Korweta',	'desc' => 'Description::Spacel Corvette'];?>

@@ -1,12 +1,12 @@
 <?php$lang += array (
-  'Search' => 'Search',
-  'EnterName:' => 'Enter player name:',
-  'MsgSent' => 'Message sent.',
-  'Back' => 'Back',
   'Send' => 'Send',
-  'NewMsg' => 'New message',
-  'Title:' => 'Title:',
-  'Validate' => 'Validate',
-  'Recipient:' => 'Recipient:',
   'NoResult' => 'No result.',
+  'Recipient:' => 'Recipient:',
+  'Search' => 'Search',
+  'NewMsg' => 'New message',
+  'Validate' => 'Validate',
+  'MsgSent' => 'Message sent.',
+  'Title:' => 'Title:',
+  'Back' => 'Back',
+  'EnterName:' => 'Enter player name:',
 );?>
