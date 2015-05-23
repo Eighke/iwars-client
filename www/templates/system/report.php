@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			report.php
+ * Package      Templates
+ * Subpackage   System
+ * File         report.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-20 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 
@@ -24,12 +24,13 @@ $ia = $this->getData('ia');
 ?>
 <h1><?php echo ILang::_('CombatReport'); ?></h1>
 <?php $this->renderMsgs(); ?>
+<?php if ($report) : ?>
 <div class="contenant">
 	<table style="width:100%;">
 		<thead>
 			<tr>
 				<th colspan="5" style="background:rgba(0,0,0, 0.6); padding: 5px 0;">
-					<span><a href="player.php?id=<?php echo $atk[1]; ?>"><?php echo $atk[0]; ?></a> (<?php echo $atk[2]; ?>) vs <a href="player.php?id=<?php echo $def[1]; ?>"><?php echo $def[0]; ?></a> (<?php echo $def[2]; ?>)</span>
+					<span><a href="player.php?id=<?php echo $atk[1]; ?>" data-load="cache"><?php echo $atk[0]; ?></a> (<?php echo $atk[2]; ?>) vs <a href="player.php?id=<?php echo $def[1]; ?>" data-load="cache"><?php echo $def[0]; ?></a> (<?php echo $def[2]; ?>)</span>
 					- <span><?php echo date('d M Y, H:i', $infos[2]); ?></span>
 				</th>
 			</tr>
@@ -163,5 +164,6 @@ $ia = $this->getData('ia');
 			<?php endif; ?>
 		</tfoot>
 	</table><br />
-	<div class="center button"><a href="reports.php?task=arch&id=<?php echo $this->getData('id'); ?>"><?php echo ILang::_('Archive'); ?></a></div>
+	<div class="center button"><a href="reports.php?task=arch&id=<?php echo $this->getData('id'); ?>" data-load="cache"><?php echo ILang::_('Archive'); ?></a></div>
 </div>
+<?php endif; ?>

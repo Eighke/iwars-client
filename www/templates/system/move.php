@@ -1,15 +1,13 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			move.php
+ * Package      Templates
+ * Subpackage   System
+ * File         move.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
- *
- * Version		2013-10-31 - Eighke
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  */
 if (!session_id()) exit();
 ?>
@@ -22,13 +20,13 @@ if (!session_id()) exit();
 		<div class="form-group">
 			<label for="unit_<?php echo $id; ?>" class="col-xs-6 col-sm-4 control-label"><?php echo ILang::unit($id, 'name'); ?> <span class="badge"><?php echo $nb; ?></span></label>
 			<div class="input-group col-xs-6 col-sm-4">
-				<a href="#" class="input-group-addon" onClick="IWMove.select(<?php echo $id; ?>, <?php echo $nb; ?>)" title="<?php echo ILang::_('All'); ?>"><i class="glyphicon glyphicon-chevron-right"></i></a>
+				<a href="#" class="select input-group-addon" data-id="<?php echo $id; ?>" data-number="<?php echo $nb; ?>" title="<?php echo ILang::_('All'); ?>"><i class="glyphicon glyphicon-chevron-right"></i></a>
 				<input type="text" name="unit[<?php echo $id; ?>]" id="unit_<?php echo $id; ?>" value="<?php echo (int) $this->getData('post')->unit[$id]; ?>" class="form-control" />
 			</div>
 		</div>
 		<?php endforeach; ?>
 		<div class="clr"></div>
-		<div class="center"><a href="#" onClick="IWMove.allselect()" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> <?php echo ILang::_('SelectAll'); ?></a></div>
+		<div class="center"><a href="#" id="selectAll" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> <?php echo ILang::_('SelectAll'); ?></a></div>
 		<?php else : ?>
 		<div><?php echo ILang::_('NoUnit'); ?></div>
 		<?php endif; ?>
@@ -49,17 +47,23 @@ if (!session_id()) exit();
 		</div>
 		<div class="visible-xs">&nbsp;</div>
 		<div class="col-sm-6">
-			<div class="input-group col-xs-4">
-				<span href="#" class="input-group-addon" title="G">G</span>
-				<input type="text" name="x" value="<?php echo (int) $this->getData('X') ?>" class="form-control" />
+			<div class="col-xs-4">
+				<div class="input-group">
+					<span class="input-group-addon" title="G">G</span>
+					<input type="text" name="x" value="<?php echo (int) $this->getData('X') ?>" class="form-control" />
+				</div>
 			</div>
-			<div class="input-group col-xs-4">
-				<span href="#" class="input-group-addon" title="G">S</span>
-				<input type="text" name="y" value="<?php echo (int) $this->getData('Y') ?>" class="form-control" />
+			<div class="col-xs-4">
+				<div class="input-group">
+					<span class="input-group-addon" title="G">S</span>
+					<input type="text" name="y" value="<?php echo (int) $this->getData('Y') ?>" class="form-control" />
+				</div>
 			</div>
-			<div class="input-group col-xs-4">
-				<span href="#" class="input-group-addon" title="G">P</span>
-				<input type="text" name="z" value="<?php echo (int) $this->getData('Z') ?>" class="form-control" />
+			<div class="col-xs-4">
+				<div class="input-group">
+					<span class="input-group-addon" title="G">P</span>
+					<input type="text" name="z" value="<?php echo (int) $this->getData('Z') ?>" class="form-control" />
+				</div>
 			</div>
 		</div>
 		<div class="clr"></div>
@@ -104,6 +108,7 @@ if (!session_id()) exit();
 	</div><br />
 	<?php endif; ?>
 	<div style="text-align:center;">
-		<input type="submit" name="vis" value="<?php echo ILang::_('Overview'); ?>" /> <input type="submit" name="act" value="<?php echo ILang::_('Launch'); ?>" />
+		<input type="submit" name="vis" value="<?php echo ILang::_('Overview'); ?>" />
+		<input type="submit" name="act" value="<?php echo ILang::_('Launch'); ?>" />
 	</div>
 </form>

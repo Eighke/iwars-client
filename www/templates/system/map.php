@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			map.php
+ * Package      Templates
+ * Subpackage   System
+ * File         map.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-20 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -23,10 +23,10 @@ if (!session_id()) exit();
 		</div>
 	</form>
 	<div style="text-align:center;">
-		<a href="?x=<?php echo $this->getData('X')-1; ?>&y=<?php echo $this->getData('Y'); ?>"><img src="<?php echo SKIN; ?>imgs/map_w.png" alt="Ouest"/></a>
-		<a href="?x=<?php echo $this->getData('X'); ?>&y=<?php echo $this->getData('Y')-1; ?>"><img src="<?php echo SKIN; ?>imgs/map_n.png" alt="Nord"/></a>
-		<a href="?x=<?php echo $this->getData('X'); ?>&y=<?php echo $this->getData('Y')+1; ?>"><img src="<?php echo SKIN; ?>imgs/map_s.png" alt="Sud"/></a>
-		<a href="?x=<?php echo $this->getData('X')+1; ?>&y=<?php echo $this->getData('Y'); ?>"><img src="<?php echo SKIN; ?>imgs/map_e.png" alt="Est"/></a>
+		<a href="map.php?x=<?php echo $this->getData('X')-1; ?>&y=<?php echo $this->getData('Y'); ?>" data-load="cache"><img src="<?php echo SKIN; ?>imgs/map_w.png" alt="Ouest"/></a>
+		<a href="map.php?x=<?php echo $this->getData('X'); ?>&y=<?php echo $this->getData('Y')-1; ?>" data-load="cache"><img src="<?php echo SKIN; ?>imgs/map_n.png" alt="Nord"/></a>
+		<a href="map.php?x=<?php echo $this->getData('X'); ?>&y=<?php echo $this->getData('Y')+1; ?>" data-load="cache"><img src="<?php echo SKIN; ?>imgs/map_s.png" alt="Sud"/></a>
+		<a href="map.php?x=<?php echo $this->getData('X')+1; ?>&y=<?php echo $this->getData('Y'); ?>" data-load="cache"><img src="<?php echo SKIN; ?>imgs/map_e.png" alt="Est"/></a>
 	</div>
 	<div>
 		<div id="map" style="position:relative;">
@@ -38,11 +38,11 @@ if (!session_id()) exit();
 					$x = $i;
 					?>
 				<?php if ($line[$j]) : ?>
-				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip gd_<?php if ($case['usrId'] == $usr->id) { echo 'self'; } else if ($case['allyId'] == $ally->id) { echo 'ally'; } else { echo 'other'; } ?>" data-toggle="tooltip" content="<?php echo $this->getData('X').':'.$this->getData('Y').':'.$case['z']; ?> - <?php echo $case['buildPoints']; ?> pts::<?php echo $case['usrName']; ?> (<?php echo $case['userPoints']; ?> pts)"><a href="p_town.php?id=<?php echo $case['twnId']; ?>"><img src="<?php echo SKIN.'imgs/'.$case['twnImg']; ?>.png" alt="" /></a></div>
+				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip gd_<?php if ($case['usrId'] == $usr->id) { echo 'self'; } else if ($case['allyId'] == $ally->id) { echo 'ally'; } else { echo 'other'; } ?>" data-toggle="tooltip" content="<?php echo $this->getData('X').':'.$this->getData('Y').':'.$case['z']; ?> - <?php echo $case['buildPoints']; ?> pts::<?php echo $case['usrName']; ?> (<?php echo $case['userPoints']; ?> pts)"><a href="p_town.php?id=<?php echo $case['twnId']; ?>" data-load="cache"><img src="<?php echo SKIN.'imgs/'.$case['twnImg']; ?>.png" alt="" /></a></div>
 				<?php else : ?>
 				<div style="position:absolute; top:<?php echo ($j-1)*32; ?>px; left:<?php echo ($x-1)*32; ?>px;" class="tip <?php if ($grid[$x][$j]) { echo 'gd2_'. $grid[$x][$j]; } ?>" data-toggle="tooltip" content="<?php echo $this->getData('X').':'.$this->getData('Y').':'.($x+($j-1)*17); ?>"><a><img src="<?php echo SKIN; ?>imgs/mempty.gif" alt="" /></a></div>
 				<?php endif; ?>
-			
+
 			<?php endfor; ?>
 		<?php endfor; ?>
 		</div>

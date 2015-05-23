@@ -16,7 +16,7 @@ if ($this->alliance->isLeader($this->user->id)) {
 
 	/**
 	 * [Tasks]
-	 * 
+	 *
 	 * Desc			Change the alliance descriptions
 	 * Link			Change the alliance website URL
 	 * Logo			Upload a new alliance logo
@@ -25,7 +25,7 @@ if ($this->alliance->isLeader($this->user->id)) {
 	 */
 	try {
 		if ('desc' == $this->task) {
-	
+
 			$result = $this->alliance->setDescription($_POST['desc'], $_POST['pdesc']);
 		}
 		elseif ('link' == $this->task) {
@@ -37,7 +37,7 @@ if ($this->alliance->isLeader($this->user->id)) {
 			$result = $this->alliance->uploadLogo();
 		}
 		elseif ('leader' == $this->task
-				|| 'destroy' == $this->task) {
+			|| 'destroy' == $this->task) {
 
 			// TODO: Add the verifPwd inside the user class or auth class!
 			require_once( PATH_LIBS.'share.inc.php' );
@@ -49,11 +49,11 @@ if ($this->alliance->isLeader($this->user->id)) {
 			if ($this->task == 'destroy') {
 
 				if ($this->conf['game']->lockMember == 0 && $_POST['del'] == 1)
-					$return = $this->alliance->delete();
+					$result = $this->alliance->delete();
 			}
 			elseif($this->task == 'leader') {
 
-				$return = $this->alliance->setLeader($_POST['usr']);
+				$result = $this->alliance->setLeader($_POST['usr']);
 			}
 		}
 
@@ -65,9 +65,8 @@ if ($this->alliance->isLeader($this->user->id)) {
 	}
 
 	$this->alliance->initInfos();
-	$members = $this->alliance->getMembers();
-	$this->setData('members', $members);
-} else {
+}
+else {
 
 	$this->setMsg('warning', ILang::_('NotLeader'));
 }

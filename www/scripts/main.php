@@ -1,49 +1,43 @@
 <?php
 /**
- * Package		Scripts
- * Subpackage	~
- * File			main.php
+ * Package      Scripts
+ * Subpackage   ~
+ * File         main.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
- *
- * Version		2013-06-22 - Eighke
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric Vandebeuque (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  */
 if (!session_id()) { exit(); }
 
 /* GET / POST */
 /**
  * $offset		int		The displayed work offset
- * $task		cmd		Task
  */
 $offset	= $_GET['all'] ? FALSE : '20';
-$task	= $_REQUEST['task'];
 
 /* [Task] */
 /**
  * Upload		Upload a new town image
  * Cancel		Cancel an action
  */
-if ($task == 'upload') {
+try {
+	if ($this->task == 'upload') {
 
-	try {
 		$result = $this->town->uploadLogo();
-		$this->setMsg('valid', ILang::_($result));
-	} catch (Exception $e) {
-		$this->setMsg('warning', ILang::_($e->getMessage()));
 	}
-} elseif ($task == 'cancel') {
+	elseif ($this->task == 'cancel') {
 
-	try {
-		$id		= (int) $_GET['id'];
-		$result	= $this->user->cancelAction($id);
-
-		$this->setMsg('valid', ILang::_($result));
-	} catch (Exception $e) {
-		$this->setMsg('warning', ILang::_($e->getMessage()));
+		$id = (int) $_GET['id'];
+		$result = $this->user->cancelAction($id);
 	}
+
+	if (isset($result))
+		$this->setMsg('valid', $result);
+}
+catch (Exception $e) {
+	$this->setMsg('warning', ILang::_($e->getMessage()));
 }
 /* [/Task] */
 

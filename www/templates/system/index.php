@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			index.php
+ * Package      Templates
+ * Subpackage   System
+ * File         index.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-13 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -28,7 +28,7 @@ if (!session_id()) exit();
 			<span class="countdown" time="<?php echo time()+$action->uTime; ?>"><?php echo $action->wait; ?></span>
 			| <?php echo $action->msg; ?></span>
 		<?php if ($action->cancel) : ?>
-		<span class="right button"><a href="?task=cancel&id=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a></span>
+		<span class="right button"><a href="index.php?task=cancel&id=<?php echo $action->id; ?>" data-load="cache"><?php echo ILang::_('Cancel'); ?></a></span>
 		<?php endif; ?>
 		<span class="clr">&nbsp;</span>
 	</div>
@@ -44,7 +44,7 @@ if (!session_id()) exit();
 			<span class="countdown" time="<?php echo time()+$action->uTime; ?>"><?php echo $action->wait; ?></span>
 			| <?php echo $action->msg; ?></span>
 		<?php if ($action->cancel) : ?>
-		<span class="right button"><a href="?task=cancel&id=<?php echo $action->id; ?>"><?php echo ILang::_('Cancel'); ?></a></span>
+		<span class="right button"><a href="index.php?task=cancel&id=<?php echo $action->id; ?>" data-load="cache"><?php echo ILang::_('Cancel'); ?></a></span>
 		<?php endif; ?>
 		<span class="clr">&nbsp;</span>
 	</div>

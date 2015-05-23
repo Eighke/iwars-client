@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	Light
- * File			_header.php
+ * Package      Templates
+ * Subpackage   System
+ * File         _header.php
  *
- * Licence		GNU General Public License version 3; see http://www.gnu.org/licenses/lgpl-3.0.en.html
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric Vandebeuque (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-14 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -35,14 +35,14 @@ if (!session_id()) exit();
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<?php if ($this->user->premium == 0) : ?><li><a href="./premium.php" style="color:red;"><?php echo ILang::_('Premium'); ?></a></li><?php endif; ?>
+							<?php if ($this->user->premium == 0) : ?><li><a href="./premium.php" style="color:red;" data-load="cache"><?php echo ILang::_('Premium'); ?></a></li><?php endif; ?>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-collapse-down"></span> <?php echo ILang::_('General'); ?><b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li<?php if ($this->name == 'rank') echo ' class="active"'; ?>><a href="./rank.php"><span class="glyphicon glyphicon-stats"></span> <?php echo ILang::_('Highscore'); ?></a></li>
-									<li<?php if ($this->name == 'ally') echo ' class="active"'; ?>><a href="./ally.php"><span class="glyphicon glyphicon-flag"></span> <?php echo ILang::_('Ally'); ?></a></li>
-									<li<?php if ($this->name == 'techtree') echo ' class="active"'; ?>><a href="./techtree.php" title="Techniques" rel="page"><span class="glyphicon glyphicon-tree-deciduous"></span> <?php echo ILang::_('Techniques'); ?></a></li>
-									<li<?php if ($this->name == 'search') echo ' class="active"'; ?>><a href="./search.php"><span class="glyphicon glyphicon-search"></span> <?php echo ILang::_('Search'); ?></a></li>
+									<li<?php if ($this->name == 'rank') echo ' class="active"'; ?>><a href="./rank.php" data-load="cache"><span class="glyphicon glyphicon-stats"></span> <?php echo ILang::_('Highscore'); ?></a></li>
+									<li<?php if ($this->name == 'ally') echo ' class="active"'; ?>><a href="./ally.php" data-load="cache"><span class="glyphicon glyphicon-flag"></span> <?php echo ILang::_('Ally'); ?></a></li>
+									<li<?php if ($this->name == 'techtree') echo ' class="active"'; ?>><a href="./techtree.php" title="Techniques" data-load="cache"><span class="glyphicon glyphicon-tree-deciduous"></span> <?php echo ILang::_('Techniques'); ?></a></li>
+									<li<?php if ($this->name == 'search') echo ' class="active"'; ?>><a href="./search.php" data-load="cache"><span class="glyphicon glyphicon-search"></span> <?php echo ILang::_('Search'); ?></a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -55,7 +55,7 @@ if (!session_id()) exit();
 							</li>
 						</ul>
 						<div class="col-sm-4 hidden-sm">
-							<form class="navbar-form navbar-left" role="search" method="post" action="./search.php">
+							<form id="search" class="navbar-form navbar-left" role="search" method="post" action="./search.php">
 								<div class="input-group">
 									<input type="text" class="form-control" name="name" placeholder="<?php echo ILang::_('Search'); ?>">
 									<span class="input-group-btn">
@@ -72,8 +72,9 @@ if (!session_id()) exit();
 									<span class="badge"><?php echo $this->user->getNewMsg(); ?></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="./msgs.php"><span class="glyphicon glyphicon-comment"></span> <?php echo ILang::_('Messages'); ?> <span class="badge pull-right"><?php echo $this->user->getNewPMs(); ?></span></a></li>
-									<li><a href="./notices.php"><span class="glyphicon glyphicon-bell"></span> <?php echo ILang::_('Notices'); ?> <span class="badge pull-right"><?php echo $this->user->getNewNots(); ?></span></a></li>
+									<li><a href="./msgs.php" data-load="cache"><span class="glyphicon glyphicon-comment"></span> <?php echo ILang::_('Messages'); ?> <span class="badge pull-right"><?php echo $this->user->getNewPMs(); ?></span></a></li>
+									<li><a href="./notices.php" data-load="cache"><span class="glyphicon glyphicon-bell"></span> <?php echo ILang::_('Notices'); ?> <span class="badge pull-right"><?php echo $this->user->getNewNots(); ?></span></a></li>
+									<li><a href="./reports.php" data-load="cache"><span class="glyphicon glyphicon-screenshot"></span> <?php echo ILang::_('Reports'); ?></a></li>
 								</ul>
 							</div>
 							<div class="btn-group dropdown">
@@ -81,8 +82,8 @@ if (!session_id()) exit();
 									<span class="glyphicon glyphicon-cog"></span>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="./player.php"><span class="glyphicon glyphicon-user"></span> <?php echo ILang::_('Profile'); ?></a></li>
-									<li><a href="./options.php"><span class="glyphicon glyphicon-wrench"></span> <?php echo ILang::_('Parameters'); ?></a></li>
+									<li><a href="./player.php" data-load="cache"><span class="glyphicon glyphicon-user"></span> <?php echo ILang::_('Profile'); ?></a></li>
+									<li><a href="./options.php" data-load="cache"><span class="glyphicon glyphicon-wrench"></span> <?php echo ILang::_('Parameters'); ?></a></li>
 									<li><a href="?log=out"><span class="glyphicon glyphicon-log-out"></span> <?php echo ILang::_('Logout'); ?></a></li>
 								</ul>
 							</div>
@@ -92,17 +93,17 @@ if (!session_id()) exit();
 				<div id="ress" class="navbar-fixed-bottom">
 					<div class="container">
 						<div>
-							<span class="glyphicon glyphicon-user"></span> <a href="./player.php"><?php echo $this->user->name; ?></a>
+							<span class="glyphicon glyphicon-user"></span> <a href="./player.php"  data-load="cache"><?php echo $this->user->name; ?></a>
 						</div>
 						<div>
-							<span class="glyphicon glyphicon-flag"></span> #<a href="./ally.php"><?php echo $this->alliance->tag; ?></a>
+							<span class="glyphicon glyphicon-flag"></span> #<a href="./ally.php"  data-load="cache"><?php echo $this->alliance->tag; ?></a>
 						</div>
 						<ul>
-							<li class="r1" data-toggle="tooltip" content="<?php echo ILang::_('Titanium'); ?>"><span class="glyphicon glyphicon-magnet"></span> <span><?php echo ILang::number($this->resources['1']); ?></span></li>
-							<li class="r2" data-toggle="tooltip" content="<?php echo ILang::_('Silicon'); ?>"><span class="glyphicon glyphicon-flash" ></span> <span><?php echo ILang::number($this->resources['2']); ?></span></li>
-							<li class="r4" data-toggle="tooltip" content="<?php echo ILang::_('Water'); ?>"><span class="glyphicon glyphicon-tint"></span> <span><?php echo ILang::number($this->resources['4']); ?></span></li>
-							<li class="r3" data-toggle="tooltip" data-placement="bottom" content="<?php echo ILang::_('Hydrogen'); ?>"><span class="glyphicon glyphicon-fire"></span> <span><?php echo ILang::number($this->resources['3']); ?></span></li>
-							<li><a href="./ress.php"><span class="glyphicon glyphicon-info-sign"></span></a></li>
+							<li class="r1" data-toggle="tooltip" content="<?php echo ILang::_('Titanium'); ?>"><span class="glyphicon glyphicon-magnet"></span> <span class="ress"><?php echo ILang::number($this->resources['1']); ?></span></li>
+							<li class="r2" data-toggle="tooltip" content="<?php echo ILang::_('Silicon'); ?>"><span class="glyphicon glyphicon-flash" ></span> <span class="ress"><?php echo ILang::number($this->resources['2']); ?></span></li>
+							<li class="r4" data-toggle="tooltip" content="<?php echo ILang::_('Water'); ?>"><span class="glyphicon glyphicon-tint"></span> <span class="ress"><?php echo ILang::number($this->resources['4']); ?></span></li>
+							<li class="r3" data-toggle="tooltip" data-placement="bottom" content="<?php echo ILang::_('Hydrogen'); ?>"><span class="glyphicon glyphicon-fire"></span> <span class="ress"><?php echo ILang::number($this->resources['3']); ?></span></li>
+							<li><a href="./ress.php"  data-load="cache"><span class="glyphicon glyphicon-info-sign"></span></a></li>
 						</ul>
 					</div>
 				</div>

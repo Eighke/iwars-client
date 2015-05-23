@@ -1,21 +1,21 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			search.php
+ * Package      Templates
+ * Subpackage   System
+ * File         search.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-27 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
 <h1><?php echo ILang::_('Search'); ?></h1>
 <?php $this->renderMsgs(); ?>
-<form action="search.php" method="post" class="form-horizontal">
+<form action="search.php?search=1" method="post" class="form-horizontal">
 			<div class="form-group">
 				<label for="field-name" class="col-xs-5 control-label"><?php echo ILang::_('EnterName:'); ?></label>
 				<div class="input-group col-xs-6">
@@ -53,10 +53,10 @@ if (!session_id()) exit();
 	</div>
 	<?php foreach($results as $result) : ?>
 	<div class="bg_<?php echo ($i = $i == 2 ? 1 : 2); ?>">
-		<div class="left" style="width:150px;"><a href="player.php?id=<?php echo $result->userId; ?>"><?php echo $result->userName; ?></a></div>
-		<div class="left" style="width:120px;">#<a href="ally.php?id=<?php echo $result->allyId; ?>"><?php echo $result->allyTag; ?></a></div>
+		<div class="left" style="width:150px;"><a href="player.php?id=<?php echo $result->userId; ?>" data-load="cache"><?php echo $result->userName; ?></a></div>
+		<div class="left" style="width:120px;">#<a href="ally.php?id=<?php echo $result->allyId; ?>" data-load="cache"><?php echo $result->allyTag; ?></a></div>
 		<div class="left" style="width:120px;"><?php echo $result->totalPoints; ?></div>
-		<div class="right"><a href="m_msg.php?id=<?php echo $result->userId; ?>"><?php echo ILang::_('Contact'); ?></a></div>
+		<div class="right"><a href="m_msg.php?id=<?php echo $result->userId; ?>" data-load="cache"><?php echo ILang::_('Contact'); ?></a></div>
 		<div class="clr"></div>
 	</div>
 	<?php endforeach; ?>

@@ -104,7 +104,8 @@ optgroup {
  **/
 .input-group-addon {
 	background-color:#1E5986;
-	border-color:#0D283D
+	border-color:#0D283D;
+	color:#fff;
 }
 .help-block {
 	color:#D0F1FF;
@@ -140,12 +141,14 @@ optgroup {
 /***
  * Table
  **/
-.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+.table>thead>tr, .table>tfoot>tr, .table>tbody>tr{
 	background-color:rgba(1, 18, 38, 0.7);
-	border-color:#011226;
 }
-.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+.table-striped>tbody>tr:nth-child(odd){
 	background-color:rgba(1, 18, 38, 0.2);
+}
+
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
 	border-color:#011226;
 }
 .table>thead>tr>td.success, .table>tbody>tr>td.success, .table>tfoot>tr>td.success, .table>thead>tr>th.success, .table>tbody>tr>th.success, .table>tfoot>tr>th.success, .table>thead>tr.success>td, .table>tbody>tr.success>td, .table>tfoot>tr.success>td, .table>thead>tr.success>th, .table>tbody>tr.success>th, .table>tfoot>tr.success>th {
@@ -183,14 +186,35 @@ optgroup {
 	background-color: #0D283D
 }
 
+.nav-tabs {
+	margin: 0 -24px 0 -23px;
+	padding: 0 24px 0 23px;
+	border-color: #A0C2D8;
+}
+.nav-tabs>li>a:hover {
+	border-color: rgba(2, 32, 66, 0.6);
+	border-bottom:0px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	color:#fff;
+	background-color: rgba(39, 59, 95, 0.3);
+	border-color: rgba(2, 32, 66, 0.6);
+	border-bottom:0px;
+}
+
+
 /***
  * Dropdown
  **/
+.dropdown-menu>li>a {
+	color:#a0dfff;
+}
 .dropdown-menu,
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
 	background-color: #1E5986
 }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	color:#a0dfff;
 	background-color: #0D283D
 }
 .dropdown-menu .divider {
@@ -211,8 +235,8 @@ optgroup {
 		border-color: #0D283D;
 	}
 .btn-primary {
-	background-color:rgba(1, 18, 38, 0.2);
-	border-color:#011226;
+	background-color:rgba(1, 18, 38, 0.4);
+	border-color:#243850;
 }
 
 /***
@@ -325,7 +349,16 @@ optgroup {
 	border-color: #0D283D;
 }
 
-
+/***
+ * Modal
+ **/
+.modal-content {
+	background-color: #061820;
+}
+button.close {
+	color: #fff;
+	opacity: 1;
+}
 
 @media (min-width: 768px) {
 	.navbar {

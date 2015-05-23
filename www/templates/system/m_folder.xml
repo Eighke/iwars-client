@@ -1,7 +1,7 @@
 <page>
 	<head>
 		<media type="js">
-			<name>mootools</name>
+			<name>jquery.form</name>
 		</media>
 	</head>
 </page>

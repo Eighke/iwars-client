@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			towns.php
+ * Package      Templates
+ * Subpackage   System
+ * File         towns.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-10-30 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -41,8 +41,8 @@ if (!session_id()) exit();
 			</td>
 			<td><?php if ($town->buildId) : ?><?php echo ILang::build($town->buildId, 'name'); ?><br /><?php echo ILang::_('Time:'); ?> <?php echo $town->buildTime; ?><?php endif; ?>&nbsp;</td>
 			<td>
-				<a href="towns.php?task=rename&id=<?php echo $town->id; ?>" class="btn btn-sm btn-default glyphicon glyphicon-edit" title="<?php echo ILang::_('Rename'); ?>"></a>
-				<a href="townd.php?id=<?php echo $town->id; ?>" class="btn btn-sm btn-danger glyphicon glyphicon-remove" title="<?php echo ILang::_('Delete'); ?>"></a>
+				<a href="towns.php?task=rename&id=<?php echo $town->id; ?>" class="btn btn-sm btn-default glyphicon glyphicon-edit" title="<?php echo ILang::_('Rename'); ?>" data-load="cache"></a>
+				<a href="townd.php?id=<?php echo $town->id; ?>" class="btn btn-sm btn-danger glyphicon glyphicon-remove" title="<?php echo ILang::_('Delete'); ?>" data-load="cache"></a>
 			</td>
 			<td><?php echo $town->points; ?></td>
 		</tr>

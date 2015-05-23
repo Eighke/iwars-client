@@ -1,15 +1,15 @@
 <?php
 /**
- * Package		Templates
- * Subpackage	System
- * File			diplomacy.php
+ * Package      Templates
+ * Subpackage   System
+ * File         diplomacy.php
  *
- * Licence		Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
- * Copyright	Copyright (C) 2005 - 2013 Frédéric Vandebeuque. All rights reserved.
- * Contrib		Frédéric V. (fred.vdb@newebtime.com)
- * 				Eighke (eighke@multi-site.net)
+ * Licence      Mozilla Public License, v. 2.0; see http://mozilla.org/MPL/2.0/
+ * Copyright    Copyright (C) 2005 - 2014 Frédéric Vandebeuque. All rights reserved.
+ * Contrib      Frédéric V. (fred.vdb@newebtime.com)
+ *              Eighke (eighke@multi-site.net)
  *
- * Version		2013-02-18 - Eighke
+ * Version      2014-02-13 - Eighke
  */
 if (!session_id()) exit();
 ?>
@@ -65,9 +65,9 @@ if (!session_id()) exit();
 			<dd class="bold"><?php echo ILang::_('Type'); ?></dd>
 		<?php foreach ($requests as $type => $tpacts) : ?>
 		<?php foreach ($tpacts as $pact) :  ?>
-		<dt class="bold"><a href="ally.php?id=<?php echo $pact->allyId; ?>"><?php echo $pact->allyName; ?></a></dt>
+		<dt class="bold"><a href="ally.php?id=<?php echo $pact->allyId; ?>" data-load="cache"><?php echo $pact->allyName; ?></a></dt>
 			<dd><?php echo $pact->date != 0 ? date('d M Y, H:i:s', $pact->date) : ILang::_('Unlimited'); ?></dd>
-			<dd><?php echo ILang::_($type); ?> <span><a class="right button" href="?reject=<?php echo $pact->allyId.':'.$pact->type; ?>"><?php echo ILang::_('Reject'); ?></a></span> <span><a class="right button" href="?accept=<?php echo $pact->allyId.':'.$pact->type; ?>"><?php echo ILang::_('Accept'); ?></a></span></dd>
+			<dd><?php echo ILang::_($type); ?> <span><a class="right button" href="diplomacy.php?reject=<?php echo $pact->allyId.':'.$pact->type; ?>" data-load="cache"><?php echo ILang::_('Reject'); ?></a></span> <span><a class="right button" href="diplomacy.php?accept=<?php echo $pact->allyId.':'.$pact->type; ?>" data-load="cache"><?php echo ILang::_('Accept'); ?></a></span></dd>
 			<?php endforeach; ?>
 		<?php endforeach; ?>
 	</dl>
@@ -82,9 +82,9 @@ if (!session_id()) exit();
 			<dd class="bold"><?php echo ILang::_('Type'); ?></dd>
 		<?php foreach ($pacts as $type => $tpacts) : ?>
 		<?php foreach ($tpacts as $pact) :  ?>
-		<dt class="bold"><a href="ally.php?id=<?php echo $pact->allyId; ?>"><?php echo $pact->allyName; ?></a></dt>
+		<dt class="bold"><a href="ally.php?id=<?php echo $pact->allyId; ?>" data-load="cache"><?php echo $pact->allyName; ?></a></dt>
 			<dd><?php echo $pact->date != 0 ? date('d M Y, H:i:s', $pact->date) : ILang::_('Unlimited'); ?></dd>
-			<dd><?php echo ILang::_($type); ?><?php if ($pact->date == 0) : ?><span><a class="right button" href="?cancel=<?php echo $pact->allyId.':'.$pact->type; ?>"><?php echo ILang::_('Cancel'); ?></a></span><?php endif; ?></dd>
+			<dd><?php echo ILang::_($type); ?><?php if ($pact->date == 0) : ?><span><a class="right button" href="diplomacy.php?cancel=<?php echo $pact->allyId.':'.$pact->type; ?>" data-load="cache"><?php echo ILang::_('Cancel'); ?></a></span><?php endif; ?></dd>
 			<?php endforeach; ?>
 		<?php endforeach; ?>
 	</dl>

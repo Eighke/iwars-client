@@ -1,78 +1,82 @@
-$(document).ready(function(){
-	var topHeight = $('#top').height() + 30;
+$script.ready('app', function(){
+	$script(['countdown'], 'technos');
 
-	var obj = $('#sticky');
-	var offset = obj.offset();
-	var topOffset = offset.top-topHeight;
-	var leftOffset = offset.left;
-	var marginTop = obj.css("marginTop");
-	var marginLeft = obj.css("marginLeft");
+	$script.ready('technos', function() {
+		IWars.page.technos = {
+			init: function(){
+				IWars.init.countdown();
 
-	$(window).scroll(function() {
+				var topHeight = $('#top').height() + 30;
 
-		var scrollTop = $(window).scrollTop();
+				var obj = $('#sticky');
+				var offset = obj.offset();
+				var topOffset = offset.top-topHeight;
+				var leftOffset = offset.left;
+				var marginTop = obj.css("marginTop");
+				var marginLeft = obj.css("marginLeft");
 
-		if (scrollTop >= topOffset){
+				$(window).scroll(function() {
 
-			obj.css({
-				marginTop: -topOffset,
-				position: 'fixed',
-			});
-		}
+					var scrollTop = $(window).scrollTop();
 
-		if (scrollTop < topOffset){
+					if (scrollTop >= topOffset){
 
-			obj.css({
-				marginTop: marginTop,
-				position: 'relative',
-			});
-		}
-	});
-});
+						obj.css({
+							marginTop: -topOffset,
+							position: 'fixed',
+						});
+					}
 
-var cache = {};
+					if (scrollTop < topOffset){
 
-$('.elem-name a').click(function(e){
-	e.preventDefault();
-
-	call = $(this).attr('href').split('=');
-	call = call[1];
-
-	contenant = $('#sticky > div');
-	id = contenant.attr('id').substr(1);
-
-	if (call == id) {
-		return
-	} else if (cache[call]) {
-		cache[id] = contenant.detach();
-		cache[call].appendTo('#sticky').fadeIn('fast');
-	} else {
-
-		$.ajax({
-			url: './scripts/json/techno.php',
-			data: { id: call },
-			beforeSend : function() {
-				contenant.css({'opacity' : '0.3'});
-				loader.appendTo('#sticky');
-			},
-			success: function(data) {
-
-				contenant.fadeOut('fast', function () {
-					cache[id] = contenant.detach();
-					cache[id].css({'opacity' : '1'});
-
-					$('#sticky').html(data).hide().fadeToggle('fast');
+						obj.css({
+							marginTop: marginTop,
+							position: 'relative',
+						});
+					}
 				});
-			},
-			dataType: 'html'
-		});
-	}
-});
 
-$(".countdown").countDown({
-	dayText : ' ',
-	daysText : ' ',
-	displayDays : false,
-	displayZeroDays : false,
-	serverTime : serverTime
-});
+				var cache = {};
+
+				$('.elem-name a').click(function(e){
+					e.preventDefault();
+
+					call = $(this).attr('href').split('=');
+					call = call[1];
+
+					contenant = $('#sticky > div');
+					id = contenant.attr('id').substr(1);
+
+					if (call == id) {
+						return
+					} else if (cache[call]) {
+						cache[id] = contenant.detach();
+						cache[call].appendTo('#sticky').fadeIn('fast');
+					} else {
+
+						$.ajax({
+							url: './scripts/json/techno.php',
+							data: { id: call },
+							beforeSend : function() {
+								contenant.css({'opacity' : '0.3'});
+								loader.appendTo('#sticky');
+							},
+							success: function(data) {
+
+								contenant.fadeOut('fast', function () {
+									cache[id] = contenant.detach();
+									cache[id].css({'opacity' : '1'});
+
+									$('#sticky').html(data).hide().fadeToggle('fast');
+								});
+							},
+							dataType: 'html'
+						});
+					}
+				});
+			}
+		}
+
+		IWars.page.technos.init();
+	});
+})
